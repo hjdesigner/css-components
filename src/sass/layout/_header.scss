@@ -41,7 +41,10 @@ header{
       display: none;
       width: 100%;
       height: auto;
-      float: left;
+      position: absolute;
+      z-index: 999;
+      top: 45px;
+      background: #FFF;
 
         li{
           width: 100%;

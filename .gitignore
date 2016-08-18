@@ -1,5 +1,6 @@
 # Para todos os arquivos e sub-pastas localizados na pasta
 build/
 node_modules/
+.sass-cache/
 # Para todos os arquivos e sub-pastas localizados na pasta bower_components/
 bower_components/

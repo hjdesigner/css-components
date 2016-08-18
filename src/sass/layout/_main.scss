@@ -67,6 +67,7 @@ h1{
 #collapse:checked + .container,
 #modal-open:checked + .container,
 #tab:checked + .container,
+#card-open:checked + .container,
 #menu-mobile:checked + .container
 {
   display: block;
