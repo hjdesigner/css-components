@@ -1,0 +1,121 @@
+.carousel-box{
+	width: 100%;
+	height: 440px;
+	display: inline-block;
+	position: relative;
+    .carousel-open{
+      display:none;
+    }
+		.carousel-item{
+			display:none;
+			width: 100%;
+			height: 440px;
+			position: absolute;
+			z-index: 1000;
+
+				img{
+					width: 100%;
+				}
+		}
+		.carousel-control{
+			display:none;
+			width: 50px;
+			height: 83px;
+			position: absolute;
+			z-index: 1001;
+    	top: 179px;
+    	padding: 3px 15px;
+    	cursor: pointer;
+			font-size: 0px;
+		}
+		.prev{
+			left: 10px;
+			&:hover{
+				&:before,
+				&:after{
+					background-color: $vermelho;
+				}
+			}
+			&:before,
+			&:after{
+				content: "";
+				width: 50px;
+				height: 5px;
+				position: absolute;
+				background-color: $branco;
+				transition: all .3s ease;
+			}
+			&:before{
+				transform: rotate(-55deg);
+				top: 21px;
+			}
+			&:after{
+				transform: rotate(55deg);
+				left: 14px;
+				top: 60px;
+			}
+		}
+		.next{
+			right: 10px;
+			&:hover{
+				&:before,
+				&:after{
+					background-color: $vermelho;
+				}
+			}
+			&:before,
+			&:after{
+				content: "";
+				width: 50px;
+				height: 5px;
+				position: absolute;
+				background-color: $branco;
+			}
+			&:before{
+				transform: rotate(-125deg);
+				top: 21px;
+			}
+			&:after{
+				transform: rotate(125deg);
+				left: 14px;
+				top: 60px;
+			}
+		}
+		.carousel-indicators{
+			list-style: none;
+		  width: 100%;
+		  position: absolute;
+			z-index: 1002;
+			bottom:0px;
+			margin:0;
+			padding:0;
+			text-align: center;
+
+				li {
+				    display: inline-block;
+				    margin: 0 5px;
+
+    					.carousel-bullet {
+						    color: #fff;
+						    cursor: pointer;
+						    display: block;
+						    font-size: 35px;
+						}
+				}
+
+		}
+}
+.carousel-open:checked + .carousel-item{
+	display:block;
+	-webkit-animation: alpha 4s ease-out;
+}
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3{
+	display: block;
+}
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-1 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-1 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+	color: $vermelho;
+}

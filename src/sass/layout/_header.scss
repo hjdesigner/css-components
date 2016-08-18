@@ -1,0 +1,67 @@
+header{
+  width: 100%;
+  height: auto;
+  float: left;
+    .selecione{
+      width: 100%;
+      height: auto;
+      float: left;
+      transition: all .3s ease;
+      &:hover{
+        ul{
+          display: block;
+        }
+      }
+    }
+    .texto-selecione{
+      width: 100%;
+      height: 40px;
+      float: left;
+      position: relative;
+      border-bottom: 5px solid $cinza;
+      line-height: 40px;
+      text-align: center;
+      font-size: 1.3em;
+      font-weight: 500;
+      font-color: $preto;
+      cursor: pointer;
+        &:after{
+          content: "";
+          width: 0;
+          height: 0;
+          position: absolute;
+          right: 2%;
+          top: 12px;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-top: 15px solid $preto;
+        }
+    }
+    ul{
+      display: none;
+      width: 100%;
+      height: auto;
+      float: left;
+
+        li{
+          width: 100%;
+          height: 30px;
+          float: left;
+          border-bottom: 1px solid $cinza;
+        }
+        label{
+          width: 100%;
+          height: 30px;
+          float: left;
+          cursor: pointer;
+          line-height: 30px;
+          text-align: center;
+          font-size: 1.2em;
+          font-size: 400;
+          color: $preto;
+          &:hover{
+            color: $rosa;
+          }
+        }
+    }
+}

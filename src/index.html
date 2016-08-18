@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Components</title>
+  <link rel="stylesheet" href="css/css-components.css">
+</head>
+<body>
+
+  <header>
+      <nav class="selecione">
+        <div class="texto-selecione">Selecione um componente</div>
+        <ul>
+          <li><label for="carousel">Carousel</label></li>
+          <li><label for="collapse">Collapse</label></li>
+          <li><label for="modal-open">Modal</label></li>
+          <li><label for="tab">Tab</label></li>
+          <li><label for="menu-mobile">Menu Mobile</label></li>
+        </ul>
+      </nav>
+  </header>
+
+    <h1>CSS COMPONENTS</h1>
+
+    <input type="radio" class="open-components" name="radio-components" id="carousel" checked>
+    <div class="container">
+
+      <div class="row">
+
+        <div class="code">
+          <h2>Carousel</h2>
+          <a href="">view code Github</a>
+        </div>
+
+        <div class="carousel-box">
+
+          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" checked>
+          <div class="carousel-item">
+            <img src="/images/harley-1.jpg" alt="">
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-2" name="carousel">
+          <div class="carousel-item">
+            <img src="images/harley-2.jpg" alt="">
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-3" name="carousel">
+          <div class="carousel-item">
+            <img src="images/harley-3.jpg" alt="">
+          </div>
+
+          <label for="carousel-3" class="carousel-control prev control-1"><</label>
+          <label for="carousel-2" class="carousel-control next control-1">></label>
+          <label for="carousel-1" class="carousel-control prev control-2"><</label>
+          <label for="carousel-3" class="carousel-control next control-2">></label>
+          <label for="carousel-2" class="carousel-control prev control-3"><</label>
+          <label for="carousel-1" class="carousel-control next control-3">></label>
+
+          <ol class="carousel-indicators">
+            <li><label for="carousel-1" class="carousel-bullet">•</label></li>
+            <li><label for="carousel-2" class="carousel-bullet">•</label></li>
+            <li><label for="carousel-3" class="carousel-bullet">•</label></li>
+          </ol>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <input type="radio" class="open-components" name="radio-components" id="collapse">
+    <div class="container" id="collapse">
+
+      <div class="row">
+
+        <div class="collapse-box">
+
+    			<div class="collapse-painel">
+
+    				<input type="checkbox" id="collapse-1" class="check-open">
+    				<label for="collapse-1" class="collapse-nav">Titulo do collapse 1 <span class="icon"></span></label>
+
+    					<div class="collapse-container">
+
+    						<h2>Container do collapse 1</h2>
+
+    						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum itaque quae eos natus est asperiores consectetur sit, deserunt saepe totam tenetur numquam dicta harum distinctio, accusamus sed minima, reiciendis expedita.</p>
+
+    					</div>
+
+
+    			</div>
+
+    			<div class="collapse-painel">
+
+    				<input type="checkbox" id="collapse-2" class="check-open">
+    				<label for="collapse-2" class="collapse-nav">Titulo do collapse 2 <span class="icon"></span></label>
+
+    					<div class="collapse-container">
+
+    						<h2>Container do collapse 2</h2>
+
+    						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum itaque quae eos natus est asperiores consectetur sit, deserunt saepe totam tenetur numquam dicta harum distinctio, accusamus sed minima, reiciendis expedita.</p>
+
+    					</div>
+
+
+    			</div>
+
+    			<div class="collapse-painel">
+
+    				<input type="checkbox" id="collapse-3" class="check-open">
+    				<label for="collapse-3" class="collapse-nav">Titulo do collapse 3 <span class="icon"></span></label>
+
+    					<div class="collapse-container">
+
+    						<h2>Container do collapse 3</h2>
+
+    						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum itaque quae eos natus est asperiores consectetur sit, deserunt saepe totam tenetur numquam dicta harum distinctio, accusamus sed minima, reiciendis expedita.</p>
+
+    					</div>
+
+
+    			</div>
+
+    			<div class="collapse-painel">
+
+    				<input type="checkbox" id="collapse-4" class="check-open">
+    				<label for="collapse-4" class="collapse-nav">Titulo do collapse 4 <span class="icon"></span></label>
+
+    					<div class="collapse-container">
+
+    						<h2>Container do collapse 4</h2>
+
+    						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum itaque quae eos natus est asperiores consectetur sit, deserunt saepe totam tenetur numquam dicta harum distinctio, accusamus sed minima, reiciendis expedita.</p>
+
+    					</div>
+
+
+    			</div>
+
+    		</div>
+
+      </div>
+
+    </div>
+
+    <input type="radio" class="open-components" name="radio-components" id="tab">
+    <div class="container">
+      <div class="row">
+
+        <div class="tab-box">
+
+      		<div class="tab-painel">
+
+      			<input type="radio" id="tab-1" name="tab-content" class="tab-open" checked>
+      			<label for="tab-1" class="tab-nav">TITULO 1 </label>
+
+      				<div class="tab-inner">
+
+      					<h2>PAINEL 1</h2>
+
+      					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis magnam laboriosam modi quaerat, doloremque placeat perspiciatis distinctio eos sit! Dignissimos eum consectetur vero perferendis iusto blanditiis nulla repellat repellendus, aliquid.</p>
+
+      				</div>
+      		</div>
+
+      		<div class="tab-painel">
+
+      			<input type="radio" id="tab-2" name="tab-content" class="tab-open">
+      			<label for="tab-2" class="tab-nav">TITULO 2</label>
+
+      				<div class="tab-inner">
+
+      					<h2>PAINEL 2</h2>
+
+      					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis magnam laboriosam modi quaerat, doloremque placeat perspiciatis distinctio eos sit! Dignissimos eum consectetur vero perferendis iusto blanditiis nulla repellat repellendus, aliquid.</p>
+
+      				</div>
+      		</div>
+
+      		<div class="tab-painel">
+
+      			<input type="radio" id="tab-3" name="tab-content" class="tab-open">
+      			<label for="tab-3" class="tab-nav">TITULO 3</label>
+      				<div class="tab-inner">
+
+      					<h2>PAINEL 3</h2>
+
+      					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis magnam laboriosam modi quaerat, doloremque placeat perspiciatis distinctio eos sit! Dignissimos eum consectetur vero perferendis iusto blanditiis nulla repellat repellendus, aliquid.</p>
+
+      				</div>
+      		</div>
+
+      	</div>
+
+      </div>
+    </div>
+
+    <input type="radio" class="open-components" name="radio-components" id="modal-open">
+    <div class="container">
+      <div class="row">
+        <div class="box-modal">
+
+    				<label for="modal" class="btn">Clique e veja a magica!</label>
+    				<input type="checkbox" id="modal" name="modal">
+
+    					<div class="modal-content">
+
+    						<div class="modal-in">
+
+    							<label for="modal" id="modal" class="modal-fechar">X</label>
+
+    							<h2>Titulo modal</h2>
+
+    							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia fugiat earum tempora reprehenderit aliquid consectetur ut, quod a dicta alias esse facere repellendus, libero mollitia repellat corporis maiores, delectus illum!</p>
+
+    						</div>
+
+    					</div>
+
+    		</div>
+      </div>
+    </div>
+
+    <input type="radio" class="open-components" name="radio-components" id="menu-mobile">
+    <div class="container">
+      <div class="row">
+
+        <input type="checkbox" id="menu" class="check-open">
+      	<label for="menu" class="menu-open"></label>
+
+      		<nav class="menu-box">
+      			<label for="menu" class="menu-fechar">X</label>
+      			<ul>
+      				<li><a href="#">Item 1</a></li>
+      				<li><a href="#">Item 2</a></li>
+      				<li><a href="#">Item 3</a></li>
+      				<li><a href="#">Item 4</a></li>
+      				<li><a href="#">Item 5</a></li>
+      				<li><a href="#">Item 6</a></li>
+      				<li><a href="#">Item 7</a></li>
+      				<li><a href="#">Item 8</a></li>
+      				<li><a href="#">Item 9</a></li>
+      				<li><a href="#">Item 10</a></li>
+      				<li><a href="#">Item 11</a></li>
+      			</ul>
+      		</nav>
+
+      </div>
+    </div>
+
+</body>
+</html>

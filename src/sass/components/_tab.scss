@@ -1,0 +1,52 @@
+.tab-box{
+	width: 100%;
+
+		.tab-open{
+			display: none;
+		}
+		.tab-painel{
+			min-width: 100px;
+			display: inline-block;
+
+				.tab-nav{
+					width: 100%;
+				  display: inline-block;
+					cursor: pointer;
+			    border: 1px solid #666;
+			    line-height: 30px;
+			    text-align: center;
+          font-weight: 500;
+          font-size: .9em;
+          color: $preto;
+
+						&:hover{
+							background-color:#F2F2F2;
+						}
+
+
+				}
+		}
+		.tab-inner{
+			width: 98%;
+			height: auto;
+			padding: 1%;
+			margin-top: 5px;
+			display: inline-block;
+			background-color: #F2F2F2;
+			position: absolute;
+			left: 0;
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.tab-open:checked ~ .tab-inner{
+			opacity: 1;
+			visibility: visible;
+			-webkit-animation: alpha 2s ease-in;
+		}
+		.tab-open:checked ~ label{
+			background-color:#F2F2F2;
+		}
+
+
+}
