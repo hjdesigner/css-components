@@ -8,3 +8,4 @@ COMPONENTES CRIADO ATÉ O MOMENTO:
 - Modal
 - Tab
 - Card
+- Dropdown
