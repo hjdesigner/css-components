@@ -15,15 +15,15 @@ header{
     }
     .texto-selecione{
       width: 100%;
-      height: 40px;
+      height: 50px;
       float: left;
       position: relative;
-      border-bottom: 5px solid $cinza;
-      line-height: 40px;
+      background-color: $azul;
+      line-height: 50px;
       text-align: center;
       font-size: 1.3em;
-      font-weight: 500;
-      font-color: $preto;
+      font-weight: 300;
+      color: $branco;
       cursor: pointer;
         &:after{
           content: "";
@@ -31,10 +31,10 @@ header{
           height: 0;
           position: absolute;
           right: 2%;
-          top: 12px;
+          top: 18px;
           border-left: 10px solid transparent;
           border-right: 10px solid transparent;
-          border-top: 15px solid $preto;
+          border-top: 15px solid $branco;
         }
     }
     ul{
@@ -44,26 +44,26 @@ header{
       position: absolute;
       z-index: 999;
       top: 45px;
-      background: #FFF;
+      background: $preto;
 
         li{
-          width: 100%;
-          height: 30px;
+          width: 25%;
+          height: 40px;
           float: left;
           border-bottom: 1px solid $cinza;
         }
         label{
           width: 100%;
-          height: 30px;
+          height: 40px;
           float: left;
           cursor: pointer;
-          line-height: 30px;
+          line-height: 40px;
           text-align: center;
           font-size: 1.2em;
           font-size: 400;
-          color: $preto;
+          color: $branco;
           &:hover{
-            color: $rosa;
+            background: $azul2;
           }
         }
     }

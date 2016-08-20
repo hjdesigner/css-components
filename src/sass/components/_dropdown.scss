@@ -1,0 +1,78 @@
+.drop-box{
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+    input[type="checkbox"]{
+      display: none;
+    }
+    .title{
+      width: 340px;
+      height: 50px;
+      float: left;
+      padding-left: 10px;
+      background-color: $preto;
+      line-height: 50px;
+      font-weight: 500;
+      color: $branco;
+      cursor: pointer;
+      transition: all .3s ease;
+        &:after{
+          content: "\25BC";
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: $rosa2;
+          text-align: center;
+          line-height: 55px;
+          font-size: 1.2em;
+        }
+        &:hover{
+          &:after{
+            content: "\25BC";
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: $rosa;
+            text-align: center;
+            line-height: 55px;
+            font-size: 1.2em;
+          }
+        }
+    }
+    ul{
+      display: none;
+      width: 100%;
+      height: auto;
+      float: left;
+      position: absolute;
+      top: 57px;
+      background-color: $preto;
+      transition: all .3s ease;
+      -webkit-animation: animationDropdown .3s ease;
+      -moz-animation: animationDropdown .3s ease;
+      -o-animation: animationDropdown .3s ease;
+      -ms-animation: animationDropdown .3s ease;
+      animation: animationDropdown .3s ease;
+        li{
+          width: 330px;
+          height: 40px;
+          float: left;
+          padding: 10px;
+          line-height: 50px;
+          font-weight: 300;
+          font-size: 1em;
+          color: $branco;
+          &:hover{
+            background-color: $rosa;
+          }
+        }
+    }
+    #open-drop:checked ~ ul{
+      display: block;
+    }
+}

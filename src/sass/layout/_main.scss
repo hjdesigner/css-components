@@ -68,7 +68,8 @@ h1{
 #modal-open:checked + .container,
 #tab:checked + .container,
 #card-open:checked + .container,
-#menu-mobile:checked + .container
+#menu-mobile:checked + .container,
+#dropdown-open:checked + .container
 {
   display: block;
 }
