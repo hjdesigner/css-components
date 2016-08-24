@@ -1,0 +1,103 @@
+.timeline{
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: 50px 0;
+  position: relative;
+  background-color: $cinza;
+    &:before{
+      content: "";
+      width: 10px;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 50%;
+      background-color: $cinza2;
+    }
+
+    .timeline-item{
+      width: 100%;
+      height: auto;
+      float: left;
+      margin-bottom: 40px;
+      &:last-child{
+        margin-bottom: 0px;
+      }
+        .timeline-texto{
+          width: 350px;
+          height: auto;
+          padding: 20px;
+          background-color: $rosa;
+          position: relative;
+          &.timeline-left{
+            float: left;
+            margin-left: 60px;
+            &:before{
+              content: "";
+              width: 50px;
+              height: 50px;
+              position: absolute;
+              right: -80px;
+              bottom: 13px;
+              background-color: $vermelho2;
+              border-radius: 50%;
+            }
+            &:after{
+              content: "";
+              width: 35px;
+              height: 35px;
+              position: absolute;
+              right: -73px;
+              bottom: 20px;
+              background-color: $vermelho3;
+              border-radius: 50%;
+            }
+          }
+          &.timeline-right{
+            float: right;
+            margin-right: 60px;
+            &:before{
+              content: "";
+              width: 50px;
+              height: 50px;
+              position: absolute;
+              left: -72px;
+              bottom: 13px;
+              background-color: $vermelho2;
+              border-radius: 50%;
+            }
+            &:after{
+              content: "";
+              width: 35px;
+              height: 35px;
+              position: absolute;
+              left: -64px;
+              bottom: 20px;
+              background-color: $vermelho3;
+              border-radius: 50%;
+            }
+          }
+            h2{
+              width: 100%;
+              height: auto;
+              float: left;
+              margin-bottom: 20px;
+              font-size: 1.2em;
+              color: $branco;
+              font-weight: 500;
+            }
+            p{
+              width: 100%;
+              height: auto;
+              float: left;
+              margin-bottom: 10px;
+              font-size: 1em;
+              color: $branco;
+              font-weight: 300;
+              &:last-child{
+                margin-bottom: 0px;
+              }
+            }
+        }
+    }
+}

@@ -52,7 +52,6 @@
       position: absolute;
       top: 57px;
       background-color: $preto;
-      transition: all .3s ease;
       -webkit-animation: animationDropdown .3s ease;
       -moz-animation: animationDropdown .3s ease;
       -o-animation: animationDropdown .3s ease;
@@ -67,6 +66,11 @@
           font-weight: 300;
           font-size: 1em;
           color: $branco;
+          -webkit-animation: alpha .5s ease;
+          -moz-animation: alpha .5s ease;
+          -o-animation: alpha .5s ease;
+          -ms-animation: alpha .5s ease;
+          animation: alpha .5s ease;
           &:hover{
             background-color: $rosa;
           }

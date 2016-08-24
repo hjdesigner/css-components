@@ -20,21 +20,17 @@
           <li><label for="menu-mobile">Menu Mobile</label></li>
           <li><label for="card-open">Card</label></li>
           <li><label for="dropdown-open">Dropdown</label></li>
+          <li><label for="timeline-open">Timeline</label></li>
         </ul>
       </nav>
   </header>
 
     <h1>CSS COMPONENTS</h1>
 
-    <input type="radio" class="open-components" name="radio-components" id="carousel">
+    <input type="radio" class="open-components" name="radio-components" id="carousel" checked>
     <div class="container">
 
       <div class="row">
-
-        <div class="code">
-          <h2>Carousel</h2>
-          <a href="">view code Github</a>
-        </div>
 
         <div class="carousel-box">
 
@@ -66,6 +62,165 @@
 
         </div>
 
+        <!--HTML-->
+        <pre>
+          <code class="prettyprint prettyprinted">
+            <span class="com">&lt;!-- Carousel HTML --&gt;</span>
+              <span class="tag">&lt;div</span><span class="pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="span atv">"carousel-box"</span><span class="tag">&gt;</span>
+                <span class="pln">  </span></span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"carousel-1"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"carousel-open"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"carousel"</span><span class="pln"></span><span class="atn">checked</span><span class="tag">&gt;</span>
+                <span class="pln">  </span></span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"carousel-item"</span><span class="tag">&gt;</span>
+                  <span class="pln">      </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"images/harley-1.jpg"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span>
+                <span class="pln">  </span><span class="tag">&lt;/div&gt;</span>
+                <span class="pln">  </span></span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"carousel-2"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"carousel-open"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"carousel"</span><span class="pln"></span><span class="tag">&gt;</span>
+                <span class="pln">  </span></span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"carousel-item"</span><span class="tag">&gt;</span>
+                  <span class="pln">      </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"images/harley-2.jpg"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span>
+                <span class="pln">  </span><span class="tag">&lt;/div&gt;</span>
+                <span class="pln">  </span></span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"carousel-3"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"carousel-open"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"carousel"</span><span class="pln"></span><span class="tag">&gt;</span>
+                <span class="pln">  </span></span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"carousel-item"</span><span class="tag">&gt;</span>
+                  <span class="pln">      </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"images/harley-3.jpg"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">""</span><span class="tag">&gt;</span>
+                <span class="pln">  </span><span class="tag">&lt;/div&gt;</span>
+                  <span class="pln">    </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"carousel-3"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"carousel-control prev control-1"</span><span class="tag">&gt;</span><span class="pln"><</span><span class="tag">&lt;/label&gt;</span>
+                  <span class="pln">    </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"carousel-2"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"carousel-control next control-1"</span><span class="tag">&gt;</span><span class="pln">></span><span class="tag">&lt;/label&gt;</span>
+                  <span class="pln">    </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"carousel-1"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"carousel-control prev control-2"</span><span class="tag">&gt;</span><span class="pln"><</span><span class="tag">&lt;/label&gt;</span>
+                  <span class="pln">    </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"carousel-3"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"carousel-control next control-2"</span><span class="tag">&gt;</span><span class="pln">></span><span class="tag">&lt;/label&gt;</span>
+                  <span class="pln">    </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"carousel-2"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"carousel-control prev control-3"</span><span class="tag">&gt;</span><span class="pln"><</span><span class="tag">&lt;/label&gt;</span>
+                  <span class="pln">    </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"carousel-1"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"carousel-control next control-3"</span><span class="tag">&gt;</span><span class="pln">></span><span class="tag">&lt;/label&gt;</span>
+                    <span class="pln">      </span><span class="tag">&lt;ol</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"carousel-indicators"</span><span class="tag">&gt;</span>
+                      <span class="pln">        </span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"carousel-1"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"carousel-bullet"</span><span class="tag">&gt;</span><span class="pln">•</span><span class="tag">&lt;/li&gt;</span>
+                      <span class="pln">        </span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"carousel-2"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"carousel-bullet"</span><span class="tag">&gt;</span><span class="pln">•</span><span class="tag">&lt;/li&gt;</span>
+                      <span class="pln">        </span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"carousel-3"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"carousel-bullet"</span><span class="tag">&gt;</span><span class="pln">•</span><span class="tag">&lt;/li&gt;</span>
+                    <span class="pln">      </span><span class="tag">&lt;/ol&gt;</span>
+              <span class="tag">&lt;/div&gt;</span>
+          </code>
+        </pre>
+        <!--CSS-->
+        <pre>
+          <code class="prettyprint prettyprinted">
+            <span class="com">&lt;!-- Carousel CSS --&gt;</span>
+            <span class="tag">@import</span><span class="atn"> url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100)</span><span class="pln">;</span>
+            <span class="tag">body</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">font-family</spa><span class="pln">:</span><span class="atv"> 'Roboto', sans-serif;</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">@-webkit-keyframes alpha </span><span class="pln">{</span>
+              <span class="pln">  </span><span class="atn">0%</span><span class="pln">{</span>
+                <span class="pln">    </span><spa class="atn">opacity</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+              <span class="pln">  </span><span class="pln">}</span>
+              <span class="pln">  </span><span class="atn">100%</span><span class="pln">{</span>
+                <span class="pln">    </span><spa class="atn">opacity</spa><span class="pln">:</span><span class="atv"> 1px</span><span class="pln">;</span>
+              <span class="pln">  </span><span class="pln">}</span>
+            <span class="pln">}</span>
+            <span class="tag">.carousel-box</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 440px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> inline-block</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> relative</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.carousel-box .carousel-open</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.carousel-box .carousel-item</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 440px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">z-index</spa><span class="pln">:</span><span class="atv"> 100</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.carousel-box .carousel-item img</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.carousel-box .carousel-control</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">widht</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 83px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">z-index</spa><span class="pln">:</span><span class="atv"> 1001</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 179px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">padding</spa><span class="pln">:</span><span class="atv"> 3px 15px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">cursor</spa><span class="pln">:</span><span class="atv"> pointer</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.carousel-box .prev</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 10px</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.carousel-box .prev:hover:before, .carousel-box .prev:hover:after</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #E80A0A</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.carousel-box .prev:before, .carousel-box .prev:after</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 5px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #FFFFFF</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">transition</spa><span class="pln">:</span><span class="atv"> all .3s ease</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.carousel-box .prev:before</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(-55deg)</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 21px</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.carousel-box .prev:after</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(55deg)</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 14px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 60px</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.carousel-box .next</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">right</spa><span class="pln">:</span><span class="atv"> 10px</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.carousel-box .next:hover:before, .carousel-box .next:hover:after</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #E80A0A</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.carousel-box .next:before, .carousel-box .next:after</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 5px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #FFFFFF</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.carousel-box .next:before</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(-125deg)</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 21px</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.carousel-box .next:after</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(125deg)</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 14px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 60px</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.carousel-box .carousel-indicators</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">list-style</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%;</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">z-index</spa><span class="pln">:</span><span class="atv"> 1002</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">bottom</spa><span class="pln">:</span><span class="atv"> 0px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">margin</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">padding</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">text-align</spa><span class="pln">:</span><span class="atv"> center</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.carousel-box .carousel-indicators li</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> inline-block</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">margin</spa><span class="pln">:</span><span class="atv"> 0 5px</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.carousel-box .carousel-indicators li .carousel-bullet</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">color</spa><span class="pln">:</span><span class="atv"> #FFFFFF</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">cursor</spa><span class="pln">:</span><span class="atv"> pointer</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> block</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 35px</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.carousel-open:checked + .carousel-item</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> block</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">-webkit-animation</spa><span class="pln">:</span><span class="atv"> alpha 4s ease-out</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">#carousel-1:checked ~ .control-1,</span>
+            <span class="tag">#carousel-2:checked ~ .control-2,</span>
+            <span class="tag">#carousel-3:checked ~ .control-3</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> block</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,</span>
+            <span class="tag">#carousel-2:checked ~ .control-1 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,</span>
+            <span class="tag">#carousel-3:checked ~ .control-1 ~ .carousel-indicators li:nth-child(3) .carousel-bullet</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">color</spa><span class="pln">:</span><span class="atv"> #E80A0A</span><span class="pln">;</span>
+            <span class="pln">}</span>
+          </code>
+        </pre>
 
 
       </div>
@@ -145,6 +300,116 @@
 
     		</div>
 
+        <!--HTML-->
+        <pre>
+          <code class="prettyprint prettyprinted">
+            <span class="com">&lt;!-- Collapse HTML --&gt;</span>
+              <span class="tag">&lt;div</span><span class="pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="span atv">"collapse-box"</span><span class="tag">&gt;</span>
+                <span class="pln">  </span><span class="tag">&lt;div</span><din class="pln"> </din><span class="atn">class</span><div class="pun">=</div><div class="atv">"collapse-painel"</div><div class="tag">&gt;</div>
+                  <span class="pln">    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"collapse-1"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"check-open"</span><span class="tag">&gt;</span>
+                  <span class="pln">    </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="span atn">for</span><span class="pun">=</span><span class="atv">"collapse-1"</span><span class="span pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"collapse-nav"</span><span class="tag">&gt;</span><span class="pln">Titulo do collapse 2</span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon"</span><span class="tag">&gt;</span><span class="tag">&lt;/span&gt;</span><span class="tag">&lt;/label</span><span class="tag">&gt;</span>
+                    <span class="pln">      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"collapse-container"</span><span class="tag">&gt;</span>
+                      <span class="pln">        </span><span class="tag">&lt;h2&gt;</span><span class="pln">Container do collapse 1</span><span class="tag">&lt;/h2&gt;</span>
+                      <span class="pln">        </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum itaque quae eo</span><span class="tag">&lt;/p&gt;</span>
+                    <span class="pln">      </span><span class="tag">&lt;/div&gt;</span>
+                <span class="pln">  </span><span class="tag">&lt;/div&gt;</span>
+                <span class="pln">  </span><span class="tag">&lt;div</span><din class="pln"> </din><span class="atn">class</span><div class="pun">=</div><div class="atv">"collapse-painel"</div><div class="tag">&gt;</div>
+                  <span class="pln">    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"collapse-2"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"check-open"</span><span class="tag">&gt;</span>
+                  <span class="pln">    </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="span atn">for</span><span class="pun">=</span><span class="atv">"collapse-2"</span><span class="span pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"collapse-nav"</span><span class="tag">&gt;</span><span class="pln">Titulo do collapse 2</span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon"</span><span class="tag">&gt;</span><span class="tag">&lt;/span&gt;</span><span class="tag">&lt;/label</span><span class="tag">&gt;</span>
+                    <span class="pln">      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"collapse-container"</span><span class="tag">&gt;</span>
+                      <span class="pln">        </span><span class="tag">&lt;h2&gt;</span><span class="pln">Container do collapse 2</span><span class="tag">&lt;/h2&gt;</span>
+                      <span class="pln">        </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum itaque quae eo</span><span class="tag">&lt;/p&gt;</span>
+                    <span class="pln">      </span><span class="tag">&lt;/div&gt;</span>
+                <span class="pln">  </span><span class="tag">&lt;/div&gt;</span>
+              <span class="tag">&lt;/div&gt;</span>
+          </code>
+        </pre>
+
+        <!--CSS-->
+        <pre>
+          <code class="prettyprint prettyprinted">
+            <span class="com">&lt;!-- Collapse CSS --&gt;</span>
+            <span class="tag">@import</span><span class="atn"> url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100)</span><span class="pln">;</span>
+            <span class="tag">body</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">font-family</spa><span class="pln">:</span><span class="atv"> 'Roboto', sans-serif;</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">@-webkit-keyframes alpha </span><span class="pln">{</span>
+              <span class="pln">  </span><span class="atn">0%</span><span class="pln">{</span>
+                <span class="pln">    </span><spa class="atn">opacity</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+              <span class="pln">  </span><span class="pln">}</span>
+              <span class="pln">  </span><span class="atn">100%</span><span class="pln">{</span>
+                <span class="pln">    </span><spa class="atn">opacity</spa><span class="pln">:</span><span class="atv"> 1px</span><span class="pln">;</span>
+              <span class="pln">  </span><span class="pln">}</span>
+            <span class="pln">}</span>
+            <span class="tag">.collapse-box</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.collapse-box .check-open</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.collapse-box .collapse-painel</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> inline-block</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.collapse-box .collapse-painel .collapse-nav</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 98%</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> inline-block</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">cursor</spa><span class="pln">:</span><span class="atv"> pointer</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #F2F2F2</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">padding</spa><span class="pln">:</span><span class="atv"> 1%</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">margin-bottom</spa><span class="pln">:</span><span class="atv"> 5px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> .9em</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">color</spa><span class="pln">:</span><span class="atv"> #000000</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">font-weight</spa><span class="pln">:</span><span class="atv"> 600</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">transition</spa><span class="pln">:</span><span class="atv"> all .25s linear</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.collapse-box .collapse-painel .collapse-nav:hover</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #E6E6E6</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.collapse-box .collapse-painel .collapse-nav .icon</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 12px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 10px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> right</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">margin</spa><span class="pln">:</span><span class="atv"> 5px 6px</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.collapse-box .collapse-painel .collapse-nav .icon:after</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">border-top</spa><span class="pln">:</span><span class="atv"> 10px solid #000</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">border-left</spa><span class="pln">:</span><span class="atv"> 5px solid transparent</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">border-right</spa><span class="pln">:</span><span class="atv"> 5px solid transparent</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.collapse-box .collapse-painel .collapse-nav .icon:before</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">border-bottom</spa><span class="pln">:</span><span class="atv"> 10px solid #000</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">border-left</spa><span class="pln">:</span><span class="atv"> 5px solid transparent</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">border-right</spa><span class="pln">:</span><span class="atv"> 5px solid transparent</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">opacity</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.collapse-box .collapse-painel .collapse-container</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> auto</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.collapse-box .collapse-painel .check-open:checked ~ .collapse-container</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> block</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">-webkit-animation</spa><span class="pln">:</span><span class="atv"> alpha 2s ease-out</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.collapse-box .collapse-painel .check-open:checked ~ .collapse-nav .icon:after</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">opacity</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.collapse-box .collapse-painel .check-open:checked ~ .collapse-nav .icon:before</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">opacity</spa><span class="pln">:</span><span class="atv"> 1</span><span class="pln">;</span>
+            <span class="pln">}</span>
+          </code>
+        </pre>
+
       </div>
 
     </div>
@@ -198,10 +463,107 @@
 
       	</div>
 
+        <!--HTML-->
+        <pre>
+          <code class="prettyprint prettyprinted">
+            <span class="com">&lt;!-- Tab HTML --&gt;</span>
+              <span class="tag">&lt;div</span><span class="pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="span atv">"tab-box"</span><span class="tag">&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="span atv">"tab-painel"</span><span class="tag">&gt;</span>
+                <span class="pln">    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"tab-1"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"tab-content"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tab-open"</span><span class="pln"> </span><span class="atn">checked</span><span class="tag">&gt;</span>
+                <span class="pln">    </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="span atn">for</span><span class="pun">=</span><span class="atv">"tab-1"</span><span class="span pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="atv">"tab-nav"</span><span class="tag">&gt;</span><span class="pln">TITULO 1</span><span class="tag">&lt;/label</span><span class="tag">&gt;</span>
+                  <span class="pln">      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="span atv">"tab-inner"</span><span class="tag">&gt;</span>
+                    <span class="pln">          </span><span class="tag">&lt;h2&gt;</span><span class="pln">Painel 1</span><span class="tag">&lt;/h2&gt;</span>
+                    <span class="pln">          </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia fugiat earum</span><span class="tag">&lt;/p&gt;</span>
+                  <span class="pln">      </span><span class="tag">&lt;/div&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;/div&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="span atv">"tab-painel"</span><span class="tag">&gt;</span>
+                <span class="pln">    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"tab-2"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"tab-content"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tab-open"</span><span class="tag">&gt;</span>
+                <span class="pln">    </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="span atn">for</span><span class="pun">=</span><span class="atv">"tab-2"</span><span class="span pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="atv">"tab-nav"</span><span class="tag">&gt;</span><span class="pln">TITULO 2</span><span class="tag">&lt;/label</span><span class="tag">&gt;</span>
+                  <span class="pln">      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="span atv">"tab-inner"</span><span class="tag">&gt;</span>
+                    <span class="pln">          </span><span class="tag">&lt;h2&gt;</span><span class="pln">Painel 2</span><span class="tag">&lt;/h2&gt;</span>
+                    <span class="pln">          </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia fugiat earum</span><span class="tag">&lt;/p&gt;</span>
+                  <span class="pln">      </span><span class="tag">&lt;/div&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;/div&gt;</span>
+                <span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="span atv">"tab-painel"</span><span class="tag">&gt;</span>
+                  <span class="pln">    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"radio"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"tab-3"</span><span class="pln"> </span><span class="atn">name</span><span class="pun">=</span><span class="atv">"tab-content"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"tab-open"</span><span class="tag">&gt;</span>
+                  <span class="pln">    </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="span atn">for</span><span class="pun">=</span><span class="atv">"tab-3"</span><span class="span pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="atv">"tab-nav"</span><span class="tag">&gt;</span><span class="pln">TITULO 3</span><span class="tag">&lt;/label</span><span class="tag">&gt;</span>
+                    <span class="pln">      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="span atv">"tab-inner"</span><span class="tag">&gt;</span>
+                      <span class="pln">          </span><span class="tag">&lt;h2&gt;</span><span class="pln">Painel 3</span><span class="tag">&lt;/h2&gt;</span>
+                      <span class="pln">          </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia fugiat earum</span><span class="tag">&lt;/p&gt;</span>
+                    <span class="pln">      </span><span class="tag">&lt;/div&gt;</span>
+                <span class="pln">  </span><span class="tag">&lt;/div&gt;</span>
+              <span class="tag">&lt;/div&gt;</span>
+          </code>
+        </pre>
+        <!--CSS-->
+        <pre>
+          <code class="prettyprint prettyprinted">
+            <span class="com">&lt;!-- Tab CSS --&gt;</span>
+            <span class="tag">@import</span><span class="atn"> url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100)</span><span class="pln">;</span>
+            <span class="tag">body</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">font-family</spa><span class="pln">:</span><span class="atv"> 'Roboto', sans-serif;</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">@-webkit-keyframes alpha </span><span class="pln">{</span>
+              <span class="pln">  </span><span class="atn">0%</span><span class="pln">{</span>
+                <span class="pln">    </span><spa class="atn">opacity</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+              <span class="pln">  </span><span class="pln">}</span>
+              <span class="pln">  </span><span class="atn">100%</span><span class="pln">{</span>
+                <span class="pln">    </span><spa class="atn">opacity</spa><span class="pln">:</span><span class="atv"> 1px</span><span class="pln">;</span>
+              <span class="pln">  </span><span class="pln">}</span>
+            <span class="pln">}</span>
+            <span class="tag">.tab-box</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.tab-box .tab-open</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.tab-box .tab-painel</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">min-width</spa><span class="pln">:</span><span class="atv"> 100px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> inline-block</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.tab-box .tab-painel .tab-nav</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> inline-block</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">cursor</spa><span class="pln">:</span><span class="atv"> pointer</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">border</spa><span class="pln">:</span><span class="atv"> 1px solid #666</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">line-height</spa><span class="pln">:</span><span class="atv"> 30px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">text-align</spa><span class="pln">:</span><span class="atv"> center</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">font-weight</spa><span class="pln">:</span><span class="atv"> 500</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> .9em</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">color</spa><span class="pln">:</span><span class="atv"> #2E2929</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.tab-box .tab-painel .tab-nav:hover</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #F2F2F2</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.tab-box .tab-inner</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 98%</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> auto</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">padding</spa><span class="pln">:</span><span class="atv"> 1%</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">margin-top</spa><span class="pln">:</span><span class="atv"> 5px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> inline-block</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #F2F2F2</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">opacity</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">visibility</spa><span class="pln">:</span><span class="atv"> hidden</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.tab-box .tab-open:checked ~ .tab-inner</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">opacity</spa><span class="pln">:</span><span class="atv"> 1</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">visibility</spa><span class="pln">:</span><span class="atv"> visible</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">-webkit-animation</spa><span class="pln">:</span><span class="atv"> alpha 2s ease</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.tab-box .tab-open:checked ~ label</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #F2F2F2</span><span class="pln">;</span>
+            <span class="pln">}</span>
+          </code>
+        </pre>
+
+
       </div>
     </div>
 
-    <input type="radio" class="open-components" name="radio-components" id="modal-open">
+    <input type="radio" class="open-components" name="radio-components" id="modal-open" >
     <div class="container">
       <div class="row">
         <div class="box-modal">
@@ -223,7 +585,105 @@
 
     					</div>
 
+
     		</div>
+        <!--HTML-->
+        <pre>
+          <code class="prettyprint prettyprinted">
+            <span class="com">&lt;!-- Modal HTML --&gt;</span>
+              <span class="tag">&lt;div</span><span class="pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="span atv">"box-modal"</span><span class="tag">&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="span atn">for</span><span class="pun">=</span><span class="atv">"modal"</span><span class="span pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="atv">"btn"</span><span class="tag">&gt;</span><span class="pln">Clique e veja a magica!</span><span class="tag">&lt;/label</span><span class="tag">&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"modal"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"modal"</span><span class="tag">&gt;</span>
+                <span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="span atv">"modal-content"</span><span class="tag">&gt;</span>
+                  <span class="pln">      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="span atv">"modal-in"</span><span class="tag">&gt;</span>
+                    <span class="pln">        </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="span atn">for</span><span class="pun">=</span><span class="atv">"modal"</span><span class="span pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="atv">"modal-fechar"</span><span class="tag">&gt;</span><span class="pln">X</span><span class="tag">&lt;/label</span><span class="tag">&gt;</span>
+                    <span class="pln">        </span><span class="tag">&lt;h2&gt;</span><span class="pln">Titulo modal</span><span class="tag">&lt;/h2&gt;</span>
+                    <span class="pln">        </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia fugiat earum</span><span class="tag">&lt;/p&gt;</span>
+                  <span class="pln">      </span><span class="tag">&lt;/div&gt;</span>
+                <span class="pln">    </span><span class="tag">&lt;/div&gt;</span>
+              <span class="tag">&lt;/div&gt;</span>
+          </code>
+        </pre>
+        <!--CSS-->
+        <pre>
+          <code class="prettyprint prettyprinted">
+            <span class="com">&lt;!-- Modal CSS --&gt;</span>
+            <span class="tag">@import</span><span class="atn"> url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100)</span><span class="pln">;</span>
+            <span class="tag">body</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">font-family</spa><span class="pln">:</span><span class="atv"> 'Roboto', sans-serif;</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">@-webkit-keyframes alpha </span><span class="pln">{</span>
+              <span class="pln">  </span><span class="atn">0%</span><span class="pln">{</span>
+                <span class="pln">    </span><spa class="atn">opacity</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+              <span class="pln">  </span><span class="pln">}</span>
+              <span class="pln">  </span><span class="atn">100%</span><span class="pln">{</span>
+                <span class="pln">    </span><spa class="atn">opacity</spa><span class="pln">:</span><span class="atv"> 1px</span><span class="pln">;</span>
+              <span class="pln">  </span><span class="pln">}</span>
+            <span class="pln">}</span>
+            <span class="tag">.box-modal</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.box-modal input[type="checkbox"]</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.box-modal .btn</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 40px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> inline-block</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">background</spa><span class="pln">:</span><span class="atv"> #73b1d4</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">box-shadow</spa><span class="pln">:</span><span class="atv"> 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">line-height</spa><span class="pln">:</span><span class="atv"> 40px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">text-align</spa><span class="pln">:</span><span class="atv"> center</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">font-weight</spa><span class="pln">:</span><span class="atv"> 500</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 1.2em</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">color</spa><span class="pln">:</span><span class="atv"> #FFFFFF</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">cursor</spa><span class="pln">:</span><span class="atv"> pointer</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.box-modal .btn:hover</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">background</spa><span class="pln">:</span><span class="atv"> #679ebe</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.box-modal .modal-content</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> fixed</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">z-index</spa><span class="pln">:</span><span class="atv"> 1000</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">background</spa><span class="pln">:</span><span class="atv"> rgba(0, 0, 0, 0.6);</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.modal-in</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">widht</spa><span class="pln">:</span><span class="atv"> 500px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 300px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">background</spa><span class="pln">:</span><span class="atv"> #FFFFFF</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">border</spa><span class="pln">:</span><span class="atv"> 1px solid #999</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">z-index</spa><span class="pln">:</span><span class="atv"> 1000</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 50%</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 50%</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">margin</spa><span class="pln">:</span><span class="atv"> -150px 0 0 -250px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">padding</spa><span class="pln">:</span><span class="atv"> 20px</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.modal-in .modal-fechar</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">z-index</spa><span class="pln">:</span><span class="atv"> 1002</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> -11px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">right</spa><span class="pln">:</span><span class="atv"> -13px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">padding</spa><span class="pln">:</span><span class="atv"> 5px 10px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">cursor</spa><span class="pln">:</span><span class="atv"> pointer</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">background</spa><span class="pln">:</span><span class="atv"> red</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">border-radius</spa><span class="pln">:</span><span class="atv"> 50%</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">font-weight</spa><span class="pln">:</span><span class="atv"> 500</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> .8em</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">color</spa><span class="pln">:</span><span class="atv"> #FFFFFF</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">#modal:checked ~ .modal-content</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> block</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">-webkit-animation</spa><span class="pln">:</span><span class="atv">  alpha 1s ease-in</span><span class="pln">;</span>
+            <span class="pln">}</span>
+          </code>
+        </pre>
       </div>
     </div>
 
@@ -251,6 +711,118 @@
       			</ul>
       		</nav>
 
+          <!--HTML-->
+          <pre>
+            <code class="prettyprint prettyprinted">
+              <span class="com">&lt;!-- Menu Mobile HTML --&gt;</span>
+              <span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"menu"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"check-open"</span><span class="tag">&gt;</span>
+                <span class="pln">  </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="span atn">for</span><span class="pun">=</span><span class="atv">"menu"</span><span class="span pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="atv">"menu-open"</span><span class="tag">&gt;</span><span class="tag">&lt;/label</span><span class="tag">&gt;</span>
+                  <span class="pln">    </span><span class="tag">&lt;nav</span><span class="pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="span atv">"menu-box"</span><span class="tag">&gt;</span>
+                    <span class="pln">      </span><span class="tag">&lt;ul&gt;</span>
+                      <span class="pln">        </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="span atn">for</span><span class="pun">=</span><span class="atv">"menu"</span><span class="span pln"> </span><span class="span atn">class</span><span class="pun">=</span><span class="atv">"menu-fechar"</span><span class="tag">&gt;</span><span class="pln">X</span><span class="tag">&lt;/label</span><span class="tag">&gt;</span>
+                      <span class="pln">        </span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span><span class="pln"> </span><span class="span atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Item</span><span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+                      <span class="pln">        </span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span><span class="pln"> </span><span class="span atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Item</span><span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+                      <span class="pln">        </span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span><span class="pln"> </span><span class="span atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Item</span><span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+                      <span class="pln">        </span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span><span class="pln"> </span><span class="span atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Item</span><span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+                      <span class="pln">        </span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span><span class="pln"> </span><span class="span atn">href</span><span class="pun">=</span><span class="atv">"#"</span><span class="tag">&gt;</span><span class="pln">Item</span><span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+                    <span class="pln">      </span><span class="tag">&lt;/ul&gt;</span>
+                  <span class="pln">    </span><span class="tag">&lt;/nav&gt;</span>
+            </code>
+          </pre>
+          <!--CSS-->
+          <pre>
+            <code class="prettyprint prettyprinted">
+              <span class="com">&lt;!-- Menu Mobile CSS --&gt;</span>
+              <span class="tag">@import</span><span class="atn"> url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100)</span><span class="pln">;</span>
+              <span class="tag">body</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">font-family</spa><span class="pln">:</span><span class="atv"> 'Roboto', sans-serif;</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.check-open</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.menu-open</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 40px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 32px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> flex</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">background</spa><span class="pln">:</span><span class="atv"> #000000</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">cursor</spa><span class="pln">:</span><span class="atv"> pointer</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> relative</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">transition</spa><span class="pln">:</span><span class="atv"> all .25s linear</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.menu-open:before</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> block</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">margin</spa><span class="pln">:</span><span class="atv"> 7px auto</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 70%</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 0.25em</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">background</spa><span class="pln">:</span><span class="atv"> #FFFFFF</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">box-shadow</spa><span class="pln">:</span><span class="atv"> 0 .45em 0 0 #FFF, 0 .9em 0 0 #FFF</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.menu-open:hover, .menu-open:focus</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">background</spa><span class="pln">:</span><span class="atv"> #FA58F4</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.menu-box</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 300px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">padding</spa><span class="pln">:</span><span class="atv"> 50px 10px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> fixed</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 0px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 0px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">z-index</spa><span class="pln">:</span><span class="atv"> 1000</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">background</spa><span class="pln">:</span><span class="atv"> #333333</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> translateX(-320px);</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">transition</spa><span class="pln">:</span><span class="atv"> all .25s linear;</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.menu-box .menu-fechar</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">font-weight</spa><span class="pln">:</span><span class="atv"> 500</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">color</spa><span class="pln">:</span><span class="atv"> #FFFFFF</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">cursor</spa><span class="pln">:</span><span class="atv"> pointer</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 10px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">right</spa><span class="pln">:</span><span class="atv"> 20px</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.menu-box .menu-fechar:hover</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">color</spa><span class="pln">:</span><span class="atv"> #CC0000</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.menu-box ul</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> auto</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">margin</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">padding</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">list-style</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.menu-box li</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 40px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border-bottom</spa><span class="pln">:</span><span class="atv"> 2px solid #666666</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.menu-box a</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 98%</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 40px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">padding-left</spa><span class="pln">:</span><span class="atv"> 2%</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">text-decoration</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">line-height</spa><span class="pln">:</span><span class="atv"> 40px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">font-weight</spa><span class="pln">:</span><span class="atv"> 500</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 1em</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">color</spa><span class="pln">:</span><span class="atv"> #FFFFFF</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.menu-box a:hover</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">background</spa><span class="pln">:</span><span class="atv"> #666666</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">#menu:checked ~ .menu-box</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 0px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> translateX(0)</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">transition</spa><span class="pln">:</span><span class="atv"> all .25s linear</span><span class="pln">;</span>
+              <span class="pln">}</span>
+            </code>
+          </pre>
+
+
       </div>
     </div>
 
@@ -276,10 +848,136 @@
 
           </div>
 
+          <!--HTML-->
+          <pre>
+            <code class="prettyprint prettyprinted">
+              <span class="com">&lt;!-- Card HTML --&gt;</span>
+              <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"card-box"</span><span class="tag">&gt;</span>
+                <span class="pln">  </span><span class="tag">&lt;figure</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"card-img"</span><span class="tag">&gt;</span>
+                  <span class="pln">    </span><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="pln">"image/harckers.jpg"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="pln">"Harckers"</span><span class="tag">&gt;</span>
+                <span class="pln">  </span><span class="tag">&lt;/figure</span><span class="tag">&gt;</span>
+                <span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"card-titulo"</span><span class="tag">&gt;</span><span class="pln">Card Titulo</span><span class="tag">&lt;/div</span><span class="tag">&gt;</span>
+                <span class="pln">    </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"click-card"</span><span class="tag">/&gt;</span>
+                <span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"click-card"</span><span class="tag">&gt;</span>
+                  <span class="pln">      </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"click-card"</span><span class="tag">&gt;</span><span class="tag">&lt;/label&gt;</span>
+                <span class="pln">    </span><span class="tag">&lt;/div</span><span class="tag">&gt;</span>
+                <span class="pln">    </span><span class="tag">&lt;article</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"card-texto"</span><span class="tag">&gt;</span>
+                  <span class="pln">      </span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                <span class="pln">    </span><span class="tag">&lt;/article</span><span class="tag">&gt;</span>
+              <span class="tag">&lt;/div</span><span class="tag">&gt;</span>
+            </code>
+          </pre>
+          <!--CSS-->
+          <pre>
+            <code class="prettyprint prettyprinted">
+              <span class="com">&lt;!-- Dropdown CSS --&gt;</span>
+              <span class="tag">@import</span><span class="atn"> url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100)</span><span class="pln">;</span>
+              <span class="tag">body</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">font-family</spa><span class="pln">:</span><span class="atv"> 'Roboto', sans-serif;</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">@-webkit-keyframes alpha </span><span class="pln">{</span>
+                <span class="pln">  </span><span class="atn">0%</span><span class="pln">{</span>
+                  <span class="pln">    </span><spa class="atn">opacity</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+                <span class="pln">  </span><span class="pln">}</span>
+                <span class="pln">  </span><span class="atn">100%</span><span class="pln">{</span>
+                  <span class="pln">    </span><spa class="atn">opacity</spa><span class="pln">:</span><span class="atv"> 1px</span><span class="pln">;</span>
+                <span class="pln">  </span><span class="pln">}</span>
+              <span class="pln">}</span>
+              <span class="tag">.card-box</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 390px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 280px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">box-shadow</spa><span class="pln">:</span><span class="atv"> 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> relative</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.card-box input[type="checkbox"]</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.card-img</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> auto</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">margin</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.card-box .card-titulo</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 350px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 240px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">padding</spa><span class="pln">:</span><span class="atv"> 10px 20px 0</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">font-weight</spa><span class="pln">:</span><span class="atv"> 300</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">color</spa><span class="pln">:</span><span class="atv"> #FF1493</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 1.4em</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.card-box .click-card</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 26px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 14px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">right</spa><span class="pln">:</span><span class="atv"> 10px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">bottom</spa><span class="pln">:</span><span class="atv"> 10px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">z-index</spa><span class="pln">:</span><span class="atv"> 1</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.card-box .click-card label</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 26px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 14px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">cursor</spa><span class="pln">:</span><span class="atv"> pointer</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.card-box .click-card label:before</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 15px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 2px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 0px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 6px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #2E2929</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(-50deg)</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.card-box .click-card label:after</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 15px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 2px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 10px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 6px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #2E2929</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(50deg)</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.card-box .card-texto</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 350px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 240px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">z-index</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">padding</spa><span class="pln">:</span><span class="atv"> 20px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">line-height</spa><span class="pln">:</span><span class="atv"> 30px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">font-family</spa><span class="pln">:</span><span class="atv"> 'Roboto', sans-serif</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">font-weight</spa><span class="pln">:</span><span class="atv"> 500</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">color</spa><span class="pln">:</span><span class="atv"> #2E2929</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #FFFFFF</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.card-box #click-card:checked ~ .card-texto</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> block</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">-webkit-animation</spa><span class="pln">:</span><span class="atv"> alpha .3s linear</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.card-box #click-card:checked ~ .click-card label:after</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 15px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 2px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 0px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 6px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #2E2929</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(50deg)</span><span class="pln">;</span>
+              <span class="pln">}</span>
+            </code>
+          </pre>
+
       </div>
     </div>
 
-    <input type="radio" class="open-components" name="radio-components" id="dropdown-open" checked>
+    <input type="radio" class="open-components" name="radio-components" id="dropdown-open">
     <section class="container">
       <div class="row">
 
@@ -296,9 +994,312 @@
               </ul>
           </div>
 
+            <!--HTML-->
+            <pre>
+              <code class="prettyprint prettyprinted">
+                <span class="com">&lt;!-- Dropdown HTML --&gt;</span>
+                <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"drop-box"</span><span class="tag">&gt;</span>
+                  <span class="pln">  </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"open-drop"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"title"</span><span class="tag">&gt;</span><span class="pln">Selecione um item</span><span class="tag">&lt;/label&gt;</span>
+                  <span class="pln">  </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"open-drop"</span><span class="tag">/&gt;</span>
+                    <span class="pln">    </span><span class="tag">&lt;ul</span><span class="tag">&gt;</span>
+                      <span class="pln">      </span><span class="tag">&lt;li</span><span class="tag">&gt;</span><span class="pln">Item 1</span><span class="tag">&lt;/li&gt;</span>
+                      <span class="pln">      </span><span class="tag">&lt;li</span><span class="tag">&gt;</span><span class="pln">Item 2</span><span class="tag">&lt;/li&gt;</span>
+                      <span class="pln">      </span><span class="tag">&lt;li</span><span class="tag">&gt;</span><span class="pln">Item 3</span><span class="tag">&lt;/li&gt;</span>
+                      <span class="pln">      </span><span class="tag">&lt;li</span><span class="tag">&gt;</span><span class="pln">Item 4</span><span class="tag">&lt;/li&gt;</span>
+                      <span class="pln">      </span><span class="tag">&lt;li</span><span class="tag">&gt;</span><span class="pln">Item 5</span><span class="tag">&lt;/li&gt;</span>
+                      <span class="pln">      </span><span class="tag">&lt;li</span><span class="tag">&gt;</span><span class="pln">Item 6</span><span class="tag">&lt;/li&gt;</span>
+                    <span class="pln">    </span><span class="tag">&lt;/ul</span><span class="tag">&gt;</span>
+                <span class="tag">&lt;/div</span><span class="tag">&gt;</span>
+              </code>
+            </pre>
+
+            <!--CSS-->
+            <pre>
+              <code class="prettyprint prettyprinted">
+                <span class="com">&lt;!-- Dropdown CSS --&gt;</span>
+                  <span class="tag">@import</span><span class="atn"> url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100)</span><span class="pln">;</span>
+                  <span class="tag">body</span><span class="pln">{</span>
+                    <span class="pln">  </span><spa class="atn">font-family</spa><span class="pln">:</span><span class="atv"> 'Roboto', sans-serif;</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+                  <span class="pln">}</span>
+                  <span class="tag">@-webkit-keyframes animationDropdown </span><span class="pln">{</span>
+                    <span class="pln">  </span><span class="atn">0%</span><span class="pln">{</span>
+                      <span class="pln">    </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 0px</span><span class="pln">;</span>
+                    <span class="pln">  </span><span class="pln">}</span>
+                    <span class="pln">  </span><span class="atn">100%</span><span class="pln">{</span>
+                      <span class="pln">    </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 360px</span><span class="pln">;</span>
+                    <span class="pln">  </span><span class="pln">}</span>
+                  <span class="pln">}</span>
+                  <span class="tag">@-webkit-keyframes alpha </span><span class="pln">{</span>
+                    <span class="pln">  </span><span class="atn">0%</span><span class="pln">{</span>
+                      <span class="pln">    </span><spa class="atn">opacity</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+                    <span class="pln">  </span><span class="pln">}</span>
+                    <span class="pln">  </span><span class="atn">100%</span><span class="pln">{</span>
+                      <span class="pln">    </span><spa class="atn">opacity</spa><span class="pln">:</span><span class="atv"> 1px</span><span class="pln">;</span>
+                    <span class="pln">  </span><span class="pln">}</span>
+                  <span class="pln">}</span>
+                  <span class="tag">.drop-box</span><span class="pln">{</span>
+                    <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 350px</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> auto</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> relative</span><span class="pln">;</span>
+                  <span class="pln">}</span>
+                  <span class="tag">.drop-box input[type="checkbox"]</span><span class="pln">{</span>
+                    <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+                  <span class="pln">}</span>
+                  <span class="tag">.drop-box .title</span><span class="pln">{</span>
+                    <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 340px</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> relative</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">padding-left</spa><span class="pln">:</span><span class="atv"> 10px</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #2E2929</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">line-height</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">font-weight</spa><span class="pln">:</span><span class="atv"> 500</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">color</spa><span class="pln">:</span><span class="atv"> #FFFFFF</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">cursor</spa><span class="pln">:</span><span class="atv"> pointer</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">transition</spa><span class="pln">:</span><span class="atv"> all .3s ease</span><span class="pln">;</span>
+                  <span class="pln">}</span>
+                  <span class="tag">.drop-box .title:after</span><span class="pln">{</span>
+                    <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> "\25BC"</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">right</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #FF00B7</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">text-align</spa><span class="pln">:</span><span class="atv"> center</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">line-height</spa><span class="pln">:</span><span class="atv"> 55px</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 1.2em</span><span class="pln">;</span>
+                  <span class="pln">}</span>
+                  <span class="tag">.drop-box .title:hover:after</span><span class="pln">{</span>
+                    <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> "\25BC"</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">right</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #FF1493</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">text-align</spa><span class="pln">:</span><span class="atv"> center</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">line-height</spa><span class="pln">:</span><span class="atv"> 55px</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 1.2em</span><span class="pln">;</span>
+                  <span class="pln">}</span>
+                  <span class="tag">.drop-box ul</span><span class="pln">{</span>
+                    <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> auto</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 57px</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #2E2929</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">-webkit-animation</spa><span class="pln">:</span><span class="atv"> animationDropdown .3s ease</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">padding</spa><span class="pln">:</span><span class="atv"> 0px</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">margin</spa><span class="pln">:</span><span class="atv"> 0px</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">list-style</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">text-decoration</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+                  <span class="pln">}</span>
+                  <span class="tag">.drop-box li</span><span class="pln">{</span>
+                    <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 330px</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 40px</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">padding</spa><span class="pln">:</span><span class="atv"> 10px</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">line-height</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">font-weight</spa><span class="pln">:</span><span class="atv"> 300</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 1em</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">color</spa><span class="pln">:</span><span class="atv"> #FFFFFF</span><span class="pln">;</span>
+                    <span class="pln">  </span><spa class="atn">-webkit-animation</spa><span class="pln">:</span><span class="atv"> alpha .5s ease</span><span class="pln">;</span>
+                  <span class="pln">}</span>
+                  <span class="tag">.drop-box li:hover</span><span class="pln">{</span>
+                    <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #FF1493</span><span class="pln">;</span>
+                  <span class="pln">}</span>
+                  <span class="tag">.drop-box #open-drop:checked ~ ul</span><span class="pln">{</span>
+                    <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> block</span><span class="pln">;</span>
+                  <span class="pln">}</span>
+
+              </code>
+            </pre>
+
       </div>
     </section>
 
+    <input type="radio" class="open-components" name="radio-components" id="timeline-open">
+    <section class="container">
+      <div class="row">
+
+          <div class="timeline">
+
+              <section class="timeline-item">
+                <article class="timeline-texto timeline-left">
+                  <h2>Titulo</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, doloribus magni dicta temporibus, distinctio magnam quod quas eaque neque facilis quis laboriosam non porro iure excepturi voluptas deserunt omnis aut.</p>
+                </article>
+              </section>
+
+              <section class="timeline-item">
+                <article class="timeline-texto timeline-right">
+                  <h2>Titulo</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, doloribus magni dicta temporibus, distinctio magnam quod quas eaque neque facilis quis laboriosam non porro iure excepturi voluptas deserunt omnis aut.</p>
+                </article>
+              </section>
+
+              <section class="timeline-item">
+                <article class="timeline-texto timeline-left">
+                  <h2>Titulo</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, doloribus magni dicta temporibus, distinctio magnam quod quas eaque neque facilis quis laboriosam non porro iure excepturi voluptas deserunt omnis aut.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, doloribus magni dicta temporibus, distinctio magnam quod quas eaque neque facilis quis laboriosam non porro iure excepturi voluptas deserunt omnis aut.</p>
+                </article>
+              </section>
+
+              <section class="timeline-item">
+                <article class="timeline-texto timeline-right">
+                  <h2>Titulo</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, doloribus magni dicta temporibus, distinctio magnam quod quas eaque neque facilis quis laboriosam non porro iure excepturi voluptas deserunt omnis aut.</p>
+                </article>
+              </section>
+
+          </div>
+
+          <!--HTML-->
+          <pre>
+            <code class="prettyprint prettyprinted">
+              <span class="com">&lt;!-- Timeline HTML --&gt;</span>
+              <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"timeline"</span><span class="tag">&gt;</span>
+                <span class="pln">  </span><span class="tag">&lt;section</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"timeline-item timeline-left"</span><span class="tag">&gt;</span>
+                  <span class="pln">    </span><span class="tag">&lt;article</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"timeline-texto"</span><span class="tag">&gt;</span>
+                    <span class="pln">      </span><span class="tag">&lt;h2</span><span class="tag">&gt;</span><span class="pln">Titulo</span><span class="tag">&lt;h2</span><span class="tag">&gt;</span>
+                    <span class="pln">      </span><span class="tag">&lt;p</span><span class="tag">&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span><span class="tag">&lt;p</span><span class="tag">&gt;</span>
+                  <span class="pln">    </span><span class="tag">&lt;article</span><span class="tag">&gt;</span>
+                <span class="pln">  </span><span class="tag">&lt;section</span><span class="tag">&gt;</span>
+                <span class="pln">  </span><span class="tag">&lt;section</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"timeline-item timeline-right"</span><span class="tag">&gt;</span>
+                  <span class="pln">    </span><span class="tag">&lt;article</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"timeline-texto"</span><span class="tag">&gt;</span>
+                    <span class="pln">      </span><span class="tag">&lt;h2</span><span class="tag">&gt;</span><span class="pln">Titulo</span><span class="tag">&lt;h2</span><span class="tag">&gt;</span>
+                    <span class="pln">      </span><span class="tag">&lt;p</span><span class="tag">&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span><span class="tag">&lt;p</span><span class="tag">&gt;</span>
+                  <span class="pln">    </span><span class="tag">&lt;article</span><span class="tag">&gt;</span>
+                <span class="pln">  </span><span class="tag">&lt;section</span><span class="tag">&gt;</span>
+              <span class="tag">&lt;/div</span><span class="tag">&gt;</span>
+            </code>
+          </pre>
+
+          <!--CSS-->
+          <pre>
+            <code class="prettyprint prettyprinted">
+              <span class="com">&lt;!-- Timeline CSS --&gt;</span>
+                <span class="tag">@import</span><span class="atn"> url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100)</span><span class="pln">;</span>
+                <span class="tag">body</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">font-family</spa><span class="pln">:</span><span class="atv"> 'Roboto', sans-serif;</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.timeline</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> auto</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">padding</spa><span class="pln">:</span><span class="atv"> 50px 0</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> relative</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #c0c8c9</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.timeline:before</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 10px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 0px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 50%</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #9ca3a4</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.timeline .timeline-item</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> auto</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">margin-bottom</spa><span class="pln">:</span><span class="atv"> 40px</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.timeline .timeline-item:last-child</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">margin-bottom</spa><span class="pln">:</span><span class="atv"> 0px</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.timeline .timeline-item .timeline-texto</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 350px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> auto</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">padding</spa><span class="pln">:</span><span class="atv"> 20px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #FF1493</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> relative</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.timeline .timeline-item .timeline-texto.timeline-left</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">margin-left</spa><span class="pln">:</span><span class="atv"> 60px</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.timeline .timeline-item .timeline-texto.timeline-left:before</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">right</spa><span class="pln">:</span><span class="atv"> -80px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">bottom</spa><span class="pln">:</span><span class="atv"> 13px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #980b0b</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">border-radius</spa><span class="pln">:</span><span class="atv"> 50%</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.timeline .timeline-item .timeline-texto.timeline-left:after</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 35px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 35px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">right</spa><span class="pln">:</span><span class="atv"> -73px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">bottom</spa><span class="pln">:</span><span class="atv"> 20px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #cd1717</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">border-radius</spa><span class="pln">:</span><span class="atv"> 50%</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.timeline .timeline-item .timeline-texto.timeline-right</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> right</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">margin-right</spa><span class="pln">:</span><span class="atv"> 60px</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.timeline .timeline-item .timeline-texto.timeline-right:before</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> -72px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">bottom</spa><span class="pln">:</span><span class="atv"> 13px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #980b0b</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">border-radius</spa><span class="pln">:</span><span class="atv"> 50%</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.timeline .timeline-item .timeline-texto.timeline-right:after</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 35px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 35px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> -64px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">bottom</spa><span class="pln">:</span><span class="atv"> 20px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #cd1717</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">border-radius</spa><span class="pln">:</span><span class="atv"> 50%</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.timeline .timeline-item .timeline-texto h2</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> auto</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">margin-bottom</spa><span class="pln">:</span><span class="atv"> 20px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 1.2em</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">color</spa><span class="pln">:</span><span class="atv"> #FFFFFF</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">font-weight</spa><span class="pln">:</span><span class="atv"> 500</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.timeline .timeline-item .timeline-texto p</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> auto</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">margin-bottom</spa><span class="pln">:</span><span class="atv"> 10px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 1em</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">color</spa><span class="pln">:</span><span class="atv"> #FFFFFF</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">font-weight</spa><span class="pln">:</span><span class="atv"> 300</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.timeline .timeline-item .timeline-texto p:last-child</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">margin-bottom</spa><span class="pln">:</span><span class="atv"> 0px</span><span class="pln">;</span>
+                <span class="pln">}</span>
+
+
+            </code>
+          </pre>
+
+      </div>
+    </section>
+
+      <figure class="github"><a href="http://github.com/hjdesigner" target="_blank"><img src="images/github.jpg" alt="Github" /></a></figure>
 
 </body>
 </html>

@@ -63,13 +63,77 @@ h1{
 .open-components{
   display: none;
 }
+pre{
+  width: 94%;
+  height: auto;
+  float: left;
+  background-color: #111;
+  color: #fff;
+  clear: both;
+  font-size: 1em;
+  padding: 0 3% 3%;
+  margin: 50px 0 0px;
+  word-break: break-all;
+  word-wrap: break-word;
+    code {
+      width: 100%;
+      height: auto;
+      float: left;
+      padding: 0;
+      font-size: inherit;
+      color: inherit;
+      white-space: pre-wrap;
+      background-color: transparent;
+      border-radius: 0;
+      &.prettyprint {
+          background-color: #111;
+          border-radius: 8px;
+      }
+      .com {
+          width: 100%;
+          float: left;
+          color: #aeaeae;
+          font-style: italic;
+      }
+      .pln, .tag, .atn, .pun, .atv, .tag{
+        width: auto;
+        float: left;
+      }
+      .pln {
+          color: #fff;
+      }
+      .tag {
+          color: #89bdff;
+      }
+      .atn {
+          color: #bdb76b;
+      }
+      .pun {
+          color: #fff;
+      }
+      .atv {
+          color: #65b042;
+      }
+      .tag {
+          color: #89bdff;
+      }
+    }
+}
+.github{
+  width: 103px;
+  height: 103px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
 #carousel:checked + .container,
 #collapse:checked + .container,
 #modal-open:checked + .container,
 #tab:checked + .container,
 #card-open:checked + .container,
 #menu-mobile:checked + .container,
-#dropdown-open:checked + .container
+#dropdown-open:checked + .container,
+#timeline-open:checked + .container
 {
   display: block;
 }

@@ -40,7 +40,7 @@
 	transition: all .25s linear;
 
 		.menu-fechar{
-			font-family: 'Pacifico', cursive;
+			font-weight: 500;
 			color: #FFF;
 			cursor: pointer;
 			position: absolute;
@@ -51,7 +51,14 @@
 					color: #CC0000;
 				}
 		}
-
+		ul{
+			width: 100%;
+			height: auto;
+			float: left;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
 		li{
 			width: 100%;
 			height: 40px;

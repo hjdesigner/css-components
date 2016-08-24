@@ -9,3 +9,4 @@ COMPONENTES CRIADO ATÉ O MOMENTO:
 - Tab
 - Card
 - Dropdown
+- Timeline
