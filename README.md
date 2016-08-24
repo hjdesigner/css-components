@@ -10,3 +10,4 @@ COMPONENTES CRIADO ATÉ O MOMENTO:
 - Card
 - Dropdown
 - Timeline
+- Preloaders

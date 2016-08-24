@@ -124,7 +124,10 @@ pre{
   height: 103px;
   position: fixed;
   right: 0;
-  bottom: 0;
+  bottom: 10px;
+  &:hover{
+    -webkit-animation: github 1s cubic-bezier(.49,0,.46,1) infinite;
+  }
 }
 #carousel:checked + .container,
 #collapse:checked + .container,
@@ -133,7 +136,8 @@ pre{
 #card-open:checked + .container,
 #menu-mobile:checked + .container,
 #dropdown-open:checked + .container,
-#timeline-open:checked + .container
+#timeline-open:checked + .container,
+#preloaders-open:checked + .container
 {
   display: block;
 }
