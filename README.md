@@ -2,6 +2,8 @@
 
 COMPONENTES CRIADO ATÉ O MOMENTO:
 
+Acesse [http://hjdesigner.github.io/css-components/](http://hjdesigner.github.io/css-components/) e confira com o CSS é lindo!!!! <3
+
 - Carousel
 - Collapse
 - Menu Mobile
@@ -11,3 +13,4 @@ COMPONENTES CRIADO ATÉ O MOMENTO:
 - Dropdown
 - Timeline
 - Preloaders
+- Tooltips

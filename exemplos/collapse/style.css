@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
+body{
+  font-family: 'Roboto', sans-serif;;
+  font-size: 100%;
+}
+.container{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 5%;
+}
+.row{
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+h1{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 2% 0;
+  text-align: center;
+  font-weight: 100;
+  color: #FF1493;
+  font-size: 4em;
+}
+h1:before{
+  content: "</";
+}
+h1:after{
+  content: ">";
+}
+@-webkit-keyframes alpha {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1px;
+    }
+}
+.collapse-box{
+    width: 100%;
+}
+.collapse-box .check-open{
+    display: none;
+}
+.collapse-box .collapse-painel{
+    width: 100%;
+    display: inline-block;
+}
+.collapse-box .collapse-painel .collapse-nav{
+    width: 98%;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #F2F2F2;
+    padding: 1%;
+    margin-bottom: 5px;
+    font-size: .9em;
+    color: #000000;
+    font-weight: 600;
+    transition: all .25s linear;
+}
+.collapse-box .collapse-painel .collapse-nav:hover{
+    background-color: #E6E6E6;
+}
+.collapse-box .collapse-painel .collapse-nav .icon{
+    width: 12px;
+    height: 10px;
+    float: right;
+    margin: 5px 6px;
+}
+.collapse-box .collapse-painel .collapse-nav .icon:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid #000;
+    border-left: 5px solid transparent;
+    position: absolute;
+    border-right: 5px solid transparent;
+}
+.collapse-box .collapse-painel .collapse-nav .icon:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #000;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    position: absolute;
+    opacity: 0;
+}
+.collapse-box .collapse-painel .collapse-container{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.collapse-box .collapse-painel .check-open:checked ~ .collapse-container{
+    display: block;
+    -webkit-animation: alpha 2s ease-out;
+}
+.collapse-box .collapse-painel .check-open:checked ~ .collapse-nav .icon:after{
+    opacity: 0;
+}
+.collapse-box .collapse-painel .check-open:checked ~ .collapse-nav .icon:before{
+    opacity: 1;
+}

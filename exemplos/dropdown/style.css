@@ -1,0 +1,126 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
+body{
+  font-family: 'Roboto', sans-serif;;
+  font-size: 100%;
+}
+.container{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 5%;
+}
+.row{
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+h1{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 2% 0;
+  text-align: center;
+  font-weight: 100;
+  color: #FF1493;
+  font-size: 4em;
+}
+h1:before{
+  content: "</";
+}
+h1:after{
+  content: ">";
+}
+@-webkit-keyframes animationDropdown {
+    0%{
+        height: 0px;
+    }
+    100%{
+        height: 360px;
+    }
+}
+@-webkit-keyframes alpha {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1px;
+    }
+}
+.drop-box{
+    width: 350px;
+    height: auto;
+    float: left;
+    position: relative;
+}
+.drop-box input[type="checkbox"]{
+    display: none;
+}
+.drop-box .title{
+    width: 340px;
+    height: 50px;
+    float: left;
+    position: relative;
+    padding-left: 10px;
+    background-color: #2E2929;
+    line-height: 50px;
+    font-weight: 500;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.drop-box .title:after{
+    content: "\25BC";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FF00B7;
+    text-align: center;
+    line-height: 55px;
+    font-size: 1.2em;
+}
+.drop-box .title:hover:after{
+    content: "\25BC";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FF1493;
+    text-align: center;
+    line-height: 55px;
+    font-size: 1.2em;
+}
+.drop-box ul{
+    display: none;
+    width: 100%;
+    height: auto;
+    float: left;
+    position: absolute;
+    top: 57px;
+    background-color: #2E2929;
+    -webkit-animation: animationDropdown .3s ease;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+.drop-box li{
+    width: 330px;
+    height: 40px;
+    float: left;
+    padding: 10px;
+    line-height: 50px;
+    font-weight: 300;
+    font-size: 1em;
+    color: #FFFFFF;
+    -webkit-animation: alpha .5s ease;
+}
+.drop-box li:hover{
+    background-color: #FF1493;
+}
+.drop-box #open-drop:checked ~ ul{
+    display: block;
+}

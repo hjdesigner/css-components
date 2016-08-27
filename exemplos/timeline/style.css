@@ -1,0 +1,135 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
+body{
+  font-family: 'Roboto', sans-serif;;
+  font-size: 100%;
+}
+.container{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 5%;
+}
+.row{
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+h1{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 2% 0;
+  text-align: center;
+  font-weight: 100;
+  color: #FF1493;
+  font-size: 4em;
+}
+h1:before{
+  content: "</";
+}
+h1:after{
+  content: ">";
+}
+.timeline{
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: 50px 0;
+  position: relative;
+  background-color: #c0c8c9;
+}
+.timeline:before{
+  content: "";
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  background-color: #9ca3a4;
+}
+.timeline .timeline-item{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 40px;
+}
+.timeline .timeline-item:last-child{
+  margin-bottom: 0px;
+}
+.timeline .timeline-item .timeline-texto{
+  width: 350px;
+  height: auto;
+  padding: 20px;
+  background-color: #FF1493;
+  position: relative;
+}
+.timeline .timeline-item .timeline-texto.timeline-left{
+  float: left;
+  margin-left: 60px;
+}
+.timeline .timeline-item .timeline-texto.timeline-left:before{
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: -80px;
+  bottom: 13px;
+  background-color: #980b0b;
+  border-radius: 50%;
+}
+.timeline .timeline-item .timeline-texto.timeline-left:after{
+  content: "";
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: -73px;
+  bottom: 20px;
+  background-color: #cd1717;
+  border-radius: 50%;
+}
+.timeline .timeline-item .timeline-texto.timeline-right{
+  float: right;
+  margin-right: 60px;
+}
+.timeline .timeline-item .timeline-texto.timeline-right:before{
+  content: "";
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: -72px;
+  bottom: 13px;
+  background-color: #980b0b;
+  border-radius: 50%;
+}
+.timeline .timeline-item .timeline-texto.timeline-right:after{
+  content: "";
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: -64px;
+  bottom: 20px;
+  background-color: #cd1717;
+  border-radius: 50%;
+}
+.timeline .timeline-item .timeline-texto h2{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.timeline .timeline-item .timeline-texto p{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #FFFFFF;
+  font-weight: 300;
+}
+.timeline .timeline-item .timeline-texto p:last-child{
+  margin-bottom: 0px;
+}

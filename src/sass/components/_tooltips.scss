@@ -1,0 +1,28 @@
+.box-tooltips{
+  width: 350px;
+  height: 50px;
+  margin: 50px auto;
+  position: relative;
+  background-color: $preto;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 300;
+  color: $branco;
+  font-size: 1.2em;
+  &:after{
+    display: none;
+  }
+  &:hover{
+    &:after{
+      display: block;
+      -webkit-animation: alpha 2s ease-out;      
+      content: attr(data-title);
+      position: absolute;
+      top: 60px;
+      left: 72px;
+      font-weight: 300;
+      color: $preto;
+      font-size: 1.2em;
+    }
+  }
+}

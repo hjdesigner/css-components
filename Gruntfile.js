@@ -21,7 +21,8 @@ module.exports = function(grunt){
             style: 'compressed'
           },
           files: {
-            'src/css/css-components.css': 'src/sass/css-components.scss',
+            'src/css/css-components-min.css': 'src/sass/css-components.scss',
+            'src/css/style-min.css': 'src/sass/style.scss'
           }
         }
       },
@@ -34,6 +35,14 @@ module.exports = function(grunt){
           },
         },
       },
+  		imagemin: {
+  			public: {
+  				expand: true,
+  				cwd: 'src/images',
+  				src: '**/*.{png,jpg,gif}',
+  				dest: 'build/images'
+  			}
+  		},
       browserSync: {
         public: {
           bsFiles: {
@@ -50,7 +59,7 @@ module.exports = function(grunt){
 
     });
 
-    grunt.registerTask('build', ['clean', 'copy']);
+    grunt.registerTask('build', ['clean', 'copy', 'imagemin']);
     grunt.registerTask('dev', ['sass']);
     grunt.registerTask('server', ['browserSync', 'watch']);
     grunt.registerTask('default', ['dev','server','build']);
@@ -58,6 +67,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
 }

@@ -27,10 +27,10 @@
     transform: rotate(0deg);
   }
   50%{
-    transform: rotate(190deg);    
+    transform: rotate(190deg);
   }
   100%{
-    transform: rotate(0deg);    
+    transform: rotate(0deg);
   }
 }
 @-webkit-keyframes preloader2before{
@@ -38,7 +38,7 @@
     transform: rotate(0deg);
   }
   50%{
-    transform: rotate(190deg);    
+    transform: rotate(190deg);
   }
   100%{
     transform: rotate(0deg);
@@ -64,6 +64,14 @@
   }
   100%{
     transform: scale(1);
+  }
+}
+@-webkit-keyframes preloader4{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
   }
 }
 @-webkit-keyframes github{

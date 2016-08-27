@@ -75,12 +75,33 @@
 					-webkit-animation: preloader3 1s cubic-bezier(.49,0,.46,1) infinite;
 				}
 				&:nth-child(2){
-					-webkit-animation: preloader3b 1s cubic-bezier(.49,0,.46,1) infinite;					
+					-webkit-animation: preloader3b 1s cubic-bezier(.49,0,.46,1) infinite;
 				}
 				&:nth-child(3){
-					-webkit-animation: preloader3 1s cubic-bezier(.49,0,.46,1) infinite;					
+					-webkit-animation: preloader3 1s cubic-bezier(.49,0,.46,1) infinite;
 				}
 			}
-
+	}
+	.preloaders-4{
+		width: 200px;
+		height: 200px;
+		float: left;
+		position: relative;
+		border-radius: 50%;
+		border-right: 20px solid $rosa;
+		border-left: 20px solid transparent;
+		border-top: 20px solid transparent;
+		border-bottom: 20px solid transparent;
+		-webkit-animation: preloader4 1s linear infinite;
+		&:before{
+			content: "";
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			left: 50px;
+			top: 50px;
+			background-color: $preto;
+			border-radius: 50%;
+		}
 	}
 }

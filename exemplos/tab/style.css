@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
+body{
+  font-family: 'Roboto', sans-serif;;
+  font-size: 100%;
+}
+.container{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 5%;
+}
+.row{
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+h1{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 2% 0;
+  text-align: center;
+  font-weight: 100;
+  color: #FF1493;
+  font-size: 4em;
+}
+h1:before{
+  content: "</";
+}
+h1:after{
+  content: ">";
+}
+          @-webkit-keyframes alpha {
+              0%{
+                  opacity: 0;
+              }
+              100%{
+                  opacity: 1px;
+              }
+          }
+          .tab-box{
+              width: 100%;
+          }
+          .tab-box .tab-open{
+              display: none;
+          }
+          .tab-box .tab-painel{
+              min-width: 100px;
+              display: inline-block;
+          }
+          .tab-box .tab-painel .tab-nav{
+              width: 100%;
+              display: inline-block;
+              cursor: pointer;
+              border: 1px solid #666;
+              line-height: 30px;
+              text-align: center;
+              font-weight: 500;
+              font-size: .9em;
+              color: #2E2929;
+          }
+          .tab-box .tab-painel .tab-nav:hover{
+              background-color: #F2F2F2;
+          }
+          .tab-box .tab-inner{
+              width: 98%;
+              height: auto;
+              padding: 1%;
+              margin-top: 5px;
+              display: inline-block;
+              background-color: #F2F2F2;
+              position: absolute;
+              left: 0;
+              opacity: 0;
+              visibility: hidden;
+          }
+          .tab-box .tab-open:checked ~ .tab-inner{
+              opacity: 1;
+              visibility: visible;
+              -webkit-animation: alpha 2s ease;
+          }
+          .tab-box .tab-open:checked ~ label{
+              background-color: #F2F2F2;
+          }

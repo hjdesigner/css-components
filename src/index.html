@@ -5,7 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Components</title>
-  <link rel="stylesheet" href="css/css-components.css">
+  <meta name=”description” content=”CSS Components são componentes criado somente usando css com todo seu poder sem nada de javascript ou jquery”>
+  <meta name="keywords" content="components, css, pure css, css components, modal css, card css, carrousel css, menu mobile css">
+  <meta name="twitter:title" content="CSS Components">
+  <meta name="twitter:description" content="CSS Components são componentes criado somente usando css com todo seu poder sem nada de javascript ou jquery">
+  <meta name="twitter:url" content="http://hjdesigner.github.io/css-components/">
+  <meta name="twitter:image" content="http://hjdesigner.github.io/css-components/images/css-components.jpg">
+  <meta property=”og:title” content=”CSS Components“/>
+  <meta property=”og:description” content=”CSS Components são componentes criado somente usando css com todo seu poder sem nada de javascript ou jquery“/>
+  <meta property=”og:image”content=”http://hjdesigner.github.io/css-components/images/css-components.jpg“/>
+  <meta property=”og:url” content=”http://hjdesigner.github.io/css-components/”/>
+  <link rel="stylesheet" href="css/style-min.css">
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-19817494-11', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </head>
 <body>
 
@@ -22,14 +42,16 @@
           <li><label for="dropdown-open">Dropdown</label></li>
           <li><label for="timeline-open">Timeline</label></li>
           <li><label for="preloaders-open">Preloaders</label></li>
+          <li><label for="tooltips-open">Tooltips</label></li>
         </ul>
       </nav>
   </header>
 
     <h1>CSS COMPONENTS</h1>
 
+    <!--CAROUSEL-->
     <input type="radio" class="open-components" name="radio-components" id="carousel">
-    <div class="container">
+    <section class="container">
 
       <div class="row">
 
@@ -62,7 +84,10 @@
           </ol>
 
         </div>
-
+        <div class="by-download">
+          <a href="css-components.zip" target="_blank">Download CSS-Components.css</a> Criado por: <a href="https://twitter.com/coisadedev" target="_blank">Henrique Rodrigues</a>
+        </div>
+    </div>
         <!--HTML-->
         <pre>
           <code class="prettyprint prettyprinted">
@@ -224,12 +249,13 @@
         </pre>
 
 
-      </div>
 
-    </div>
 
+    </section>
+
+    <!--COLLAPSE-->
     <input type="radio" class="open-components" name="radio-components" id="collapse">
-    <div class="container" id="collapse">
+    <section class="container" id="collapse">
 
       <div class="row">
 
@@ -300,7 +326,10 @@
     			</div>
 
     		</div>
-
+        <div class="by-download">
+          <a href="css-components.zip" target="_blank">Download CSS-Components.css</a> Criado por: <a href="https://twitter.com/coisadedev" target="_blank">Henrique Rodrigues</a>
+        </div>
+    </div>
         <!--HTML-->
         <pre>
           <code class="prettyprint prettyprinted">
@@ -411,12 +440,13 @@
           </code>
         </pre>
 
-      </div>
 
-    </div>
 
+    </section>
+
+    <!--TAB-->
     <input type="radio" class="open-components" name="radio-components" id="tab">
-    <div class="container">
+    <section class="container">
       <div class="row">
 
         <div class="tab-box">
@@ -463,7 +493,10 @@
       		</div>
 
       	</div>
-
+        <div class="by-download">
+          <a href="css-components.zip" target="_blank">Download CSS-Components.css</a> Criado por: <a href="https://twitter.com/coisadedev" target="_blank">Henrique Rodrigues</a>
+        </div>
+    </div>
         <!--HTML-->
         <pre>
           <code class="prettyprint prettyprinted">
@@ -561,11 +594,12 @@
         </pre>
 
 
-      </div>
-    </div>
 
+    </section>
+
+    <!--MODAL-->
     <input type="radio" class="open-components" name="radio-components" id="modal-open" >
-    <div class="container">
+    <section class="container">
       <div class="row">
         <div class="box-modal">
 
@@ -588,6 +622,10 @@
 
 
     		</div>
+        <div class="by-download">
+          <a href="css-components.zip" target="_blank">Download CSS-Components.css</a> Criado por: <a href="https://twitter.com/coisadedev" target="_blank">Henrique Rodrigues</a>
+        </div>
+    </div>
         <!--HTML-->
         <pre>
           <code class="prettyprint prettyprinted">
@@ -685,11 +723,11 @@
             <span class="pln">}</span>
           </code>
         </pre>
-      </div>
-    </div>
+    </section>
 
+    <!--MENU-->
     <input type="radio" class="open-components" name="radio-components" id="menu-mobile">
-    <div class="container">
+    <section class="container">
       <div class="row">
 
         <input type="checkbox" id="menu" class="check-open">
@@ -712,6 +750,10 @@
       			</ul>
       		</nav>
 
+          <div class="by-download">
+            <a href="css-components.zip" target="_blank">Download CSS-Components.css</a> Criado por: <a href="https://twitter.com/coisadedev" target="_blank">Henrique Rodrigues</a>
+          </div>
+      </div>
           <!--HTML-->
           <pre>
             <code class="prettyprint prettyprinted">
@@ -822,13 +864,11 @@
               <span class="pln">}</span>
             </code>
           </pre>
+    </section>
 
-
-      </div>
-    </div>
-
+    <!--CARD-->
     <input type="radio" class="open-components" name="radio-components" id="card-open">
-    <div class="container">
+    <section class="container">
       <div class="row">
 
           <div class="card-box">
@@ -848,7 +888,10 @@
                   </article>
 
           </div>
-
+          <div class="by-download">
+            <a href="css-components.zip" target="_blank">Download CSS-Components.css</a> Criado por: <a href="https://twitter.com/coisadedev" target="_blank">Henrique Rodrigues</a>
+          </div>
+      </div>
           <!--HTML-->
           <pre>
             <code class="prettyprint prettyprinted">
@@ -975,9 +1018,10 @@
             </code>
           </pre>
 
-      </div>
-    </div>
 
+    </section>
+
+    <!--DROPDOWN-->
     <input type="radio" class="open-components" name="radio-components" id="dropdown-open">
     <section class="container">
       <div class="row">
@@ -994,7 +1038,10 @@
                 <li>Item 6</li>
               </ul>
           </div>
-
+          <div class="by-download">
+            <a href="css-components.zip" target="_blank">Download CSS-Components.css</a> Criado por: <a href="https://twitter.com/coisadedev" target="_blank">Henrique Rodrigues</a>
+          </div>
+      </div>
             <!--HTML-->
             <pre>
               <code class="prettyprint prettyprinted">
@@ -1120,9 +1167,10 @@
               </code>
             </pre>
 
-      </div>
+
     </section>
 
+    <!--TIMELINE-->
     <input type="radio" class="open-components" name="radio-components" id="timeline-open">
     <section class="container">
       <div class="row">
@@ -1159,7 +1207,10 @@
               </section>
 
           </div>
-
+          <div class="by-download">
+            <a href="css-components.zip" target="_blank">Download CSS-Components.css</a> Criado por: <a href="https://twitter.com/coisadedev" target="_blank">Henrique Rodrigues</a>
+          </div>
+      </div>
           <!--HTML-->
           <pre>
             <code class="prettyprint prettyprinted">
@@ -1297,29 +1348,315 @@
             </code>
           </pre>
 
-      </div>
+
     </section>
 
-    <input type="radio" class="open-components" name="radio-components" id="preloaders-open" checked>
+    <!--PRELOADERS-->
+    <input type="radio" class="open-components" name="radio-components" id="preloaders-open">
     <section class="container">
       <div class="row">
 
         <div class="box-preloaders">
 
-          <div class="preloaders-1"></div>
-          <div class="preloaders-2"></div>
-          <div class="preloaders-3">
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="line">
+            <div class="preloaders-1"></div>
+            <div class="preloaders-2"></div>
+            <div class="preloaders-3">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
-          
+          <div class="line">
+            <div class="preloaders-4"></div>
+          </div>
+
         </div>
 
+        <div class="by-download">
+          <a href="css-components.zip" target="_blank">Download CSS-Components.css</a> Criado por: <a href="https://twitter.com/coisadedev" target="_blank">Henrique Rodrigues</a>
+        </div>
+
+
+
       </div>
+        <!--HTML-->
+        <pre>
+          <code class="prettyprint prettyprinted">
+            <span class="com">&lt;!-- PRELOADER HTML --&gt;</span>
+            <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"box-preloaders"</span><span class="tag">&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"line"</span><span class="tag">&gt;</span>
+                <span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"preloaders-1"</span><span class="tag">&gt;</span><span class="tag">&lt;/div&gt;</span>
+                <span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"preloaders-2"</span><span class="tag">&gt;</span><span class="tag">&lt;/div&gt;</span>
+                <span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"preloaders-3"</span><span class="tag">&gt;</span>
+                  <span class="pln">      </span><span class="tag">&lt;span&gt;</span><span class="tag">&lt;/span&gt;</span>
+                  <span class="pln">      </span><span class="tag">&lt;span&gt;</span><span class="tag">&lt;/span&gt;</span>
+                  <span class="pln">      </span><span class="tag">&lt;span&gt;</span><span class="tag">&lt;/span&gt;</span>
+                <span class="pln">    </span><span class="tag">&lt;/div&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;/div&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"line"</span><span class="tag">&gt;</span>
+                <span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"preloaders-4"</span><span class="tag">&gt;</span><span class="tag">&lt;/div&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;/div&gt;</span>
+            <span class="tag">&lt;/div&gt;</span>
+
+          </code>
+        </pre>
+        <!--CSS-->
+        <pre>
+          <code class="prettyprint prettyprinted">
+            <span class="com">&lt;!-- PRELOADER CSS --&gt;</span>
+              <span class="tag">@import</span><span class="atn"> url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100)</span><span class="pln">;</span>
+              <span class="tag">body</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">font-family</spa><span class="pln">:</span><span class="atv"> 'Roboto', sans-serif;</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">@-webkit-keyframes preloader1 </span><span class="pln">{</span>
+                <span class="pln">  </span><span class="atn">0%</span><span class="pln">{</span>
+                  <span class="pln">    </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(0deg)</span><span class="pln">;</span>
+                <span class="pln">  </span><span class="pln">}</span>
+                <span class="pln">  </span><span class="atn">100%</span><span class="pln">{</span>
+                  <span class="pln">    </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(360deg)</span><span class="pln">;</span>
+                <span class="pln">  </span><span class="pln">}</span>
+              <span class="pln">}</span>
+              <span class="tag">@-webkit-keyframes preloader2after </span><span class="pln">{</span>
+                <span class="pln">  </span><span class="atn">0%</span><span class="pln">{</span>
+                  <span class="pln">    </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(0deg)</span><span class="pln">;</span>
+                <span class="pln">  </span><span class="pln">}</span>
+                <span class="pln">  </span><span class="atn">50%</span><span class="pln">{</span>
+                  <span class="pln">    </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(190deg)</span><span class="pln">;</span>
+                <span class="pln">  </span><span class="pln">}</span>
+                <span class="pln">  </span><span class="atn">100%</span><span class="pln">{</span>
+                  <span class="pln">    </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(0deg)</span><span class="pln">;</span>
+                <span class="pln">  </span><span class="pln">}</span>
+              <span class="pln">}</span>
+              <span class="tag">@-webkit-keyframes preloader2before </span><span class="pln">{</span>
+                <span class="pln">  </span><span class="atn">0%</span><span class="pln">{</span>
+                  <span class="pln">    </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(0deg)</span><span class="pln">;</span>
+                <span class="pln">  </span><span class="pln">}</span>
+                <span class="pln">  </span><span class="atn">50%</span><span class="pln">{</span>
+                  <span class="pln">    </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(190deg)</span><span class="pln">;</span>
+                <span class="pln">  </span><span class="pln">}</span>
+                <span class="pln">  </span><span class="atn">100%</span><span class="pln">{</span>
+                  <span class="pln">    </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(0deg)</span><span class="pln">;</span>
+                <span class="pln">  </span><span class="pln">}</span>
+              <span class="pln">}</span>
+              <span class="tag">@-webkit-keyframes preloader3 </span><span class="pln">{</span>
+                <span class="pln">  </span><span class="atn">0%</span><span class="pln">{</span>
+                  <span class="pln">    </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> scale(.2)</span><span class="pln">;</span>
+                <span class="pln">  </span><span class="pln">}</span>
+                <span class="pln">  </span><span class="atn">50%</span><span class="pln">{</span>
+                  <span class="pln">    </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> scale(1)</span><span class="pln">;</span>
+                <span class="pln">  </span><span class="pln">}</span>
+                <span class="pln">  </span><span class="atn">100%</span><span class="pln">{</span>
+                  <span class="pln">    </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> scale(.2)</span><span class="pln">;</span>
+                <span class="pln">  </span><span class="pln">}</span>
+              <span class="pln">}</span>
+              <span class="tag">@-webkit-keyframes preloader3b </span><span class="pln">{</span>
+                <span class="pln">  </span><span class="atn">0%</span><span class="pln">{</span>
+                  <span class="pln">    </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> scale(1)</span><span class="pln">;</span>
+                <span class="pln">  </span><span class="pln">}</span>
+                <span class="pln">  </span><span class="atn">50%</span><span class="pln">{</span>
+                  <span class="pln">    </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> scale(.2)</span><span class="pln">;</span>
+                <span class="pln">  </span><span class="pln">}</span>
+                <span class="pln">  </span><span class="atn">100%</span><span class="pln">{</span>
+                  <span class="pln">    </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> scale(1)</span><span class="pln">;</span>
+                <span class="pln">  </span><span class="pln">}</span>
+              <span class="pln">}</span>
+              <span class="tag">@-webkit-keyframes preloader4 </span><span class="pln">{</span>
+                <span class="pln">  </span><span class="atn">0%</span><span class="pln">{</span>
+                  <span class="pln">    </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(0deg)</span><span class="pln">;</span>
+                <span class="pln">  </span><span class="pln">}</span>
+                <span class="pln">  </span><span class="atn">100%</span><span class="pln">{</span>
+                  <span class="pln">    </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(360deg)</span><span class="pln">;</span>
+                <span class="pln">  </span><span class="pln">}</span>
+              <span class="pln">}</span>
+            <span class="com">/* PRELOADER 1 */</span>
+              <span class="tag">.box-preloaders</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> auto</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.box-preloaders .preloaders-1</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 200px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 200px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">margin-right</spa><span class="pln">:</span><span class="atv"> 150px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> relative</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border</spa><span class="pln">:</span><span class="atv"> 10px solid #2E2929</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border-radius</spa><span class="pln">:</span><span class="atv"> 50%</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.box-preloaders .preloaders-1:after</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 200px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 200px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> -10px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> -11px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border</spa><span class="pln">:</span><span class="atv"> 10px solid transparent</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border-right</spa><span class="pln">:</span><span class="atv"> 12px solid #FF1493</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border-radius</spa><span class="pln">:</span><span class="atv"> 50%</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">-webkit-animation</spa><span class="pln">:</span><span class="atv"> preloader1 1s linear infinite</span><span class="pln">;</span>
+              <span class="pln">}</span>
+            <span class="com">/* PRELOADER 2 */</span>
+              <span class="tag">.box-preloaders .preloaders-2</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 200px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 200px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">margin-right</spa><span class="pln">:</span><span class="atv"> 150px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> relative</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border</spa><span class="pln">:</span><span class="atv"> 10px solid #2E2929</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border-radius</spa><span class="pln">:</span><span class="atv"> 50%</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.box-preloaders .preloaders-2:after</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 200px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 200px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> -10px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> -11px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border</spa><span class="pln">:</span><span class="atv"> 10px solid transparent</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border-right</spa><span class="pln">:</span><span class="atv"> 12px solid #FF1493</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border-radius</spa><span class="pln">:</span><span class="atv"> 50%</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">-webkit-animation</spa><span class="pln">:</span><span class="atv"> preloader2after 1s cubic-bezier(0.49, 0, 0.46, 1) infinite</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.box-preloaders .preloaders-2:before</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 200px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 200px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> -10px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> -11px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border</spa><span class="pln">:</span><span class="atv"> 10px solid transparent</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border-left</spa><span class="pln">:</span><span class="atv"> 12px solid #FF1493</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border-radius</spa><span class="pln">:</span><span class="atv"> 50%</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">-webkit-animation</spa><span class="pln">:</span><span class="atv"> preloader2before 1s cubic-bezier(0.49, 0, 0.46, 1) infinite</span><span class="pln">;</span>
+              <span class="pln">}</span>
+            <span class="com">/* PRELOADER 3 */</span>
+              <span class="tag">.box-preloaders .preloaders-3</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 230px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">margin-top</spa><span class="pln">:</span><span class="atv"> 80px</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.box-preloaders .preloaders-3 span</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">margin-right</spa><span class="pln">:</span><span class="atv"> 30px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #2E2929</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border-radius</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.box-preloaders .preloaders-3 span:last-child</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">margin-right</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.box-preloaders .preloaders-3 span:nth-child(1)</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">-webkit-animation</spa><span class="pln">:</span><span class="atv"> preloader3 1s cubic-bezier(0.49, 0, 0.46, 1) infinite</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.box-preloaders .preloaders-3 span:nth-child(2)</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">-webkit-animation</spa><span class="pln">:</span><span class="atv"> preloader3b 1s cubic-bezier(0.49, 0, 0.46, 1) infinite</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.box-preloaders .preloaders-3 span:nth-child(3)</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">-webkit-animation</spa><span class="pln">:</span><span class="atv"> preloader3 1s cubic-bezier(0.49, 0, 0.46, 1) infinite</span><span class="pln">;</span>
+              <span class="pln">}</span>
+            <span class="com">/* PRELOADER 4 */</span>
+              <span class="tag">.box-preloaders .preloaders-4</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 200px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 200px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> relative</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border-radius</spa><span class="pln">:</span><span class="atv"> 50%</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border-right</spa><span class="pln">:</span><span class="atv"> 20px solid #FF1493</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border-left</spa><span class="pln">:</span><span class="atv"> 20px solid transparent</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border-top</spa><span class="pln">:</span><span class="atv"> 20px solid transparent</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border-bottom</spa><span class="pln">:</span><span class="atv"> 20px solid transparent</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">-webkit-animation</spa><span class="pln">:</span><span class="atv"> preloader4 1s linear infinite</span><span class="pln">;</span>
+              <span class="pln">}</span>
+              <span class="tag">.box-preloaders .preloaders-4:before</span><span class="pln">{</span>
+                <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 100px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 100px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #2E2929</span><span class="pln">;</span>
+                <span class="pln">  </span><spa class="atn">border-radius</spa><span class="pln">:</span><span class="atv"> 50%</span><span class="pln">;</span>
+              <span class="pln">}</span>
+          </code>
+        </pre>
+
     </section>
 
-      <figure class="github"><a href="http://github.com/hjdesigner" target="_blank"><img src="images/github.jpg" alt="Github" /></a></figure>
+    <!--TOOLTIPS-->
+    <input type="radio" class="open-components" name="radio-components" id="tooltips-open" checked>
+    <section class="container">
+      <div class="row">
+
+          <div class="box-tooltips" data-title="Oi, eu sou o Tooltips!">
+            Passe o mouse e veja a magica.
+          </div>
+          <div class="by-download">
+            <a href="css-components.zip" target="_blank">Download CSS-Components.css</a> Criado por: <a href="https://twitter.com/coisadedev" target="_blank">Henrique Rodrigues</a>
+          </div>
+      </div>
+      <pre>
+        <code class="prettyprint prettyprinted">
+          <span class="com">&lt;!-- Tooltips HTML --&gt;</span>
+          <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"box-tooltips"</span><span class="pln"> </span><span class="atn">data-title</span><span class="pun">=</span><span class="atv">"Oi, eu sou o Tooltips!"</span><span class="tag">&gt;</span>
+            <span class="pln">  </span><span class="pln">Passe o mouse e veja a magica.</span>
+          <span class="tag">&lt;/div&gt;</span>
+
+        </code>
+      </pre>
+      <!--CSS-->
+      <pre>
+        <code class="prettyprint prettyprinted">
+          <span class="com">&lt;!-- Tooltips CSS --&gt;</span>
+            <span class="tag">@import</span><span class="atn"> url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100)</span><span class="pln">;</span>
+            <span class="tag">body</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">font-family</spa><span class="pln">:</span><span class="atv"> 'Roboto', sans-serif;</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 100%</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">@-webkit-keyframes alpha </span><span class="pln">{</span>
+              <span class="pln">  </span><span class="atn">0%</span><span class="pln">{</span>
+                <span class="pln">    </span><spa class="atn">opacity</spa><span class="pln">:</span><span class="atv"> 0</span><span class="pln">;</span>
+              <span class="pln">  </span><span class="pln">}</span>
+              <span class="pln">  </span><span class="atn">100%</span><span class="pln">{</span>
+                <span class="pln">    </span><spa class="atn">opacity</spa><span class="pln">:</span><span class="atv"> 1</span><span class="pln">;</span>
+              <span class="pln">  </span><span class="pln">}</span>
+            <span class="pln">}</span>
+            <span class="tag">.box-tooltips</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 350px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">margin</spa><span class="pln">:</span><span class="atv"> 50px 0</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> relative</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #2E2929</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">text-align</spa><span class="pln">:</span><span class="atv"> center</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">line-height</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">color</spa><span class="pln">:</span><span class="atv"> #FFFFFF</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">font-weight</spa><span class="pln">:</span><span class="atv"> 300</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 1.2em</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.box-tooltips:after</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+            <span class="pln">}</span>
+            <span class="tag">.box-tooltips:hover:after</span><span class="pln">{</span>
+              <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> block</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> attr(data-title)</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 60px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 72px</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">font-weight</spa><span class="pln">:</span><span class="atv"> 300</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">color</spa><span class="pln">:</span><span class="atv"> #2E2929</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">font-size</spa><span class="pln">:</span><span class="atv"> 1.2em</span><span class="pln">;</span>
+              <span class="pln">  </span><spa class="atn">-webkit-animation</spa><span class="pln">:</span><span class="atv"> alpha 2s ease-out</span><span class="pln">;</span>
+            <span class="pln">}</span>
+        </code>
+      </pre>
+
+    </section>
+
+      <figure class="github"><a href="http://github.com/hjdesigner" target="_blank"><img src="images/github-2.png" alt="Github" /></a></figure>
 
 </body>
 </html>

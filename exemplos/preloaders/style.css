@@ -1,0 +1,210 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
+body{
+  font-family: 'Roboto', sans-serif;;
+  font-size: 100%;
+}
+.container{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 5%;
+}
+.row{
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+h1{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 2% 0;
+  text-align: center;
+  font-weight: 100;
+  color: #FF1493;
+  font-size: 4em;
+}
+h1:before{
+  content: "</";
+}
+h1:after{
+  content: ">";
+}
+.line{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 20px;
+}
+@-webkit-keyframes preloader1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes preloader2after {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(190deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@-webkit-keyframes preloader2before {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(190deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@-webkit-keyframes preloader3 {
+    0%{
+        transform: scale(.2);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(.2);
+    }
+}
+@-webkit-keyframes preloader3b {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@-webkit-keyframes preloader4 {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* PRELOADER 1 */
+.box-preloaders{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.box-preloaders .preloaders-1{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 150px;
+    position: relative;
+    border: 10px solid #2E2929;
+    border-radius: 50%;
+}
+.box-preloaders .preloaders-1:after{
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -10px;
+    left: -11px;
+    border: 10px solid transparent;
+    border-right: 12px solid #FF1493;
+    border-radius: 50%;
+    -webkit-animation: preloader1 1s linear infinite;
+}
+/* PRELOADER 2 */
+.box-preloaders .preloaders-2{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 150px;
+    position: relative;
+    border: 10px solid #2E2929;
+    border-radius: 50%;
+}
+.box-preloaders .preloaders-2:after{
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -10px;
+    left: -11px;
+    border: 10px solid transparent;
+    border-right: 12px solid #FF1493;
+    border-radius: 50%;
+    -webkit-animation: preloader2after 1s cubic-bezier(0.49, 0, 0.46, 1) infinite;
+}
+.box-preloaders .preloaders-2:before{
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -10px;
+    left: -11px;
+    border: 10px solid transparent;
+    border-left: 12px solid #FF1493;
+    border-radius: 50%;
+    -webkit-animation: preloader2before 1s cubic-bezier(0.49, 0, 0.46, 1) infinite;
+}
+/* PRELOADER 3 */
+.box-preloaders .preloaders-3{
+    width: 230px;
+    height: 50px;
+    float: left;
+    margin-top: 80px;
+}
+.box-preloaders .preloaders-3 span{
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 30px;
+    background-color: #2E2929;
+    border-radius: 50px;
+}
+.box-preloaders .preloaders-3 span:last-child{
+    margin-right: 0;
+}
+.box-preloaders .preloaders-3 span:nth-child(1){
+    -webkit-animation: preloader3 1s cubic-bezier(0.49, 0, 0.46, 1) infinite;
+}
+.box-preloaders .preloaders-3 span:nth-child(2){
+    -webkit-animation: preloader3b 1s cubic-bezier(0.49, 0, 0.46, 1) infinite;
+}
+.box-preloaders .preloaders-3 span:nth-child(3){
+    -webkit-animation: preloader3 1s cubic-bezier(0.49, 0, 0.46, 1) infinite;
+}
+/* PRELOADER 4 */
+.box-preloaders .preloaders-4{
+    width: 200px;
+    height: 200px;
+    float: left;
+    position: relative;
+    border-radius: 50%;
+    border-right: 20px solid #FF1493;
+    border-left: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    -webkit-animation: preloader4 1s linear infinite;
+}
+.box-preloaders .preloaders-4:before{
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    background-color: #2E2929;
+    border-radius: 50%;
+}

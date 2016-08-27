@@ -2,6 +2,13 @@
 @import "tools/_site-settings.scss";
 @import "tools/_animations.scss";
 
+//BASE
+@import "base/_base.scss";
+
+//LAYOUT
+@import "layout/_header.scss";
+@import "layout/_main.scss";
+
 //COMPONENTS
 @import "components/_carousel.scss";
 @import "components/_collapse.scss";
