@@ -1,0 +1,12 @@
+.texto-filtro{
+	width: 100%;
+	height: auto;
+	float: left;
+	text-align: center;
+	font-size: 9em;
+	font-weight: 900;
+	background: url('http://hjdesigner.github.io/css-components/images/star-wars.jpg');
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

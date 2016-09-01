@@ -130,6 +130,10 @@
         top: 20px;
       }
   }
+  // Text Filter Background
+  .texto-filtro{
+    font-size: 2.9em;
+  }
 }
 @media (min-width: 321px) and (max-width: 375px){
   header {
@@ -265,6 +269,10 @@
       .carousel-control{
         top: 31px;
       }
+  }
+  // Text Filter Background
+  .texto-filtro{
+    font-size: 3.4em;
   }
 }
 @media (min-width: 376px) and (max-width: 425px){
@@ -404,6 +412,10 @@
         top: 44px;
       }
   }
+  // Text Filter Background
+  .texto-filtro{
+    font-size: 3.9em;
+  }
 }
 @media (min-width: 430px) and (max-width: 768px){
   header {
@@ -536,6 +548,10 @@
       .carousel-control{
         top: 114px;
       }
+  }
+  // Text Filter Background
+  .texto-filtro{
+    font-size: 7em;
   }
 }
 @media (min-width: 770px) and (max-width: 1024px){
