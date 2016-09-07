@@ -1,0 +1,156 @@
+.input-checkbox{
+	display: none;
+}
+.row-checkbox{
+	width: auto;
+	height: 50px;
+	float: left;
+	margin: 50px 50px 0 0;
+}
+.checkbox-1{
+	width: 30px;
+	height: 30px;
+	float: left;
+	position: relative;
+	border-radius: 50%;
+	background-color: $preto;
+	cursor: pointer;
+	&:before{
+		display: none;
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		background-color: $azul;
+		border-radius: 50%;
+		top: 5px;
+    	left: 5px;
+	}
+}
+#checkbox-1:checked ~ .checkbox-1{
+	&:before{
+		display: block;
+	}
+}
+
+.checkbox-2{
+	width: 30px;
+	height: 30px;
+	float: left;
+	position: relative;
+	background-color: $preto;
+	cursor: pointer;
+	&:before{
+		display: none;
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		background-color: $azul;
+		top: 5px;
+    	left: 5px;
+	}
+}
+#checkbox-2:checked ~ .checkbox-2{
+	&:before{
+		display: block;
+	}
+}
+.checkbox-3{
+	width: 30px;
+	height: 30px;
+	float: left;
+	position: relative;
+	background-color: $preto;
+	cursor: pointer;
+	&:before{
+		display: none;
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 2px;
+		background-color: $azul;
+		top: 14px;
+	    left: 5px;
+	    transform: rotate(-42deg);
+	}
+	&:after{
+		display: none;
+		content: "";
+		position: absolute;
+		width: 20px;
+		height: 2px;
+		background-color: $azul;
+		top: 14px;
+	    left: 5px;
+	    transform: rotate(42deg);
+	}
+}
+#checkbox-3:checked ~ .checkbox-3{
+	&:before,
+	&:after{
+		display: block;
+	}
+}
+.checkbox-4{
+	width: 30px;
+	height: 30px;
+	float: left;
+	position: relative;
+	background-color: $preto;
+	cursor: pointer;
+	&:before{
+		display: none;
+		content: "";
+		position: absolute;
+		width: 15px;
+		height: 2px;
+		background-color: $azul;
+		top: 13px;
+	    left: 12px;
+	    transform: rotate(-59deg);
+	}
+	&:after{
+		display: none;
+		content: "";
+		position: absolute;
+		width: 9px;
+		height: 2px;
+		background-color: $azul;
+		top: 16px;
+	    left: 8px;
+	    transform: rotate(42deg);
+	}
+}
+#checkbox-4:checked ~ .checkbox-4{
+	&:before,
+	&:after{
+		display: block;
+	}
+}
+.checkbox-5{
+	width: 70px;
+	height: 30px;
+	float: left;
+	position: relative;
+	border-radius: 44px;
+	background-color: $cinza;
+	cursor: pointer;	
+	&:before{
+		content: "";
+	    width: 24px;
+	    height: 24px;
+	    position: absolute;
+	    left: 4px;
+	    top: 3px;
+		background-color: $branco;
+	    border-radius: 50%;
+	    transition: .25s;
+	}
+}
+#checkbox-5:checked ~ .checkbox-5{
+	background-color: $verde;
+	&:before{
+		transform: translateX(38px);
+	}
+}

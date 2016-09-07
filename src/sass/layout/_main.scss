@@ -168,7 +168,8 @@ pre{
 #dropdown-open:checked + .container,
 #timeline-open:checked + .container,
 #preloaders-open:checked + .container,
-#tooltips-open:checked + .container
+#tooltips-open:checked + .container,
+#checkbox-open:checked + .container
 {
   display: block;
 }

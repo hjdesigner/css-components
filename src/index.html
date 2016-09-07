@@ -44,6 +44,7 @@
           <li><label for="timeline-open">Timeline</label></li>
           <li><label for="preloaders-open">Preloaders</label></li>
           <li><label for="tooltips-open">Tooltips</label></li>
+          <li><label for="checkbox-open">Tooltips</label></li>
         </ul>
       </nav>
   </header>
@@ -1588,7 +1589,7 @@
     </section>
 
     <!--TOOLTIPS-->
-    <input type="radio" class="open-components" name="radio-components" id="tooltips-open" checked>
+    <input type="radio" class="open-components" name="radio-components" id="tooltips-open">
     <section class="container">
       <div class="row">
 
@@ -1655,6 +1656,217 @@
         </code>
       </pre>
 
+    </section>
+
+    <!--CHECKBOX-->
+    <input type="radio" class="open-components" name="radio-components" id="checkbox-open" checked>
+    <section class="container">
+      <div class="row">
+      
+        <div class="row-checkbox">
+          <input type="checkbox" id="checkbox-1" class="input-checkbox" checked>
+          <label for="checkbox-1" class="checkbox-1"></label>
+        </div>
+
+        <div class="row-checkbox">
+          <input type="checkbox" id="checkbox-2" class="input-checkbox" checked>
+          <label for="checkbox-2" class="checkbox-2"></label>
+        </div>
+
+        <div class="row-checkbox">
+          <input type="checkbox" id="checkbox-3" class="input-checkbox" checked>
+          <label for="checkbox-3" class="checkbox-3"></label>
+        </div>
+
+        <div class="row-checkbox">
+          <input type="checkbox" id="checkbox-4" class="input-checkbox" checked>
+          <label for="checkbox-4" class="checkbox-4"></label>
+        </div>
+
+        <div class="row-checkbox">
+          <input type="checkbox" id="checkbox-5" class="input-checkbox">
+          <label for="checkbox-5" class="checkbox-5"></label>
+        </div>
+
+      </div>
+        
+        <!--HTML-->
+        <pre>
+          <code class="prettyprint prettyprinted">
+            <span class="com">&lt;!-- CHECKBOX HTML --&gt;</span>
+            <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row-checkbox"</span><span class="tag">&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"checkbox-1"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"input-checkbox"</span><span class="pln"> </span><span class="atn">checked</span><span class="tag">&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"checkbox-1"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"checkbox-1"</span><span class="tag">&gt;</span><span class="tag">&lt;/label&gt;</span>
+            <span class="tag">&lt;/div&gt;</span>
+            <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row-checkbox"</span><span class="tag">&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"checkbox-2"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"input-checkbox"</span><span class="pln"> </span><span class="atn">checked</span><span class="tag">&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"checkbox-2"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"checkbox-2"</span><span class="tag">&gt;</span><span class="tag">&lt;/label&gt;</span>
+            <span class="tag">&lt;/div&gt;</span>
+            <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row-checkbox"</span><span class="tag">&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"checkbox-3"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"input-checkbox"</span><span class="pln"> </span><span class="atn">checked</span><span class="tag">&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"checkbox-3"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"checkbox-3"</span><span class="tag">&gt;</span><span class="tag">&lt;/label&gt;</span>
+            <span class="tag">&lt;/div&gt;</span>
+            <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row-checkbox"</span><span class="tag">&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"checkbox-4"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"input-checkbox"</span><span class="pln"> </span><span class="atn">checked</span><span class="tag">&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"checkbox-4"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"checkbox-4"</span><span class="tag">&gt;</span><span class="tag">&lt;/label&gt;</span>
+            <span class="tag">&lt;/div&gt;</span>
+            <span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"row-checkbox"</span><span class="tag">&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"checkbox-5"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"input-checkbox"</span><span class="pln"> </span><span class="tag">&gt;</span>
+              <span class="pln">  </span><span class="tag">&lt;label</span><span class="pln"> </span><span class="atn">for</span><span class="pun">=</span><span class="atv">"checkbox-5"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"checkbox-5"</span><span class="tag">&gt;</span><span class="tag">&lt;/label&gt;</span>
+            <span class="tag">&lt;/div&gt;</span>
+          </code>
+        </pre>
+          <!--CSS-->
+          <pre>
+            <code class="prettyprint prettyprinted">
+              <span class="com">&lt;!-- Checkbox CSS --&gt;</span>
+                <span class="tag">.input-checkbox</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>                  
+                <span class="pln">}</span>
+                <span class="tag">.row-checkbox</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> auto</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 50px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">margin</spa><span class="pln">:</span><span class="atv"> 50px 50px 0 0</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.checkbox-1</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 30px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 30px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> relative</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">border-radius</spa><span class="pln">:</span><span class="atv"> 50%</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #2E2929</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">cursor</spa><span class="pln">:</span><span class="atv"> pointer</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.checkbox-1:before</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 20px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 20px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #3CA3F2</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">border-radius</spa><span class="pln">:</span><span class="atv"> 50%</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 5px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 5px</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">#checkbox-1:checked ~ .checkbox-1:before</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> block</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.checkbox-2</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 30px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 30px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> relative</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #2E2929</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">cursor</spa><span class="pln">:</span><span class="atv"> pointer</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.checkbox-2:before</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 20px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 20px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #3CA3F2</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 5px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 5px</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">#checkbox-2:checked ~ .checkbox-2:before</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> block</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.checkbox-3</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 30px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 30px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> relative</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #2E2929</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">cursor</spa><span class="pln">:</span><span class="atv"> pointer</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.checkbox-3:before</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 20px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 2px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #3CA3F2</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 14px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 5px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(-42deg)</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.checkbox-3:after</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 20px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 2px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #3CA3F2</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 14px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 5px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(42deg)</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">#checkbox-3:checked ~ .checkbox-3:before, #checkbox-3:checked ~ .checkbox-3:after</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> block</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.checkbox-4</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 30px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 30px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> relative</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #2E2929</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">cursor</spa><span class="pln">:</span><span class="atv"> pointer</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.checkbox-4:before</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 15px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 2px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #3CA3F2</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 13px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 12px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(-59deg)</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.checkbox-4:after</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> none</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 9px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 2px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #3CA3F2</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 16px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 8px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> rotate(42deg)</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">#checkbox-4:checked ~ .checkbox-4:before, #checkbox-4:checked ~ .checkbox-4:after</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">display</spa><span class="pln">:</span><span class="atv"> block</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.checkbox-5</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 70px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 30px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">float</spa><span class="pln">:</span><span class="atv"> left</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> relative</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">border-radius</spa><span class="pln">:</span><span class="atv"> 44px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #c0c8c9</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">cursor</spa><span class="pln">:</span><span class="atv"> pointer</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">.checkbox-5:before</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">content</spa><span class="pln">:</span><span class="atv"> ""</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">width</spa><span class="pln">:</span><span class="atv"> 24px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">height</spa><span class="pln">:</span><span class="atv"> 24px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">position</spa><span class="pln">:</span><span class="atv"> absolute</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">left</spa><span class="pln">:</span><span class="atv"> 4px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">top</spa><span class="pln">:</span><span class="atv"> 3px</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #FFFFFF</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">border-radius</spa><span class="pln">:</span><span class="atv"> 50%</span><span class="pln">;</span>
+                  <span class="pln">  </span><spa class="atn">transition</spa><span class="pln">:</span><span class="atv"> .25s</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">#checkbox-5:checked ~ .checkbox-5</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">background-color</spa><span class="pln">:</span><span class="atv"> #4bd865</span><span class="pln">;</span>
+                <span class="pln">}</span>
+                <span class="tag">#checkbox-5:checked ~ .checkbox-5:before</span><span class="pln">{</span>
+                  <span class="pln">  </span><spa class="atn">transform</spa><span class="pln">:</span><span class="atv"> translateX(38px)</span><span class="pln">;</span>
+                <span class="pln">}</span>
+            </code>
+          </pre>
     </section>
 
       <figure class="github"><a href="http://github.com/hjdesigner" target="_blank"><img src="images/github-2.png" alt="Github" /></a></figure>
