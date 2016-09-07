@@ -130,6 +130,10 @@
         top: 20px;
       }
   }
+  // Text Filter Background
+  .texto-filtro{
+    font-size: 2.9em;
+  }
 }
 @media (min-width: 321px) and (max-width: 375px){
   header {
@@ -265,6 +269,10 @@
       .carousel-control{
         top: 31px;
       }
+  }
+  // Text Filter Background
+  .texto-filtro{
+    font-size: 3.4em;
   }
 }
 @media (min-width: 376px) and (max-width: 425px){
@@ -404,6 +412,10 @@
         top: 44px;
       }
   }
+  // Text Filter Background
+  .texto-filtro{
+    font-size: 3.9em;
+  }
 }
 @media (min-width: 430px) and (max-width: 768px){
   header {
@@ -535,6 +547,71 @@
       }
       .carousel-control{
         top: 114px;
+      }
+  }
+  // Text Filter Background
+  .texto-filtro{
+    font-size: 7em;
+  }
+}
+@media (min-width: 770px) and (max-width: 1024px){
+  .row {
+    width: 90%;
+    padding: 0 5%;
+  }
+  //COMPONENTE PRELOADERS
+  .box-preloaders{
+    .preloaders-1,
+    .preloaders-2{
+      margin-right: 20px;
+    }
+  }
+  //COMPONENTE TIMELINE
+  .timeline{
+    &:before{
+      left: 49.6%;
+    }
+    .timeline-item{
+      .timeline-texto{
+        width: 270px;
+        &.timeline-left{
+          margin-left: 10px;
+          &:before{
+            right: -56px;
+          }
+          &:after{
+            right: -49px;
+          }
+        }
+        &.timeline-right{
+          margin-right: 7px;
+          &:before{
+            left: -55px;
+          }
+          &:after{
+            left: -47px;
+          }
+        }
+      }
+    }
+  }
+  //COMPONENTE TABBOX
+  .tab-box{
+    margin-bottom: 150px;
+      .tab-inner{
+        width: 94%;
+        top: 36px;
+        left: 15px;
+      }
+  }
+  //COMPONENTE CAROUSEL
+  .carousel-box{
+    height: 405px;
+      .carousel-item{
+        height: 405px;
+      }
+      .carousel-control{
+        top: 173px;
       }
   }
 }

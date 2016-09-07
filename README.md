@@ -14,3 +14,5 @@ Acesse [http://hjdesigner.github.io/css-components/](http://hjdesigner.github.io
 - Timeline
 - Preloaders
 - Tooltips
+- Text Filter Background
+- Checkbox

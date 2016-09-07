@@ -169,7 +169,8 @@ pre{
 #timeline-open:checked + .container,
 #preloaders-open:checked + .container,
 #tooltips-open:checked + .container,
-#checkbox-open:checked + .container
+#checkbox-open:checked + .container,
+#text-open:checked + .container
 {
   display: block;
 }
