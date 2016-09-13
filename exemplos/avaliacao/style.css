@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
+body{
+  font-family: 'Roboto', sans-serif;;
+  font-size: 100%;
+}
+.container{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 5%;
+}
+.row{
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+h1{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 2% 0;
+  text-align: center;
+  font-weight: 100;
+  color: #FF1493;
+  font-size: 4em;
+}
+h1:before{
+  content: "</";
+}
+h1:after{
+  content: ">";
+}
+              @-webkit-keyframes alpha {
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+            }
+              input{
+                  display: none;
+              }
+              .box-estrela{
+                  width: 76px;;
+                  height: 111px;
+                  float: left;
+                  margin-right: 10px;
+                  position: relative;
+                  cursor: pointer;
+              }
+              .estrela-diagrama,
+              .estrela-diagrama:before,
+              .estrela-diagrama:after{
+                  width: 0px;
+                  height: 0px;
+                  position: absolute;
+                  border-right: 38px solid transparent;
+                  border-left: 38px solid transparent;
+                  border-bottom: 22px solid #c0c8c9;
+              }              
+              .estrela-diagrama{
+                  z-index: 5;
+                  transform: rotate(-180deg);
+                  left: 0px;
+                  top: 47px;
+              }
+              .estrela-diagrama:before{
+                  content: "";
+                  z-index: 6;
+                  transform: rotate(-72deg);
+                  left: -36px;
+                  top: 1px;
+              }
+              .estrela-diagrama:after{
+                  content: "";
+                  z-index: 6;
+                  transform: rotate(71deg);
+                  left: -40px;
+                  top: 1px;
+              }
+              #estrela-1:checked ~ label[for="estrela-1"] .estrela-diagrama,
+              #estrela-1:checked ~ label[for="estrela-1"] .estrela-diagrama:before,
+              #estrela-1:checked ~ label[for="estrela-1"] .estrela-diagrama:after{
+                  -webkit-animation: alpha .2s ease;
+                  width: 0;
+                  height: 0;
+                  position: absolute;
+                  border-right: 38px solid transparent;
+                  border-left: 38px solid transparent;
+                  border-bottom: 22px solid gold;
+              }
+              #estrela-2:checked ~ label[for="estrela-1"] .estrela-diagrama,
+              #estrela-2:checked ~ label[for="estrela-1"] .estrela-diagrama:before,
+              #estrela-2:checked ~ label[for="estrela-1"] .estrela-diagrama:after,
+              #estrela-2:checked ~ label[for="estrela-2"] .estrela-diagrama,
+              #estrela-2:checked ~ label[for="estrela-2"] .estrela-diagrama:before,
+              #estrela-2:checked ~ label[for="estrela-2"] .estrela-diagrama:after{
+                  -webkit-animation: alpha .2s ease;
+                  width: 0;
+                  height: 0;
+                  position: absolute;
+                  border-right: 38px solid transparent;
+                  border-left: 38px solid transparent;
+                  border-bottom: 22px solid gold;
+              }
+              #estrela-3:checked ~ label[for="estrela-1"] .estrela-diagrama,
+              #estrela-3:checked ~ label[for="estrela-1"] .estrela-diagrama:before,
+              #estrela-3:checked ~ label[for="estrela-1"] .estrela-diagrama:after,
+              #estrela-3:checked ~ label[for="estrela-2"] .estrela-diagrama,
+              #estrela-3:checked ~ label[for="estrela-2"] .estrela-diagrama:before,
+              #estrela-3:checked ~ label[for="estrela-2"] .estrela-diagrama:after,
+              #estrela-3:checked ~ label[for="estrela-3"] .estrela-diagrama,
+              #estrela-3:checked ~ label[for="estrela-3"] .estrela-diagrama:before,
+              #estrela-3:checked ~ label[for="estrela-3"] .estrela-diagrama:after{
+                  -webkit-animation: alpha .2s ease;
+                  width: 0;
+                  height: 0;
+                  position: absolute;
+                  border-right: 38px solid transparent;
+                  border-left: 38px solid transparent;
+                  border-bottom: 22px solid gold;
+              }
+              #estrela-4:checked ~ label[for="estrela-1"] .estrela-diagrama,
+              #estrela-4:checked ~ label[for="estrela-1"] .estrela-diagrama:before,
+              #estrela-4:checked ~ label[for="estrela-1"] .estrela-diagrama:after,
+              #estrela-4:checked ~ label[for="estrela-2"] .estrela-diagrama,
+              #estrela-4:checked ~ label[for="estrela-2"] .estrela-diagrama:before,
+              #estrela-4:checked ~ label[for="estrela-2"] .estrela-diagrama:after,
+              #estrela-4:checked ~ label[for="estrela-3"] .estrela-diagrama,
+              #estrela-4:checked ~ label[for="estrela-3"] .estrela-diagrama:before,
+              #estrela-4:checked ~ label[for="estrela-3"] .estrela-diagrama:after,
+              #estrela-4:checked ~ label[for="estrela-4"] .estrela-diagrama,
+              #estrela-4:checked ~ label[for="estrela-4"] .estrela-diagrama:before,
+              #estrela-4:checked ~ label[for="estrela-4"] .estrela-diagrama:after{
+                  -webkit-animation: alpha .2s ease;
+                  width: 0;
+                  height: 0;
+                  position: absolute;
+                  border-right: 38px solid transparent;
+                  border-left: 38px solid transparent;
+                  border-bottom: 22px solid gold;
+              }
+              #estrela-5:checked ~ label[for="estrela-1"] .estrela-diagrama,
+              #estrela-5:checked ~ label[for="estrela-1"] .estrela-diagrama:before,
+              #estrela-5:checked ~ label[for="estrela-1"] .estrela-diagrama:after,
+              #estrela-5:checked ~ label[for="estrela-2"] .estrela-diagrama,
+              #estrela-5:checked ~ label[for="estrela-2"] .estrela-diagrama:before,
+              #estrela-5:checked ~ label[for="estrela-2"] .estrela-diagrama:after,
+              #estrela-5:checked ~ label[for="estrela-3"] .estrela-diagrama,
+              #estrela-5:checked ~ label[for="estrela-3"] .estrela-diagrama:before,
+              #estrela-5:checked ~ label[for="estrela-3"] .estrela-diagrama:after,
+              #estrela-5:checked ~ label[for="estrela-4"] .estrela-diagrama,
+              #estrela-5:checked ~ label[for="estrela-4"] .estrela-diagrama:before,
+              #estrela-5:checked ~ label[for="estrela-4"] .estrela-diagrama:after,
+              #estrela-5:checked ~ label[for="estrela-5"] .estrela-diagrama,
+              #estrela-5:checked ~ label[for="estrela-5"] .estrela-diagrama:before,
+              #estrela-5:checked ~ label[for="estrela-5"] .estrela-diagrama:after{
+                  -webkit-animation: alpha .2s ease;
+                  width: 0;
+                  height: 0;
+                  position: absolute;
+                  border-right: 38px solid transparent;
+                  border-left: 38px solid transparent;
+                  border-bottom: 22px solid gold;
+              }
+          

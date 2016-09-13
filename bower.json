@@ -1,0 +1,34 @@
+{
+  "name": "css-component",
+  "version": "0.0.1",
+  "homepage": "hjdesigner.github.io/css-components",
+  "authors": [
+    "Henrique Rodrigues <https://twitter.com/coisadedev>"
+  ],
+  "description": "CSS Components são componentes criado somente usando css com todo seu poder sem nada de javascript ou jquery",
+  "main": [
+    "src/css/css-components-min.css",
+    "src/sass/components/_avaliacao.scss",
+    "src/sass/components/_card.scss",
+    "src/sass/components/_carousel.scss",
+    "src/sass/components/_checkbox.scss",
+    "src/sass/components/_collapse.scss",
+    "src/sass/components/_dropdown.scss",
+    "src/sass/components/_menu-mobile.scss",
+    "src/sass/components/_modal.scss",
+    "src/sass/components/_preloaders.scss",
+    "src/sass/components/_tab.scss",
+    "src/sass/components/_texto-filtro.scss",
+    "src/sass/components/_timeline.scss",
+    "src/sass/components/_tooltips.scss"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    ".sass-cache",
+    "build",
+    "exemplos",
+    "src",
+  ]
+}

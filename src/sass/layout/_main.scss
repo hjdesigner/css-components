@@ -149,7 +149,7 @@ pre{
       font-weight: 500;
       margin-right: 20px;
       &:first-child{
-        font-size: 1.3em;
+        font-size: 1.2em;
       }
       &:last-child{
         font-size: .9em;
@@ -158,6 +158,17 @@ pre{
         color: $rosa;
       }
     }
+}
+.bower{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.3em;
+  color: $rosa;
+  text-decoration: underline;
 }
 #carousel:checked + .container,
 #collapse:checked + .container,
@@ -170,7 +181,8 @@ pre{
 #preloaders-open:checked + .container,
 #tooltips-open:checked + .container,
 #checkbox-open:checked + .container,
-#text-open:checked + .container
+#text-open:checked + .container,
+#avaliacao-open:checked + .container
 {
   display: block;
 }
