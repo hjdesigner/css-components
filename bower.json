@@ -33,7 +33,7 @@
     "src/images/",
     "src/index.html",
     "src/sass/layout/",
-    "src/sass/style.scss"
+    "src/sass/style.scss",
     "src/css/css-components-min.css.map",
     "src/css/style-min.css",
     "src/css/style-min.css.map"
