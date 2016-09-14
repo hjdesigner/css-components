@@ -1,5 +1,5 @@
 {
-  "name": "CSS-components",
+  "name": "components-css",
   "version": "0.0.1",
   "homepage": "hjdesigner.github.io/css-components",
   "authors": [
@@ -22,13 +22,13 @@
     "src/sass/components/_timeline.scss",
     "src/sass/components/_tooltips.scss"
   ],
+  "license": "http://henriquerodrigues.mit-license.org/",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     ".sass-cache",
     "build",
-    "exemplos",
-    "src",
+    "exemplos"
   ]
 }
