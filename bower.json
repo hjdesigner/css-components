@@ -29,6 +29,8 @@
     "bower_components",
     ".sass-cache",
     "build",
-    "exemplos"
+    "exemplos",
+    "src/images/",
+    "src/index.html"
   ]
 }
