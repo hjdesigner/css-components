@@ -1,8 +1,6 @@
 #CSS COMPONENTS
 
-COMPONENTES CRIADO ATÉ O MOMENTO:
-
-Acesse [http://hjdesigner.github.io/css-components/](http://hjdesigner.github.io/css-components/) e confira como o CSS é lindo!!!! <3
+Acesse [http://henriquemelanda.com.br/css-components/](http://henriquemelanda.com.br/css-components/) e confira como o CSS é lindo!!!! <3
 
 - Carousel
 - Collapse
@@ -17,3 +15,7 @@ Acesse [http://hjdesigner.github.io/css-components/](http://hjdesigner.github.io
 - Text Filter Background
 - Checkbox
 - Avaliação
+
+# Como funciona o projeto por baixo dos panos?
+- Jekyll 3.1.6
+- SASS
