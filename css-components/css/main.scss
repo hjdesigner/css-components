@@ -13,6 +13,14 @@
 
 
 $font-padrao: 'Roboto', sans-serif;
+// Width of the content area
+$content-width:    800px;
+$content-desktop:  1200px;
+$content-mobile:  100%;
+$content-tablet:  100%;
+$media-mobile: 767px;
+$media-tablet: 1220px;
+
 
 //CORES
 $cinza: #c0c8c9;
@@ -34,6 +42,7 @@ $gold: #FFD700;
         "base",
         "animations",
         "header",
+        "footer",
         "layout",
         "carousel",
         "collapse",
@@ -48,5 +57,6 @@ $gold: #FFD700;
         "text-filter-background",
         "checkbox",
         "avaliacao",
+        "mobile",
         "syntax-highlighting"
 ;

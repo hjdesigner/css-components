@@ -20,8 +20,14 @@ ogImage: "http://hjdesigner.github.io/css-components/images/css-components.jpg"
 ogUrl: "http://hjdesigner.github.io/css-components/"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://henriquemelanda.com.br/css-components/" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter: https://www.twitter.com/coisadedev
+github:  https://www.github.com/hjdesigner
+facebook: https://www.facebook.com/hjFrontEnd
+codepen: https://codepen.io/hjdesigner/
+linkedin: https://br.linkedin.com/in/coisadedev
+
+sass:
+  style: compressed
 
 # Build settings
 markdown: kramdown
