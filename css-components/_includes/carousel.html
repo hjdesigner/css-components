@@ -1,0 +1,339 @@
+<!--CAROUSEL-->
+    <input type="radio" class="open-components" name="radio-components" id="carousel">
+    <section class="container">
+
+      <div class="row">
+        <div class="carousel-box">
+
+          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" checked>
+          <div class="carousel-item">
+            <!--<img src="http://hjdesigner.github.io/css-components/images/harley-1.jpg" alt="">-->
+            <img src="assets/images/harley-1.jpg" alt="">
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-2" name="carousel">
+          <div class="carousel-item">
+            <!--<img src="http://hjdesigner.github.io/css-components/images/harley-2.jpg" alt="">-->
+            <img src="assets/images/harley-2.jpg" alt="">
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-3" name="carousel">
+          <div class="carousel-item">
+            <!--<img src="http://hjdesigner.github.io/css-components/images/harley-3.jpg" alt="">-->
+            <img src="assets/images/harley-3.jpg" alt="">
+          </div>
+
+          <label for="carousel-3" class="carousel-control prev control-1"></label>
+          <label for="carousel-2" class="carousel-control next control-1"></label>
+          <label for="carousel-1" class="carousel-control prev control-2"></label>
+          <label for="carousel-3" class="carousel-control next control-2"></label>
+          <label for="carousel-2" class="carousel-control prev control-3"></label>
+          <label for="carousel-1" class="carousel-control next control-3"></label>
+
+          <ol class="carousel-indicators">
+            <li><label for="carousel-1" class="carousel-bullet">•</label></li>
+            <li><label for="carousel-2" class="carousel-bullet">•</label></li>
+            <li><label for="carousel-3" class="carousel-bullet">•</label></li>
+          </ol>
+            
+        </div>
+
+            {% include download.html %}
+
+      </div>
+
+        {% highlight html %}
+          <div class="carousel-box">
+
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" checked>
+            <div class="carousel-item">
+              <img src="assets/images/harley-1.jpg" alt="">
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel">
+            <div class="carousel-item">
+              <img src="assets/images/harley-2.jpg" alt="">
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel">
+            <div class="carousel-item">
+              <img src="assets/images/harley-3.jpg" alt="">
+            </div>
+
+            <label for="carousel-3" class="carousel-control prev control-1"></label>
+            <label for="carousel-2" class="carousel-control next control-1"></label>
+            <label for="carousel-1" class="carousel-control prev control-2"></label>
+            <label for="carousel-3" class="carousel-control next control-2"></label>
+            <label for="carousel-2" class="carousel-control prev control-3"></label>
+            <label for="carousel-1" class="carousel-control next control-3"></label>
+
+            <ol class="carousel-indicators">
+              <li><label for="carousel-1" class="carousel-bullet">•</label></li>
+              <li><label for="carousel-2" class="carousel-bullet">•</label></li>
+              <li><label for="carousel-3" class="carousel-bullet">•</label></li>
+            </ol>
+        </div>
+        {% endhighlight %}
+
+        {% highlight css linenos%}
+          //CSS
+          @-webkit-keyframes alpha {
+              0%{
+                  opacity: 0;
+              }
+              100%{
+                  opacity: 1;
+              }
+          }
+            input{
+                display: none;
+            }
+            .box-estrela{
+                width: 76px;;
+                height: 111px;
+                float: left;
+                margin-right: 10px;
+                position: relative;
+                cursor: pointer;
+            }
+            .estrela-diagrama,
+            .estrela-diagrama:before,
+            .estrela-diagrama:after{
+                width: 0px;
+                height: 0px;
+                position: absolute;
+                border-right: 38px solid transparent;
+                border-left: 38px solid transparent;
+                border-bottom: 22px solid #c0c8c9;
+            }              
+            .estrela-diagrama{
+                z-index: 5;
+                transform: rotate(-180deg);
+                left: 0px;
+                top: 47px;
+            }
+            .estrela-diagrama:before{
+                content: "";
+                z-index: 6;
+                transform: rotate(-72deg);
+                left: -36px;
+                top: 1px;
+            }
+            .estrela-diagrama:after{
+                content: "";
+                z-index: 6;
+                transform: rotate(71deg);
+                left: -40px;
+                top: 1px;
+            }
+            #estrela-1:checked ~ label[for="estrela-1"] .estrela-diagrama,
+            #estrela-1:checked ~ label[for="estrela-1"] .estrela-diagrama:before,
+            #estrela-1:checked ~ label[for="estrela-1"] .estrela-diagrama:after{
+                -webkit-animation: alpha .2s ease;
+                width: 0;
+                height: 0;
+                position: absolute;
+                border-right: 38px solid transparent;
+                border-left: 38px solid transparent;
+                border-bottom: 22px solid gold;
+            }
+            #estrela-2:checked ~ label[for="estrela-1"] .estrela-diagrama,
+            #estrela-2:checked ~ label[for="estrela-1"] .estrela-diagrama:before,
+            #estrela-2:checked ~ label[for="estrela-1"] .estrela-diagrama:after,
+            #estrela-2:checked ~ label[for="estrela-2"] .estrela-diagrama,
+            #estrela-2:checked ~ label[for="estrela-2"] .estrela-diagrama:before,
+            #estrela-2:checked ~ label[for="estrela-2"] .estrela-diagrama:after{
+                -webkit-animation: alpha .2s ease;
+                width: 0;
+                height: 0;
+                position: absolute;
+                border-right: 38px solid transparent;
+                border-left: 38px solid transparent;
+                border-bottom: 22px solid gold;
+            }
+            #estrela-3:checked ~ label[for="estrela-1"] .estrela-diagrama,
+            #estrela-3:checked ~ label[for="estrela-1"] .estrela-diagrama:before,
+            #estrela-3:checked ~ label[for="estrela-1"] .estrela-diagrama:after,
+            #estrela-3:checked ~ label[for="estrela-2"] .estrela-diagrama,
+            #estrela-3:checked ~ label[for="estrela-2"] .estrela-diagrama:before,
+            #estrela-3:checked ~ label[for="estrela-2"] .estrela-diagrama:after,
+            #estrela-3:checked ~ label[for="estrela-3"] .estrela-diagrama,
+            #estrela-3:checked ~ label[for="estrela-3"] .estrela-diagrama:before,
+            #estrela-3:checked ~ label[for="estrela-3"] .estrela-diagrama:after{
+                -webkit-animation: alpha .2s ease;
+                width: 0;
+                height: 0;
+                position: absolute;
+                border-right: 38px solid transparent;
+                border-left: 38px solid transparent;
+                border-bottom: 22px solid gold;
+            }
+            #estrela-4:checked ~ label[for="estrela-1"] .estrela-diagrama,
+            #estrela-4:checked ~ label[for="estrela-1"] .estrela-diagrama:before,
+            #estrela-4:checked ~ label[for="estrela-1"] .estrela-diagrama:after,
+            #estrela-4:checked ~ label[for="estrela-2"] .estrela-diagrama,
+            #estrela-4:checked ~ label[for="estrela-2"] .estrela-diagrama:before,
+            #estrela-4:checked ~ label[for="estrela-2"] .estrela-diagrama:after,
+            #estrela-4:checked ~ label[for="estrela-3"] .estrela-diagrama,
+            #estrela-4:checked ~ label[for="estrela-3"] .estrela-diagrama:before,
+            #estrela-4:checked ~ label[for="estrela-3"] .estrela-diagrama:after,
+            #estrela-4:checked ~ label[for="estrela-4"] .estrela-diagrama,
+            #estrela-4:checked ~ label[for="estrela-4"] .estrela-diagrama:before,
+            #estrela-4:checked ~ label[for="estrela-4"] .estrela-diagrama:after{
+                -webkit-animation: alpha .2s ease;
+                width: 0;
+                height: 0;
+                position: absolute;
+                border-right: 38px solid transparent;
+                border-left: 38px solid transparent;
+                border-bottom: 22px solid gold;
+            }
+            #estrela-5:checked ~ label[for="estrela-1"] .estrela-diagrama,
+            #estrela-5:checked ~ label[for="estrela-1"] .estrela-diagrama:before,
+            #estrela-5:checked ~ label[for="estrela-1"] .estrela-diagrama:after,
+            #estrela-5:checked ~ label[for="estrela-2"] .estrela-diagrama,
+            #estrela-5:checked ~ label[for="estrela-2"] .estrela-diagrama:before,
+            #estrela-5:checked ~ label[for="estrela-2"] .estrela-diagrama:after,
+            #estrela-5:checked ~ label[for="estrela-3"] .estrela-diagrama,
+            #estrela-5:checked ~ label[for="estrela-3"] .estrela-diagrama:before,
+            #estrela-5:checked ~ label[for="estrela-3"] .estrela-diagrama:after,
+            #estrela-5:checked ~ label[for="estrela-4"] .estrela-diagrama,
+            #estrela-5:checked ~ label[for="estrela-4"] .estrela-diagrama:before,
+            #estrela-5:checked ~ label[for="estrela-4"] .estrela-diagrama:after,
+            #estrela-5:checked ~ label[for="estrela-5"] .estrela-diagrama,
+            #estrela-5:checked ~ label[for="estrela-5"] .estrela-diagrama:before,
+            #estrela-5:checked ~ label[for="estrela-5"] .estrela-diagrama:after{
+                -webkit-animation: alpha .2s ease;
+                width: 0;
+                height: 0;
+                position: absolute;
+                border-right: 38px solid transparent;
+                border-left: 38px solid transparent;
+                border-bottom: 22px solid gold;
+            }
+ 
+        {% endhighlight %}
+
+        {% highlight css linenos%}
+          //SASS
+          .carousel-box{
+            width: 100%;
+            height: 440px;
+            display: inline-block;
+            position: relative;
+              .carousel-open{
+                display:none;
+              }
+              .carousel-item{
+                display:none;
+                width: 100%;
+                height: 440px;
+                position: absolute;
+                z-index: 100;
+
+                  img{
+                    width: 100%;
+                  }
+              }
+              .carousel-control{
+                display:none;
+                width: 50px;
+                height: 83px;
+                position: absolute;
+                z-index: 1001;
+                top: 179px;
+                padding: 3px 15px;
+                cursor: pointer;
+                font-size: 0px;
+              }
+              .prev{
+                left: 10px;
+                &:hover{
+                  &:before,
+                  &:after{
+                    background-color: $vermelho;
+                  }
+                }
+                &:before,
+                &:after{
+                  content: "";
+                  width: 50px;
+                  height: 5px;
+                  position: absolute;
+                  background-color: $branco;
+                  transition: all .3s ease;
+                }
+                &:before{
+                  transform: rotate(-55deg);
+                  top: 21px;
+                }
+                &:after{
+                  transform: rotate(55deg);
+                  left: 14px;
+                  top: 60px;
+                }
+              }
+              .next{
+                right: 10px;
+                &:hover{
+                  &:before,
+                  &:after{
+                    background-color: $vermelho;
+                  }
+                }
+                &:before,
+                &:after{
+                  content: "";
+                  width: 50px;
+                  height: 5px;
+                  position: absolute;
+                  background-color: $branco;
+                }
+                &:before{
+                  transform: rotate(-125deg);
+                  top: 21px;
+                }
+                &:after{
+                  transform: rotate(125deg);
+                  left: 14px;
+                  top: 60px;
+                }
+              }
+              .carousel-indicators{
+                list-style: none;
+                width: 100%;
+                position: absolute;
+                z-index: 1002;
+                bottom:0px;
+                margin:0;
+                padding:0;
+                text-align: center;
+
+                  li {
+                      display: inline-block;
+                      margin: 0 5px;
+
+                        .carousel-bullet {
+                          color: #fff;
+                          cursor: pointer;
+                          display: block;
+                          font-size: 35px;
+                      }
+                  }
+
+              }
+          }
+          .carousel-open:checked + .carousel-item{
+            display:block;
+            -webkit-animation: alpha 4s ease-out;
+          }
+          #carousel-1:checked ~ .control-1,
+          #carousel-2:checked ~ .control-2,
+          #carousel-3:checked ~ .control-3{
+            display: block;
+          }
+          #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+          #carousel-2:checked ~ .control-1 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+          #carousel-3:checked ~ .control-1 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+            color: $vermelho;
+          }
+
+        {% endhighlight %}
+
+    </section>

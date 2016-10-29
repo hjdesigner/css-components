@@ -1,0 +1,58 @@
+<!--TEXT FILTER BACKGROUND-->
+<input type="radio" class="open-components" name="radio-components" id="text-open">
+<section class="container">
+  <div class="row">
+
+    <article class="texto-filtro">
+      STAR WARS CELEBRATION
+    </article>
+
+
+        {% include download.html %}
+
+  </div>
+
+    {% highlight html %}
+      <article class="texto-filtro">
+        STAR WARS CELEBRATION
+      </article>
+    {% endhighlight %}
+
+    {% highlight css linenos%}
+      //CSS
+      @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
+      body{
+          font-family: 'Roboto', sans-serif;;
+          font-size: 100%;
+      }
+      .texto-filtro{
+          widht: 100%;
+          height: auto;
+          float: left;
+          text-align: center;
+          font-size: 9em;
+          font-weight: 900;
+          background: url('http://wallpapercave.com/wp/4W0KpiW.jpg');
+          background-size: cover;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+      }
+
+    {% endhighlight %}
+
+    {% highlight sass linenos%}
+      //SASS
+      .texto-filtro{
+      	width: 100%;
+      	height: auto;
+      	float: left;
+      	text-align: center;
+      	font-size: 9em;
+      	font-weight: 900;
+      	background: url('http://hjdesigner.github.io/css-components/images/star-wars.jpg');
+          background-size: cover;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+      }
+    {% endhighlight %}
+</section>

@@ -1,0 +1,228 @@
+<!--DROPDOWN-->
+<input type="radio" class="open-components" name="radio-components" id="dropdown-open">
+<section class="container">
+  <div class="row">
+
+    <div class="drop-box">
+        <label for="open-drop" class="title">Selecione um item</label>
+        <input type="checkbox" id="open-drop">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+          <li>Item 6</li>
+        </ul>
+    </div>
+
+
+        {% include download.html %}
+
+  </div>
+
+    {% highlight html %}
+      <div class="drop-box">
+          <label for="open-drop" class="title">Selecione um item</label>
+          <input type="checkbox" id="open-drop">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+          </ul>
+      </div>
+    {% endhighlight %}
+
+    {% highlight css linenos%}
+      //CSS
+      @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
+      body{
+          font-family: 'Roboto', sans-serif;;
+          font-size: 100%;
+      }
+      @-webkit-keyframes animationDropdown {
+          0%{
+              height: 0px;
+          }
+          100%{
+              height: 360px;
+          }
+      }
+      @-webkit-keyframes alpha {
+          0%{
+              opacity: 0;
+          }
+          100%{
+              opacity: 1px;
+          }
+      }
+      .drop-box{
+          width: 350px;
+          height: auto;
+          float: left;
+          position: relative;
+      }
+      .drop-box input[type="checkbox"]{
+          display: none;
+      }
+      .drop-box .title{
+          width: 340px;
+          height: 50px;
+          float: left;
+          position: relative;
+          padding-left: 10px;
+          background-color: #2E2929;
+          line-height: 50px;
+          font-weight: 500;
+          color: #FFFFFF;
+          cursor: pointer;
+          transition: all .3s ease;
+      }
+      .drop-box .title:after{
+          content: "\25BC";
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: #FF00B7;
+          text-align: center;
+          line-height: 55px;
+          font-size: 1.2em;
+      }
+      .drop-box .title:hover:after{
+          content: "\25BC";
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: #FF1493;
+          text-align: center;
+          line-height: 55px;
+          font-size: 1.2em;
+      }
+      .drop-box ul{
+          display: none;
+          width: 100%;
+          height: auto;
+          float: left;
+          position: absolute;
+          top: 57px;
+          background-color: #2E2929;
+          -webkit-animation: animationDropdown .3s ease;
+          padding: 0px;
+          margin: 0px;
+          list-style: none;
+          text-decoration: none;
+      }
+      .drop-box li{
+          width: 330px;
+          height: 40px;
+          float: left;
+          padding: 10px;
+          line-height: 50px;
+          font-weight: 300;
+          font-size: 1em;
+          color: #FFFFFF;
+          -webkit-animation: alpha .5s ease;
+      }
+      .drop-box li:hover{
+          background-color: #FF1493;
+      }
+      .drop-box #open-drop:checked ~ ul{
+          display: block;
+      }
+
+    {% endhighlight %}
+
+    {% highlight sass linenos%}
+      //SASS
+      .drop-box{
+        width: 350px;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+          input[type="checkbox"]{
+            display: none;
+          }
+          .title{
+            width: 340px;
+            height: 50px;
+            float: left;
+            padding-left: 10px;
+            background-color: $preto;
+            line-height: 50px;
+            font-weight: 500;
+            color: $branco;
+            cursor: pointer;
+            transition: all .3s ease;
+              &:after{
+                content: "\25BC";
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: $rosa2;
+                text-align: center;
+                line-height: 55px;
+                font-size: 1.2em;
+              }
+              &:hover{
+                &:after{
+                  content: "\25BC";
+                  width: 50px;
+                  height: 50px;
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  background-color: $rosa;
+                  text-align: center;
+                  line-height: 55px;
+                  font-size: 1.2em;
+                }
+              }
+          }
+          ul{
+            display: none;
+            width: 100%;
+            height: auto;
+            float: left;
+            position: absolute;
+            top: 57px;
+            background-color: $preto;
+            -webkit-animation: animationDropdown .3s ease;
+            -moz-animation: animationDropdown .3s ease;
+            -o-animation: animationDropdown .3s ease;
+            -ms-animation: animationDropdown .3s ease;
+            animation: animationDropdown .3s ease;
+              li{
+                width: 330px;
+                height: 40px;
+                float: left;
+                padding: 10px;
+                line-height: 50px;
+                font-weight: 300;
+                font-size: 1em;
+                color: $branco;
+                -webkit-animation: alpha .5s ease;
+                -moz-animation: alpha .5s ease;
+                -o-animation: alpha .5s ease;
+                -ms-animation: alpha .5s ease;
+                animation: alpha .5s ease;
+                &:hover{
+                  background-color: $rosa;
+                }
+              }
+          }
+          #open-drop:checked ~ ul{
+            display: block;
+          }
+      }
+
+    {% endhighlight %}
+</section>

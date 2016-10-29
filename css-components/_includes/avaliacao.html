@@ -1,0 +1,311 @@
+<!--AVALIACAO-->
+<input type="radio" class="open-components" name="radio-components" id="avaliacao-open" checked>
+<section class="container">
+  <div class="row">
+
+    <input type="radio" name="estrela" id="estrela-1" class="input-estrela">
+    <input type="radio" name="estrela" id="estrela-2" class="input-estrela">
+    <input type="radio" name="estrela" id="estrela-3" class="input-estrela" checked>
+    <input type="radio" name="estrela" id="estrela-4" class="input-estrela">
+    <input type="radio" name="estrela" id="estrela-5" class="input-estrela">
+      <label for="estrela-1" class="box-estrela estrela-1">
+          <div class="estrela-diagrama"></div>
+      </label>
+      <label for="estrela-2" class="box-estrela">
+          <div class="estrela-diagrama"></div>
+      </label>
+      <label for="estrela-3" class="box-estrela">
+          <div class="estrela-diagrama"></div>
+      </label>
+      <label for="estrela-4" class="box-estrela">
+          <div class="estrela-diagrama"></div>
+      </label>
+      <label for="estrela-5" class="box-estrela">
+          <div class="estrela-diagrama"></div>
+      </label>
+
+        {% include download.html %}
+
+  </div>
+
+    {% highlight html %}
+      <input type="radio" name="estrela" id="estrela-1" class="input-estrela">
+      <input type="radio" name="estrela" id="estrela-2" class="input-estrela">
+      <input type="radio" name="estrela" id="estrela-3" class="input-estrela" checked>
+      <input type="radio" name="estrela" id="estrela-4" class="input-estrela">
+      <input type="radio" name="estrela" id="estrela-5" class="input-estrela">
+        <label for="estrela-1" class="box-estrela estrela-1">
+            <div class="estrela-diagrama"></div>
+        </label>
+        <label for="estrela-2" class="box-estrela">
+            <div class="estrela-diagrama"></div>
+        </label>
+        <label for="estrela-3" class="box-estrela">
+            <div class="estrela-diagrama"></div>
+        </label>
+        <label for="estrela-4" class="box-estrela">
+            <div class="estrela-diagrama"></div>
+        </label>
+        <label for="estrela-5" class="box-estrela">
+            <div class="estrela-diagrama"></div>
+        </label>
+    {% endhighlight %}
+
+    {% highlight css linenos%}
+      //CSS
+      @-webkit-keyframes alpha {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+      }
+      input{
+          display: none;
+      }
+      .box-estrela{
+          width: 76px;;
+          height: 111px;
+          float: left;
+          margin-right: 10px;
+          position: relative;
+          cursor: pointer;
+      }
+      .estrela-diagrama,
+      .estrela-diagrama:before,
+      .estrela-diagrama:after{
+          width: 0px;
+          height: 0px;
+          position: absolute;
+          border-right: 38px solid transparent;
+          border-left: 38px solid transparent;
+          border-bottom: 22px solid #c0c8c9;
+      }
+      .estrela-diagrama{
+          z-index: 5;
+          transform: rotate(-180deg);
+          left: 0px;
+          top: 47px;
+      }
+      .estrela-diagrama:before{
+          content: "";
+          z-index: 6;
+          transform: rotate(-72deg);
+          left: -36px;
+          top: 1px;
+      }
+      .estrela-diagrama:after{
+          content: "";
+          z-index: 6;
+          transform: rotate(71deg);
+          left: -40px;
+          top: 1px;
+      }
+      #estrela-1:checked ~ label[for="estrela-1"] .estrela-diagrama,
+      #estrela-1:checked ~ label[for="estrela-1"] .estrela-diagrama:before,
+      #estrela-1:checked ~ label[for="estrela-1"] .estrela-diagrama:after{
+          -webkit-animation: alpha .2s ease;
+          width: 0;
+          height: 0;
+          position: absolute;
+          border-right: 38px solid transparent;
+          border-left: 38px solid transparent;
+          border-bottom: 22px solid gold;
+      }
+      #estrela-2:checked ~ label[for="estrela-1"] .estrela-diagrama,
+      #estrela-2:checked ~ label[for="estrela-1"] .estrela-diagrama:before,
+      #estrela-2:checked ~ label[for="estrela-1"] .estrela-diagrama:after,
+      #estrela-2:checked ~ label[for="estrela-2"] .estrela-diagrama,
+      #estrela-2:checked ~ label[for="estrela-2"] .estrela-diagrama:before,
+      #estrela-2:checked ~ label[for="estrela-2"] .estrela-diagrama:after{
+          -webkit-animation: alpha .2s ease;
+          width: 0;
+          height: 0;
+          position: absolute;
+          border-right: 38px solid transparent;
+          border-left: 38px solid transparent;
+          border-bottom: 22px solid gold;
+      }
+      #estrela-3:checked ~ label[for="estrela-1"] .estrela-diagrama,
+      #estrela-3:checked ~ label[for="estrela-1"] .estrela-diagrama:before,
+      #estrela-3:checked ~ label[for="estrela-1"] .estrela-diagrama:after,
+      #estrela-3:checked ~ label[for="estrela-2"] .estrela-diagrama,
+      #estrela-3:checked ~ label[for="estrela-2"] .estrela-diagrama:before,
+      #estrela-3:checked ~ label[for="estrela-2"] .estrela-diagrama:after,
+      #estrela-3:checked ~ label[for="estrela-3"] .estrela-diagrama,
+      #estrela-3:checked ~ label[for="estrela-3"] .estrela-diagrama:before,
+      #estrela-3:checked ~ label[for="estrela-3"] .estrela-diagrama:after{
+          -webkit-animation: alpha .2s ease;
+          width: 0;
+          height: 0;
+          position: absolute;
+          border-right: 38px solid transparent;
+          border-left: 38px solid transparent;
+          border-bottom: 22px solid gold;
+      }
+      #estrela-4:checked ~ label[for="estrela-1"] .estrela-diagrama,
+      #estrela-4:checked ~ label[for="estrela-1"] .estrela-diagrama:before,
+      #estrela-4:checked ~ label[for="estrela-1"] .estrela-diagrama:after,
+      #estrela-4:checked ~ label[for="estrela-2"] .estrela-diagrama,
+      #estrela-4:checked ~ label[for="estrela-2"] .estrela-diagrama:before,
+      #estrela-4:checked ~ label[for="estrela-2"] .estrela-diagrama:after,
+      #estrela-4:checked ~ label[for="estrela-3"] .estrela-diagrama,
+      #estrela-4:checked ~ label[for="estrela-3"] .estrela-diagrama:before,
+      #estrela-4:checked ~ label[for="estrela-3"] .estrela-diagrama:after,
+      #estrela-4:checked ~ label[for="estrela-4"] .estrela-diagrama,
+      #estrela-4:checked ~ label[for="estrela-4"] .estrela-diagrama:before,
+      #estrela-4:checked ~ label[for="estrela-4"] .estrela-diagrama:after{
+          -webkit-animation: alpha .2s ease;
+          width: 0;
+          height: 0;
+          position: absolute;
+          border-right: 38px solid transparent;
+          border-left: 38px solid transparent;
+          border-bottom: 22px solid gold;
+      }
+      #estrela-5:checked ~ label[for="estrela-1"] .estrela-diagrama,
+      #estrela-5:checked ~ label[for="estrela-1"] .estrela-diagrama:before,
+      #estrela-5:checked ~ label[for="estrela-1"] .estrela-diagrama:after,
+      #estrela-5:checked ~ label[for="estrela-2"] .estrela-diagrama,
+      #estrela-5:checked ~ label[for="estrela-2"] .estrela-diagrama:before,
+      #estrela-5:checked ~ label[for="estrela-2"] .estrela-diagrama:after,
+      #estrela-5:checked ~ label[for="estrela-3"] .estrela-diagrama,
+      #estrela-5:checked ~ label[for="estrela-3"] .estrela-diagrama:before,
+      #estrela-5:checked ~ label[for="estrela-3"] .estrela-diagrama:after,
+      #estrela-5:checked ~ label[for="estrela-4"] .estrela-diagrama,
+      #estrela-5:checked ~ label[for="estrela-4"] .estrela-diagrama:before,
+      #estrela-5:checked ~ label[for="estrela-4"] .estrela-diagrama:after,
+      #estrela-5:checked ~ label[for="estrela-5"] .estrela-diagrama,
+      #estrela-5:checked ~ label[for="estrela-5"] .estrela-diagrama:before,
+      #estrela-5:checked ~ label[for="estrela-5"] .estrela-diagrama:after{
+          -webkit-animation: alpha .2s ease;
+          width: 0;
+          height: 0;
+          position: absolute;
+          border-right: 38px solid transparent;
+          border-left: 38px solid transparent;
+          border-bottom: 22px solid gold;
+      }
+    {% endhighlight %}
+
+    {% highlight sass linenos%}
+      //SASS
+      .input-estrela{
+        display: none;
+      }
+      .box-estrela{
+        width: 76px;
+        height: 111px;
+        float: left;
+        margin-right: 10px;
+        position: relative;
+        cursor: pointer;
+      }
+      .estrela-diagrama,
+      .estrela-diagrama:before,
+      .estrela-diagrama:after{
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-right: 38px solid transparent;
+        border-left: 38px solid transparent;
+        border-bottom: 22px solid $cinza;
+      }
+      .estrela-diagrama{
+        z-index: 5;
+        transform: rotate(-180deg);
+        left: 0px;
+        top: 47px;
+        &:before {
+          content: "";
+          z-index: 6;
+          transform: rotate(-72deg);
+          left: -36px;
+          top: 1px;
+        }
+        &:after {
+          content: "";
+          z-index: 6;
+          transform: rotate(71deg);
+          left: -40px;
+          top: 1px;
+        }
+      }
+      #estrela-1:checked ~ label[for="estrela-1"]{
+        .estrela-diagrama,
+        .estrela-diagrama:before,
+        .estrela-diagrama:after{
+          -webkit-animation: alpha .2s ease;
+          width: 0px;
+          height: 0px;
+          position: absolute;
+          border-right: 38px solid transparent;
+          border-left: 38px solid transparent;
+          border-bottom: 22px solid $gold;
+        }
+      }
+      #estrela-2:checked ~ label[for="estrela-1"],
+      #estrela-2:checked ~ label[for="estrela-2"]{
+        .estrela-diagrama,
+        .estrela-diagrama:before,
+        .estrela-diagrama:after{
+          -webkit-animation: alpha .2s ease;
+          width: 0px;
+          height: 0px;
+          position: absolute;
+          border-right: 38px solid transparent;
+          border-left: 38px solid transparent;
+          border-bottom: 22px solid $gold;
+        }
+      }
+      #estrela-3:checked ~ label[for="estrela-1"],
+      #estrela-3:checked ~ label[for="estrela-2"],
+      #estrela-3:checked ~ label[for="estrela-3"]{
+        .estrela-diagrama,
+        .estrela-diagrama:before,
+        .estrela-diagrama:after{
+          -webkit-animation: alpha .2s ease;
+          width: 0px;
+          height: 0px;
+          position: absolute;
+          border-right: 38px solid transparent;
+          border-left: 38px solid transparent;
+          border-bottom: 22px solid $gold;
+        }
+      }
+      #estrela-4:checked ~ label[for="estrela-1"],
+      #estrela-4:checked ~ label[for="estrela-2"],
+      #estrela-4:checked ~ label[for="estrela-3"],
+      #estrela-4:checked ~ label[for="estrela-4"]{
+        .estrela-diagrama,
+        .estrela-diagrama:before,
+        .estrela-diagrama:after{
+          -webkit-animation: alpha .2s ease;
+          width: 0px;
+          height: 0px;
+          position: absolute;
+          border-right: 38px solid transparent;
+          border-left: 38px solid transparent;
+          border-bottom: 22px solid $gold;
+        }
+      }
+      #estrela-5:checked ~ label[for="estrela-1"],
+      #estrela-5:checked ~ label[for="estrela-2"],
+      #estrela-5:checked ~ label[for="estrela-3"],
+      #estrela-5:checked ~ label[for="estrela-4"],
+      #estrela-5:checked ~ label[for="estrela-5"]{
+        .estrela-diagrama,
+        .estrela-diagrama:before,
+        .estrela-diagrama:after{
+          -webkit-animation: alpha .2s ease;
+          width: 0px;
+          height: 0px;
+          position: absolute;
+          border-right: 38px solid transparent;
+          border-left: 38px solid transparent;
+          border-bottom: 22px solid $gold;
+        }
+      }
+    {% endhighlight %}
+</section>

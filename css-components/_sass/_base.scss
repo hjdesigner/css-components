@@ -1,0 +1,45 @@
+/**
+ * Reset some basic elements
+ */
+ *{
+   padding: 0;
+   margin: 0;
+ }
+ html, body{ height: 100%;}
+ html{ overflow-y: scroll;}
+ body{
+   font-family: $font-padrao;
+   font-size: 100%;
+ }
+ ul{
+ 	padding:0px;
+ 	margin:0px;
+ 	list-style: none;
+ 	text-decoration:none;
+ }
+ a{
+ 	text-decoration: none;
+ }
+
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: auto;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}

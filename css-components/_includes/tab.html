@@ -1,0 +1,231 @@
+<!--TAB-->
+    <input type="radio" class="open-components" name="radio-components" id="tab">
+    <section class="container">
+      <div class="row">
+        
+        <div class="tab-box">
+
+          <div class="tab-painel">
+
+            <input type="radio" id="tab-1" name="tab-content" class="tab-open" checked>
+            <label for="tab-1" class="tab-nav">TITULO 1 </label>
+
+              <div class="tab-inner">
+
+                <h2>PAINEL 1</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis magnam laboriosam modi quaerat, doloremque placeat perspiciatis distinctio eos sit! Dignissimos eum consectetur vero perferendis iusto blanditiis nulla repellat repellendus, aliquid.</p>
+
+              </div>
+          </div>
+
+          <div class="tab-painel">
+
+            <input type="radio" id="tab-2" name="tab-content" class="tab-open">
+            <label for="tab-2" class="tab-nav">TITULO 2</label>
+
+              <div class="tab-inner">
+
+                <h2>PAINEL 2</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis magnam laboriosam modi quaerat, doloremque placeat perspiciatis distinctio eos sit! Dignissimos eum consectetur vero perferendis iusto blanditiis nulla repellat repellendus, aliquid.</p>
+
+              </div>
+          </div>
+
+          <div class="tab-painel">
+
+            <input type="radio" id="tab-3" name="tab-content" class="tab-open">
+            <label for="tab-3" class="tab-nav">TITULO 3</label>
+              <div class="tab-inner">
+
+                <h2>PAINEL 3</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis magnam laboriosam modi quaerat, doloremque placeat perspiciatis distinctio eos sit! Dignissimos eum consectetur vero perferendis iusto blanditiis nulla repellat repellendus, aliquid.</p>
+
+              </div>
+          </div>
+
+        </div>
+
+
+          {% include download.html %}
+      </div>
+
+          {% highlight html %}
+            <div class="tab-box">
+
+              <div class="tab-painel">
+
+                <input type="radio" id="tab-1" name="tab-content" class="tab-open" checked>
+                <label for="tab-1" class="tab-nav">TITULO 1 </label>
+
+                  <div class="tab-inner">
+
+                    <h2>PAINEL 1</h2>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis magnam 
+                    laboriosam modi quaerat, doloremque placeat perspiciatis distinctio eos sit! 
+                    Dignissimos eum consectetur vero perferendis iusto blanditiis nulla repellat 
+                    repellendus, aliquid.</p>
+
+                  </div>
+              </div>
+
+              <div class="tab-painel">
+
+                <input type="radio" id="tab-2" name="tab-content" class="tab-open">
+                <label for="tab-2" class="tab-nav">TITULO 2</label>
+
+                  <div class="tab-inner">
+
+                    <h2>PAINEL 2</h2>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis magnam 
+                    laboriosam modi quaerat, doloremque placeat perspiciatis distinctio eos sit! 
+                    Dignissimos eum consectetur vero perferendis iusto blanditiis nulla repellat r
+                    epellendus, aliquid.</p>
+
+                  </div>
+              </div>
+
+              <div class="tab-painel">
+
+                <input type="radio" id="tab-3" name="tab-content" class="tab-open">
+                <label for="tab-3" class="tab-nav">TITULO 3</label>
+                  <div class="tab-inner">
+
+                    <h2>PAINEL 3</h2>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis magnam l
+                    aboriosam modi quaerat, doloremque placeat perspiciatis distinctio eos sit! 
+                    Dignissimos eum consectetur vero perferendis iusto blanditiis nulla repellat 
+                    repellendus, aliquid.</p>
+
+                  </div>
+              </div>
+
+            </div>
+          {% endhighlight %}
+
+          {% highlight css linenos%}
+            @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
+            body{
+                font-family: 'Roboto', sans-serif;;
+                font-size: 100%;
+            }
+            @-webkit-keyframes alpha {
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1px;
+                }
+            }
+            .tab-box{
+                width: 100%;
+            }
+            .tab-box .tab-open{
+                display: none;
+            }
+            .tab-box .tab-painel{
+                min-width: 100px;
+                display: inline-block;
+            }
+            .tab-box .tab-painel .tab-nav{
+                width: 100%;
+                display: inline-block;
+                cursor: pointer;
+                border: 1px solid #666;
+                line-height: 30px;
+                text-align: center;
+                font-weight: 500;
+                font-size: .9em;
+                color: #2E2929;
+            }
+            .tab-box .tab-painel .tab-nav:hover{
+                background-color: #F2F2F2;
+            }
+            .tab-box .tab-inner{
+                width: 98%;
+                height: auto;
+                padding: 1%;
+                margin-top: 5px;
+                display: inline-block;
+                background-color: #F2F2F2;
+                position: absolute;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+            }
+            .tab-box .tab-open:checked ~ .tab-inner{
+                opacity: 1;
+                visibility: visible;
+                -webkit-animation: alpha 2s ease;
+            }
+            .tab-box .tab-open:checked ~ label{
+                background-color: #F2F2F2;
+            }
+ 
+          {% endhighlight %}
+
+          {% highlight css linenos%}
+            //SASS
+            .tab-box{
+              width: 100%;
+              margin-bottom: 50px;
+
+                .tab-open{
+                  display: none;
+                }
+                .tab-painel{
+                  min-width: 100px;
+                  display: inline-block;
+
+                    .tab-nav{
+                      width: 100%;
+                      display: inline-block;
+                      cursor: pointer;
+                      border: 1px solid #666;
+                      line-height: 30px;
+                      text-align: center;
+                      font-weight: 500;
+                      font-size: .9em;
+                      color: $preto;
+
+                        &:hover{
+                          background-color:#F2F2F2;
+                        }
+
+
+                    }
+                }
+                .tab-inner{
+                  width: 98%;
+                  height: auto;
+                  padding: 1%;
+                  margin-top: 5px;
+                  display: inline-block;
+                  background-color: #F2F2F2;
+                  position: absolute;
+                  left: 0;
+                  opacity: 0;
+                  visibility: hidden;
+                }
+
+                .tab-open:checked ~ .tab-inner{
+                  opacity: 1;
+                  visibility: visible;
+                  -webkit-animation: alpha 2s ease-in;
+                }
+                .tab-open:checked ~ label{
+                  background-color:#F2F2F2;
+                }
+
+
+            }
+
+
+          {% endhighlight %}
+
+    </section>

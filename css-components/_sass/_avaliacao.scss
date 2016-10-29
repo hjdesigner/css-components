@@ -1,0 +1,116 @@
+.input-estrela{
+  display: none;
+}
+.box-estrela{
+  width: 76px;
+  height: 111px;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.estrela-diagrama,
+.estrela-diagrama:before,
+.estrela-diagrama:after{
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-right: 38px solid transparent;
+  border-left: 38px solid transparent;
+  border-bottom: 22px solid $cinza;
+}
+.estrela-diagrama{
+  z-index: 5;
+  transform: rotate(-180deg);
+  left: 0px;
+  top: 47px;
+  &:before {
+    content: "";
+    z-index: 6;
+    transform: rotate(-72deg);
+    left: -36px;
+    top: 1px;
+  }
+  &:after {
+    content: "";
+    z-index: 6;
+    transform: rotate(71deg);
+    left: -40px;
+    top: 1px;
+  }
+}
+#estrela-1:checked ~ label[for="estrela-1"]{
+  .estrela-diagrama,
+  .estrela-diagrama:before,
+  .estrela-diagrama:after{
+    -webkit-animation: alpha .2s ease;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-right: 38px solid transparent;
+    border-left: 38px solid transparent;
+    border-bottom: 22px solid $gold;
+  }
+}
+#estrela-2:checked ~ label[for="estrela-1"],
+#estrela-2:checked ~ label[for="estrela-2"]{
+  .estrela-diagrama,
+  .estrela-diagrama:before,
+  .estrela-diagrama:after{
+    -webkit-animation: alpha .2s ease;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-right: 38px solid transparent;
+    border-left: 38px solid transparent;
+    border-bottom: 22px solid $gold;
+  }
+}
+#estrela-3:checked ~ label[for="estrela-1"],
+#estrela-3:checked ~ label[for="estrela-2"],
+#estrela-3:checked ~ label[for="estrela-3"]{
+  .estrela-diagrama,
+  .estrela-diagrama:before,
+  .estrela-diagrama:after{
+    -webkit-animation: alpha .2s ease;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-right: 38px solid transparent;
+    border-left: 38px solid transparent;
+    border-bottom: 22px solid $gold;
+  }
+}
+#estrela-4:checked ~ label[for="estrela-1"],
+#estrela-4:checked ~ label[for="estrela-2"],
+#estrela-4:checked ~ label[for="estrela-3"],
+#estrela-4:checked ~ label[for="estrela-4"]{
+  .estrela-diagrama,
+  .estrela-diagrama:before,
+  .estrela-diagrama:after{
+    -webkit-animation: alpha .2s ease;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-right: 38px solid transparent;
+    border-left: 38px solid transparent;
+    border-bottom: 22px solid $gold;
+  }
+}
+#estrela-5:checked ~ label[for="estrela-1"],
+#estrela-5:checked ~ label[for="estrela-2"],
+#estrela-5:checked ~ label[for="estrela-3"],
+#estrela-5:checked ~ label[for="estrela-4"],
+#estrela-5:checked ~ label[for="estrela-5"]{
+  .estrela-diagrama,
+  .estrela-diagrama:before,
+  .estrela-diagrama:after{
+    -webkit-animation: alpha .2s ease;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-right: 38px solid transparent;
+    border-left: 38px solid transparent;
+    border-bottom: 22px solid $gold;
+  }
+}

@@ -1,0 +1,253 @@
+<!--CARD-->
+<input type="radio" class="open-components" name="radio-components" id="card-open">
+<section class="container">
+  <div class="row">
+
+    <div class="card-box">
+      <figure class="card-img">
+        <img src="assets/images/harckers.jpg" alt="Harckers">
+      </figure>
+        <div class="card-titulo">
+          Card Titulo
+        </div>
+
+          <input type="checkbox" id="click-card">
+          <div class="click-card">
+            <label for="click-card"></label>
+          </div>
+            <article class="card-texto">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus laborum atque, a iste numquam adipisci eos magni amet hic tempora natus eaque, libero deserunt consequatur eius! Similique, nesciunt tempore expedita.</p>
+            </article>
+
+    </div>
+
+      {% include download.html %}
+
+
+  </div>
+
+
+    {% highlight html %}
+      <div class="card-box">
+        <figure class="card-img">
+          <img src="assets/images/harckers.jpg" alt="Harckers">
+        </figure>
+          <div class="card-titulo">
+            Card Titulo
+          </div>
+
+            <input type="checkbox" id="click-card">
+            <div class="click-card">
+              <label for="click-card"></label>
+            </div>
+              <article class="card-texto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus laborum atque, a iste numquam adipisci eos magni amet hic tempora natus eaque, libero deserunt consequatur eius! Similique, nesciunt tempore expedita.</p>
+              </article>
+
+      </div>
+    {% endhighlight %}
+
+    {% highlight css linenos%}
+      //CSS
+      @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
+      body{
+          font-family: 'Roboto', sans-serif;;
+          font-size: 100%;
+      }
+      @-webkit-keyframes alpha {
+          0%{
+              opacity: 0;
+          }
+          100%{
+              opacity: 1px;
+          }
+      }
+      .card-box{
+          width: 390px;
+          height: 280px;
+          float: left;
+          box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);;
+          position: relative;
+      }
+      .card-box input[type="checkbox"]{
+          display: none;
+      }
+      .card-img{
+          width: 100%;
+          height: auto;
+          float: left;
+          margin: 0;
+      }
+      .card-box .card-titulo{
+          width: 350px;
+          height: 240px;
+          padding: 10px 20px 0;
+          font-weight: 300;
+          color: #FF1493;
+          font-size: 1.4em;
+      }
+      .card-box .click-card{
+          width: 26px;
+          height: 14px;
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+          z-index: 1;
+      }
+      .card-box .click-card label{
+          width: 26px;
+          height: 14px;
+          float: left;
+          cursor: pointer;
+      }
+      .card-box .click-card label:before{
+          content: "";
+          width: 15px;
+          height: 2px;
+          position: absolute;
+          left: 0px;
+          top: 6px;
+          background-color: #2E2929;
+          transform: rotate(-50deg);
+      }
+      .card-box .click-card label:after{
+          content: "";
+          width: 15px;
+          height: 2px;
+          position: absolute;
+          left: 10px;
+          top: 6px;
+          background-color: #2E2929;
+          transform: rotate(50deg);
+      }
+      .card-box .card-texto{
+          display: none;
+          width: 350px;
+          height: 240px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 0;
+          padding: 20px;
+          line-height: 30px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          color: #2E2929;
+          background-color: #FFFFFF;
+      }
+      .card-box #click-card:checked ~ .card-texto{
+          display: block;
+          -webkit-animation: alpha .3s linear;
+      }
+      .card-box #click-card:checked ~ .click-card label:after{
+          content: "";
+          width: 15px;
+          height: 2px;
+          left: 0px;
+          top: 6px;
+          position: absolute;
+          background-color: #2E2929;
+          transform: rotate(50deg);
+      }
+
+    {% endhighlight %}
+
+    {% highlight sass linenos%}
+      //SASS
+      .card-box{
+        width: 390px;
+        height: 280px;
+        margin: 0 auto;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+        position: relative;
+
+          input[type="checkbox"]{
+            display: none;
+          }
+          .card-img{
+            width: 100%;
+            height: auto;
+            float: left;
+            margin: 0px;
+          }
+
+          .card-titulo{
+            width: 350px;
+            height: 240px;
+            padding: 10px 20px 0;
+            font-weight: 300;
+            color: $rosa;
+            font-size: 1.4em;
+          }
+          .click-card{
+            width: 26px;
+            height: 14px;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            z-index: 1;
+              label{
+                width: 26px;
+                height: 14px;
+                float: left;
+                cursor: pointer;
+                &:before{
+                  content: "";
+                  width: 15px;
+                  height: 2px;
+                  position: absolute;
+                  left: 0px;
+                  top: 6px;
+                  background-color: #2E2929;
+                  transform: rotate(-50deg);
+                }
+                &:after{
+                  content: "";
+                  width: 15px;
+                  height: 2px;
+                  left: 10px;
+                  top: 6px;
+                  position: absolute;
+                  background-color: #2E2929;
+                  transform: rotate(50deg);
+                }
+              }
+          }
+          .card-texto{
+            display: none;
+            width: 350px;
+            height: 240px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            padding: 20px;
+            line-height: 30px;
+            font-family: $font-padrao;
+            font-weight: 500;
+            color: $preto;
+            background-color: $branco;
+          }
+          #click-card:checked ~ .card-texto{
+            display: block;
+            -webkit-animation: alpha .3s linear;
+          }
+          #click-card:checked ~ .click-card{
+              label{
+                &:after{
+                  content: "";
+                  width: 15px;
+                  height: 2px;
+                  left: 0px;
+                  top: 6px;
+                  position: absolute;
+                  background-color: #2E2929;
+                  transform: rotate(50deg);
+                }
+              }
+
+          }
+      }
+
+    {% endhighlight %}
+</section>

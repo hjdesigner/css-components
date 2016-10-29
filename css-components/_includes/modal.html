@@ -1,0 +1,210 @@
+<!--MODAL-->
+    <input type="radio" class="open-components" name="radio-components" id="modal-open" >
+    <section class="container">
+
+      <div class="row">
+        <div class="box-modal">
+
+            <label for="modal" class="btn">Clique e veja a magica!</label>
+            <input type="checkbox" id="modal" name="modal">
+
+              <div class="modal-content">
+
+                <div class="modal-in">
+
+                  <label for="modal" id="modal" class="modal-fechar">X</label>
+
+                  <h2>Titulo modal</h2>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia fugiat earum tempora reprehenderit aliquid consectetur ut, quod a dicta alias esse facere repellendus, libero mollitia repellat corporis maiores, delectus illum!</p>
+
+                </div>
+
+              </div>
+
+
+        </div>
+
+            {% include download.html %}
+
+      </div>
+
+        {% highlight html %}
+          <div class="box-modal">
+
+            <label for="modal" class="btn">Clique e veja a magica!</label>
+            <input type="checkbox" id="modal" name="modal">
+
+              <div class="modal-content">
+
+                <div class="modal-in">
+
+                  <label for="modal" id="modal" class="modal-fechar">X</label>
+
+                  <h2>Titulo modal</h2>
+
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia fugiat earum 
+                  tempora reprehenderit aliquid consectetur ut, quod a dicta alias esse facere 
+                  repellendus, libero mollitia repellat corporis maiores, delectus illum!</p>
+
+                </div>
+
+              </div>
+
+
+        </div>
+        {% endhighlight %}
+
+        {% highlight css linenos%}
+          //CSS
+          @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
+            body{
+                font-family: 'Roboto', sans-serif;;
+                font-size: 100%;
+            }
+            @-webkit-keyframes alpha {
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1px;
+                }
+            }
+            .box-modal{
+                width: 100%;
+            }
+            .box-modal input[type="checkbox"]{
+                display: none;
+            }
+            .box-modal .btn{
+                width: 100%;
+                height: 40px;
+                display: inline-block;
+                background: #73b1d4;
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+                line-height: 40px;
+                text-align: center;
+                font-weight: 500;
+                font-size: 1.2em;
+                color: #FFFFFF;
+                cursor: pointer;
+            }
+            .box-modal .btn:hover{
+                background: #679ebe;
+            }
+            .box-modal .modal-content{
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                z-index: 1000;
+                background: rgba(0, 0, 0, 0.6);;
+                top: 0;
+                left: 0;
+                display: none;
+            }
+            .modal-in{
+                widht: 500px;
+                height: 300px;
+                background: #FFFFFF;
+                border: 1px solid #999;
+                position: absolute;
+                z-index: 1000;
+                top: 50%;
+                left: 50%;
+                margin: -150px 0 0 -250px;
+                padding: 20px;
+            }
+            .modal-in .modal-fechar{
+                position: absolute;
+                z-index: 1002;
+                top: -11px;
+                right: -13px;
+                padding: 5px 10px;
+                cursor: pointer;
+                background: red;
+                border-radius: 50%;
+                font-weight: 500;
+                font-size: .8em;
+                color: #FFFFFF;
+            }
+            #modal:checked ~ .modal-content{
+                display: block;
+                -webkit-animation:  alpha 1s ease-in;
+            }
+
+ 
+        {% endhighlight %}
+
+        {% highlight css linenos%}
+          //SASS
+          .box-modal{
+            width: 100%;
+
+              input[type="checkbox"]{
+                display: none;
+              }
+              .btn{
+                width: 100%;
+                height: 40px;
+                display: inline-block;
+                background: #73b1d4;
+                box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+                line-height: 40px;
+                text-align: center;
+                font-weight: 500;
+                font-size: 1.2em;
+                color: $branco;
+                cursor: pointer;
+
+                  &:hover{
+                    background: #679ebe;
+                  }
+              }
+
+              .modal-content{
+                width:100%;
+                height:100%;
+                z-index:1000;
+                background: rgba(0,0,0,0.6);
+                position: fixed;
+                top: 0;
+                left: 0;
+                display: none;
+              }
+
+          }
+          .modal-in{
+            width: 500px;
+            height: 300px;
+            background: #FFF;
+            border: 1px solid #999;
+            position: absolute;
+            z-index: 1001;
+            top:50%;
+            left:50%;
+            margin: -150px 0 0 -250px;
+            padding:20px;
+
+              .modal-fechar{
+                position: absolute;
+                z-index: 1002;
+                top: -11px;
+                right: -13px;
+                padding: 5px 10px;
+                cursor: pointer;
+                background: red;
+                border-radius: 50%;
+                font-weight: 500;
+                font-size: .8em;
+                color: $branco;
+              }
+          }
+          #modal:checked ~ .modal-content{
+            display:block;
+            -webkit-animation: alpha 1s ease-in;
+          }
+
+
+        {% endhighlight %}
+
+    </section>

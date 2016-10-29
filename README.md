@@ -2,7 +2,7 @@
 
 COMPONENTES CRIADO ATÉ O MOMENTO:
 
-Acesse [http://hjdesigner.github.io/css-components/](http://hjdesigner.github.io/css-components/) e confira com o CSS é lindo!!!! <3
+Acesse [http://hjdesigner.github.io/css-components/](http://hjdesigner.github.io/css-components/) e confira como o CSS é lindo!!!! <3
 
 - Carousel
 - Collapse
@@ -16,3 +16,4 @@ Acesse [http://hjdesigner.github.io/css-components/](http://hjdesigner.github.io
 - Tooltips
 - Text Filter Background
 - Checkbox
+- Avaliação
