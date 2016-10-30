@@ -1,0 +1,338 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
+body{
+  font-family: 'Roboto', sans-serif;;
+  font-size: 100%;
+}
+.container{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-bottom: 5%;
+}
+.row{
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+h1{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 2% 0;
+  text-align: center;
+  font-weight: 100;
+  color: #FF1493;
+  font-size: 4em;
+}
+h1:before{
+  content: "</";
+}
+h1:after{
+  content: ">";
+}
+@-webkit-keyframes facebook{
+  0%{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+input {
+  display: none;
+}
+
+.facebook-reactions {
+  width: 100px;
+  height: 52px;
+  float:left;
+  position: relative;
+  margin: 50px 0 50px calc(50% - 50px);
+  text-align: center;
+  line-height: 87px;
+  transition: opacity .20s ease;
+  font-size: 1em;
+  color: #2E2929;
+  cursor: pointer;
+}
+.facebook-reactions:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 1px;
+  left: 3px;
+  background-image: url(sprite-reactions.png);
+  background-position: -33px 53px;
+}
+.facebook-reactions:hover {
+  text-decoration: underline;
+}
+.facebook-reactions:hover .reactions {
+  display: block;
+  opacity: 1;
+}
+.facebook-reactions:hover .reactions li.reactions-curtir {
+  -webkit-animation: facebook 0.1s cubic-bezier(0.49, 0, 0.46, 1);
+}
+.facebook-reactions:hover .reactions li.reactions-amei {
+  -webkit-animation: facebook 0.2s cubic-bezier(0.49, 0, 0.46, 1);
+}
+.facebook-reactions:hover .reactions li.reactions-haha {
+  -webkit-animation: facebook 0.3s cubic-bezier(0.49, 0, 0.46, 1);
+}
+.facebook-reactions:hover .reactions li.reactions-uau {
+  -webkit-animation: facebook 0.4s cubic-bezier(0.49, 0, 0.46, 1);
+}
+.facebook-reactions:hover .reactions li.reactions-triste {
+  -webkit-animation: facebook 0.5s cubic-bezier(0.49, 0, 0.46, 1);
+}
+.facebook-reactions:hover .reactions li.reactions-grr {
+  -webkit-animation: facebook 0.6s cubic-bezier(0.49, 0, 0.46, 1);
+}
+.facebook-reactions .reactions {
+  opacity: 0;
+  display: none;
+  width: 292px;
+  height: 52px;
+  position: absolute;
+  top: -30px;
+  left: -94px;
+  background-color: #FFFFFF;
+  box-shadow: 1px 1px 11px #c0c8c9;
+  border-radius: 50px;
+}
+.facebook-reactions .reactions ul {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.facebook-reactions .reactions li {
+  width: 40px;
+  height: 40px;
+  float: left;
+  position: relative;
+  margin: 7px 0 0 7px;
+  background-image: url(sprite-reactions.png);
+  transition: transform .25s ease;
+  transform: translateY(0px);
+  opacity: 1;
+}
+.facebook-reactions .reactions li.reactions-curtir,
+.facebook-reactions .reactions li.reactions-amei,
+.facebook-reactions .reactions li.reactions-haha,
+.facebook-reactions .reactions li.reactions-uau,
+.facebook-reactions .reactions li.reactions-triste,
+.facebook-reactions .reactions li.reactions-grr {
+  background-size: cover;
+}
+.facebook-reactions .reactions li.reactions-curtir {
+  background-position: 0 -80px;
+}
+.facebook-reactions .reactions li.reactions-curtir:hover {
+  transform: translateY(-6px) scale(1.2);
+}
+.facebook-reactions .reactions li.reactions-curtir:hover:before {
+  content: attr(data-title);
+  transform: scale(0.8);
+  position: absolute;
+  top: -24px;
+  left: -3px;
+  width: 46px;
+  height: 21px;
+  background-color: #2E2929;
+  border-radius: 50px;
+  font-size: .8em;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 21px;
+  font-weight: 600;
+}
+.facebook-reactions .reactions li.reactions-amei {
+  background-position: 0 -119px;
+}
+.facebook-reactions .reactions li.reactions-amei:hover {
+  transform: translateY(-6px) scale(1.2);
+}
+.facebook-reactions .reactions li.reactions-amei:hover:before {
+  content: attr(data-title);
+  transform: scale(0.8);
+  position: absolute;
+  top: -24px;
+  left: -3px;
+  width: 46px;
+  height: 21px;
+  background-color: #2E2929;
+  border-radius: 50px;
+  font-size: .8em;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 21px;
+  font-weight: 600;
+}
+.facebook-reactions .reactions li.reactions-haha {
+  background-position: 0 -39px;
+}
+.facebook-reactions .reactions li.reactions-haha:hover {
+  transform: translateY(-6px) scale(1.2);
+}
+.facebook-reactions .reactions li.reactions-haha:hover:before {
+  content: attr(data-title);
+  transform: scale(0.8);
+  position: absolute;
+  top: -24px;
+  left: -3px;
+  width: 46px;
+  height: 21px;
+  background-color: #2E2929;
+  border-radius: 50px;
+  font-size: .8em;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 21px;
+  font-weight: 600;
+}
+.facebook-reactions .reactions li.reactions-uau {
+  background-position: 0 -199px;
+}
+.facebook-reactions .reactions li.reactions-uau:hover {
+  transform: translateY(-6px) scale(1.2);
+}
+.facebook-reactions .reactions li.reactions-uau:hover:before {
+  content: attr(data-title);
+  transform: scale(0.8);
+  position: absolute;
+  top: -24px;
+  left: -3px;
+  width: 46px;
+  height: 21px;
+  background-color: #2E2929;
+  border-radius: 50px;
+  font-size: .8em;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 21px;
+  font-weight: 600;
+}
+.facebook-reactions .reactions li.reactions-triste {
+  background-position: 0 -159px;
+}
+.facebook-reactions .reactions li.reactions-triste:hover {
+  transform: translateY(-6px) scale(1.2);
+}
+.facebook-reactions .reactions li.reactions-triste:hover:before {
+  content: attr(data-title);
+  transform: scale(0.8);
+  position: absolute;
+  top: -24px;
+  left: -3px;
+  width: 46px;
+  height: 21px;
+  background-color: #2E2929;
+  border-radius: 50px;
+  font-size: .8em;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 21px;
+  font-weight: 600;
+}
+.facebook-reactions .reactions li.reactions-grr {
+  background-position: 0 0;
+}
+.facebook-reactions .reactions li.reactions-grr:hover {
+  transform: translateY(-6px) scale(1.2);
+}
+.facebook-reactions .reactions li.reactions-grr:hover:before {
+  content: attr(data-title);
+  transform: scale(0.8);
+  position: absolute;
+  top: -24px;
+  left: -3px;
+  width: 46px;
+  height: 21px;
+  background-color: #2E2929;
+  border-radius: 50px;
+  font-size: .8em;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 21px;
+  font-weight: 600;
+}
+.facebook-reactions .reactions li label {
+  width: 100%;
+  height: 100%;
+  float: left;
+  cursor: pointer;
+}
+
+#reactions-curtir:checked ~ .facebook-reactions:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 1px;
+  left: 3px;
+  background-image: url(sprite-reactions.png);
+  background-position: 0 35px;
+}
+
+#reactions-amei:checked ~ .facebook-reactions:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 1px;
+  left: 3px;
+  background-image: url(sprite-reactions.png);
+  background-position: -17px 35px;
+}
+
+#reactions-haha:checked ~ .facebook-reactions:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 1px;
+  left: 3px;
+  background-image: url(sprite-reactions.png);
+  background-position: -17px 52px;
+}
+
+#reactions-uau:checked ~ .facebook-reactions:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 1px;
+  left: 3px;
+  background-image: url(sprite-reactions.png);
+  background-position: -17px 18px;
+}
+
+#reactions-triste:checked ~ .facebook-reactions:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 1px;
+  left: 3px;
+  background-image: url(sprite-reactions.png);
+  background-position: 0px 18px;
+}
+
+#reactions-grr:checked ~ .facebook-reactions:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  bottom: 1px;
+  left: 3px;
+  background-image: url(sprite-reactions.png);
+  background-position: 0px 52px;
+}

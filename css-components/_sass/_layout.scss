@@ -16,7 +16,7 @@
             a{
               padding: 20px;
               font-family: $font-padrao;
-              color: $branco;              
+              color: $branco;
               background-color: $azul;
               &:hover{
                 text-decoration: none;
@@ -155,7 +155,8 @@ h1{
 #tooltips-open:checked + .container,
 #checkbox-open:checked + .container,
 #text-open:checked + .container,
-#avaliacao-open:checked + .container
+#avaliacao-open:checked + .container,
+#facebook-open:checked + .container
 {
   display: block;
 }

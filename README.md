@@ -15,6 +15,7 @@ Acesse [http://henriquemelanda.com.br/css-components/](http://henriquemelanda.co
 - Text Filter Background
 - Checkbox
 - Avaliação
+- Facebook Reactions
 
 # Como funciona o projeto por baixo dos panos?
 - Jekyll 3.1.6
