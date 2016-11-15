@@ -156,7 +156,8 @@ h1{
 #checkbox-open:checked + .container,
 #text-open:checked + .container,
 #avaliacao-open:checked + .container,
-#facebook-open:checked + .container
+#facebook-open:checked + .container,
+#menu-vertical-open:checked + .container
 {
   display: block;
 }
