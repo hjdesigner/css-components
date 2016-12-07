@@ -1,0 +1,87 @@
+input[name="input-see-more"]{
+  display: none;
+}
+.box-see-more{
+  width: 100%;
+  height: 300px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+    h2{
+      width: 100%;
+      height: auto;
+      float: left;
+      margin: 20px 0;
+      text-align: center;
+      font-family: $font-padrao;
+      font-weight: 400;
+      font-size: 2em;
+    }
+    p{
+      width: 100%;
+      height: auto;
+      float: left;
+      margin: 0 0 10px;
+      text-align: justify;
+      font-family: $font-padrao;
+      font-weight: 400;
+      font-size: 1em;
+    }
+    .btn-see-more{
+      width: 100%;
+      height: 58px;
+      float: left;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #FFF;
+        .btn-see-more-open,
+        .btn-see-more-closed{
+          width: 200px;
+          height: 50px;
+          margin: 0 auto;
+            label{
+              width: 100%;
+              height: 50px;
+              float: left;
+              background-color: $azul;
+              border-bottom: 8px solid #3388CE;
+              text-align: center;
+              text-transform: uppercase;
+              line-height: 50px;
+              font-family: $font-padrao;
+              font-weight: 400;
+              color: $branco;
+              font-size: 1.3em;
+              cursor: pointer;
+              transition: all .3s ease-in-out;
+              &:hover{
+                background-color: $preto;
+                border-bottom: 8px solid #211E1D;
+              }
+            }
+        }
+        .btn-see-more-closed{
+          display: none;
+        }
+    }
+}
+
+#see-more-open:checked ~ .box-see-more{
+  height: auto;
+}
+#see-more-open:checked ~ .box-see-more .btn-see-more-open{
+  display: none;
+}
+#see-more-open:checked ~ .box-see-more .btn-see-more-closed{
+  display: block;
+}
+#see-more-closed:checked ~ .box-see-more{
+  height: 300px;
+}
+#see-more-closed:checked ~ .box-see-more .btn-see-more-closed{
+  display: none;
+}
+#see-more-closed:checked ~ .box-see-more .btn-see-more-open{
+  display: block;
+}
