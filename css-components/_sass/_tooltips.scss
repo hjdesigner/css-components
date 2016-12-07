@@ -16,6 +16,10 @@
     &:after{
       display: block;
       -webkit-animation: alpha 2s ease-out;
+      -moz-animation: alpha 2s ease-out;
+      -ms-animation: alpha 2s ease-out;
+      -o-animation: alpha 2s ease-out;
+      animation: alpha 2s ease-out;
       content: attr(data-title);
       position: absolute;
       top: 60px;

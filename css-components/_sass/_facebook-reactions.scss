@@ -31,21 +31,45 @@ input{
             &.reactions-{
               &curtir{
                 -webkit-animation: facebook .10s cubic-bezier(.49,0,.46,1);
+                -moz-animation: facebook .10s cubic-bezier(.49,0,.46,1);
+                -ms-animation: facebook .10s cubic-bezier(.49,0,.46,1);
+                -o-animation: facebook .10s cubic-bezier(.49,0,.46,1);
+                animation: facebook .10s cubic-bezier(.49,0,.46,1);
               }
               &amei{
                 -webkit-animation: facebook .20s cubic-bezier(.49,0,.46,1);
+                -moz-animation: facebook .20s cubic-bezier(.49,0,.46,1);
+                -ms-animation: facebook .20s cubic-bezier(.49,0,.46,1);
+                -o-animation: facebook .20s cubic-bezier(.49,0,.46,1);
+                animation: facebook .20s cubic-bezier(.49,0,.46,1);
               }
               &haha{
                 -webkit-animation: facebook .30s cubic-bezier(.49,0,.46,1);
+                -moz-animation: facebook .30s cubic-bezier(.49,0,.46,1);
+                -ms-animation: facebook .30s cubic-bezier(.49,0,.46,1);
+                -o-animation: facebook .30s cubic-bezier(.49,0,.46,1);
+                animation: facebook .30s cubic-bezier(.49,0,.46,1);
               }
               &uau{
                 -webkit-animation: facebook .40s cubic-bezier(.49,0,.46,1);
+                -moz-animation: facebook .40s cubic-bezier(.49,0,.46,1);
+                -ms-animation: facebook .40s cubic-bezier(.49,0,.46,1);
+                -o-animation: facebook .40s cubic-bezier(.49,0,.46,1);
+                animation: facebook .40s cubic-bezier(.49,0,.46,1);
               }
               &triste{
                 -webkit-animation: facebook .50s cubic-bezier(.49,0,.46,1);
+                -moz-animation: facebook .50s cubic-bezier(.49,0,.46,1);
+                -ms-animation: facebook .50s cubic-bezier(.49,0,.46,1);
+                -o-animation: facebook .50s cubic-bezier(.49,0,.46,1);
+                animation: facebook .50s cubic-bezier(.49,0,.46,1);
               }
               &grr{
                 -webkit-animation: facebook .60s cubic-bezier(.49,0,.46,1);
+                -moz-animation: facebook .60s cubic-bezier(.49,0,.46,1);
+                -o-animation: facebook .60s cubic-bezier(.49,0,.46,1);
+                -ms-animation: facebook .60s cubic-bezier(.49,0,.46,1);
+                animation: facebook .60s cubic-bezier(.49,0,.46,1);
               }
             }
           }

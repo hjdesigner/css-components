@@ -63,4 +63,8 @@
 #modal:checked ~ .modal-content{
 	display:block;
 	-webkit-animation: alpha 1s ease-in;
+	-moz-animation: alpha 1s ease-in;
+	-ms-animation: alpha 1s ease-in;
+	-o-animation: alpha 1s ease-in;
+	animation: alpha 1s ease-in;
 }

@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,100);
+*, ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html{
+  width: 100%;
+  height: 100%;
+}
+body{
+  font-family: 'Roboto', sans-serif;;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+.row{
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+h1{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 2% 0;
+  text-align: center;
+  font-weight: 100;
+  color: #FF1493;
+  font-size: 4em;
+}
+h1:before{
+  content: "</";
+}
+h1:after{
+  content: ">";
+}
+input[name="input-see-more"] {
+  display: none;
+}
+
+.box-see-more {
+  width: 100%;
+  height: 300px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+.box-see-more h2 {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 20px 0;
+  text-align: center;
+  font-family: "Roboto",sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+}
+.box-see-more p {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin: 0 0 10px;
+  text-align: justify;
+  font-family: "Roboto",sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+.box-see-more .btn-see-more {
+  width: 100%;
+  height: 58px;
+  float: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+}
+.box-see-more .btn-see-more .btn-see-more-open,
+.box-see-more .btn-see-more .btn-see-more-closed {
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+}
+.box-see-more .btn-see-more .btn-see-more-open label,
+.box-see-more .btn-see-more .btn-see-more-closed label {
+  width: 100%;
+  height: 50px;
+  float: left;
+  background-color: #3CA3F2;
+  border-bottom: 8px solid #3388CE;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-family: "Roboto",sans-serif;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 1.3em;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+.box-see-more .btn-see-more .btn-see-more-open label:hover,
+.box-see-more .btn-see-more .btn-see-more-closed label:hover {
+  background-color: #2E2929;
+  border-bottom: 8px solid #211E1D;
+}
+.box-see-more .btn-see-more .btn-see-more-closed {
+  display: none;
+}
+
+#see-more-open:checked ~ .box-see-more {
+  height: auto;
+}
+
+#see-more-open:checked ~ .box-see-more .btn-see-more-open {
+  display: none;
+}
+
+#see-more-open:checked ~ .box-see-more .btn-see-more-closed {
+  display: block;
+}
+
+#see-more-closed:checked ~ .box-see-more {
+  height: 300px;
+}
+
+#see-more-closed:checked ~ .box-see-more .btn-see-more-closed {
+  display: none;
+}
+
+#see-more-closed:checked ~ .box-see-more .btn-see-more-open {
+  display: block;
+}

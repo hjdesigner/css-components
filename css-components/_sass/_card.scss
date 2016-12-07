@@ -75,6 +75,10 @@
     #click-card:checked ~ .card-texto{
       display: block;
       -webkit-animation: alpha .3s linear;
+      -moz-animation: alpha .3s linear;
+      -ms-animation: alpha .3s linear;
+      -o-animation: alpha .3s linear;
+      animation: alpha .3s linear;
     }
     #click-card:checked ~ .click-card{
         label{

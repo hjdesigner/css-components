@@ -108,6 +108,10 @@
 .carousel-open:checked + .carousel-item{
 	display:block;
 	-webkit-animation: alpha 4s ease-out;
+	-moz-animation: alpha 4s ease-out;
+	-ms-animation: alpha 4s ease-out;
+	-o-animation: alpha 4s ease-out;
+	animation: alpha 4s ease-out;
 }
 #carousel-1:checked ~ .control-1,
 #carousel-2:checked ~ .control-2,

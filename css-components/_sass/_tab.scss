@@ -44,6 +44,10 @@
 			opacity: 1;
 			visibility: visible;
 			-webkit-animation: alpha 2s ease-in;
+			-moz-animation: alpha 2s ease-in;
+			-ms-animation: alpha 2s ease-in;
+			-o-animation: alpha 2s ease-in;
+			animation: alpha 2s ease-in;
 		}
 		.tab-open:checked ~ label{
 			background-color:#F2F2F2;

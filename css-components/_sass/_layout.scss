@@ -100,6 +100,10 @@ h1{
   bottom: 10px;
   &:hover{
     -webkit-animation: github 1s cubic-bezier(.49,0,.46,1) infinite;
+    -moz-animation: github 1s cubic-bezier(.49,0,.46,1) infinite;
+    -ms-animation: github 1s cubic-bezier(.49,0,.46,1) infinite;
+    -o-animation: github 1s cubic-bezier(.49,0,.46,1) infinite;
+    animation: github 1s cubic-bezier(.49,0,.46,1) infinite;
   }
 }
 .line{

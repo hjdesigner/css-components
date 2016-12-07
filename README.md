@@ -16,6 +16,8 @@ Acesse [http://henriquemelanda.com.br/css-components/](http://henriquemelanda.co
 - Checkbox
 - Avaliação
 - Facebook Reactions
+- Menu Vertical
+- Veja Mais
 
 # Como funciona o projeto por baixo dos panos?
 - Jekyll 3.1.6
