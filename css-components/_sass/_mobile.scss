@@ -134,6 +134,41 @@
   .texto-filtro{
     font-size: 2.9em;
   }
+  //COMPONENT PAGINACAO
+  .box-paginacao ul li{
+    width: 48% !important;
+    margin: 0 0 10px 1% !important;
+    box-sizing: border-box !important;
+  }
+  .box-paginacao .box-vitrines {
+      height: 651px !important;
+  }
+  .box-paginacao .vitrine1, 
+  .box-paginacao .vitrine2, 
+  .box-paginacao .vitrine3, 
+  .box-paginacao .vitrine4 {
+    height: auto !important;
+  }
+  #paginacao1:checked ~ .box-vitrines > ul{  
+    transition: transform .7s ease-in-out;
+    transform: translateY(0px);
+  }
+  #paginacao2:checked ~ .box-vitrines > ul{  
+    transition: transform .7s ease-in-out;
+    transform: translateY(-624px);
+  }
+  #paginacao3:checked ~ .box-vitrines > ul{  
+    transition: transform .7s ease-in-out;
+    transform: translateY(-1251px);
+  }
+  #paginacao4:checked ~ .box-vitrines > ul{  
+    transition: transform .7s ease-in-out;
+    transform: translateY(-1882px);
+  }
+  .btn-paginacao ul li {
+    width: 30px !important;
+    margin: 0 5px 0 0 !important;
+  }
 }
 @media (min-width: 321px) and (max-width: 375px){
   header {
@@ -273,6 +308,41 @@
   // Text Filter Background
   .texto-filtro{
     font-size: 3.4em;
+  }
+  //COMPONENT PAGINACAO
+  .box-paginacao ul li{
+    width: 48% !important;
+    margin: 0 0 10px 1% !important;
+    box-sizing: border-box !important;
+  }
+  .box-paginacao .box-vitrines {
+      height: 651px !important;
+  }
+  .box-paginacao .vitrine1, 
+  .box-paginacao .vitrine2, 
+  .box-paginacao .vitrine3, 
+  .box-paginacao .vitrine4 {
+    height: auto !important;
+  }
+  #paginacao1:checked ~ .box-vitrines > ul{  
+    transition: transform .7s ease-in-out;
+    transform: translateY(0px);
+  }
+  #paginacao2:checked ~ .box-vitrines > ul{  
+    transition: transform .7s ease-in-out;
+    transform: translateY(-624px);
+  }
+  #paginacao3:checked ~ .box-vitrines > ul{  
+    transition: transform .7s ease-in-out;
+    transform: translateY(-1251px);
+  }
+  #paginacao4:checked ~ .box-vitrines > ul{  
+    transition: transform .7s ease-in-out;
+    transform: translateY(-1882px);
+  }
+  .btn-paginacao ul li {
+    width: 30px !important;
+    margin: 0 5px 0 0 !important;
   }
 }
 @media (min-width: 376px) and (max-width: 425px){
@@ -416,6 +486,41 @@
   .texto-filtro{
     font-size: 3.9em;
   }
+  //COMPONENT PAGINACAO
+  .box-paginacao ul li{
+    width: 48% !important;
+    margin: 0 0 10px 1% !important;
+    box-sizing: border-box !important;
+  }
+  .box-paginacao .box-vitrines {
+      height: 651px !important;
+  }
+  .box-paginacao .vitrine1, 
+  .box-paginacao .vitrine2, 
+  .box-paginacao .vitrine3, 
+  .box-paginacao .vitrine4 {
+    height: auto !important;
+  }
+  #paginacao1:checked ~ .box-vitrines > ul{  
+    transition: transform .7s ease-in-out;
+    transform: translateY(0px);
+  }
+  #paginacao2:checked ~ .box-vitrines > ul{  
+    transition: transform .7s ease-in-out;
+    transform: translateY(-624px);
+  }
+  #paginacao3:checked ~ .box-vitrines > ul{  
+    transition: transform .7s ease-in-out;
+    transform: translateY(-1251px);
+  }
+  #paginacao4:checked ~ .box-vitrines > ul{  
+    transition: transform .7s ease-in-out;
+    transform: translateY(-1882px);
+  }
+  .btn-paginacao ul li {
+    width: 30px !important;
+    margin: 0 5px 0 0 !important;
+  }
 }
 @media (min-width: 430px) and (max-width: 768px){
   header {
@@ -552,6 +657,41 @@
   // Text Filter Background
   .texto-filtro{
     font-size: 7em;
+  }
+  //COMPONENT PAGINACAO
+  .box-paginacao ul li{
+    width: 48% !important;
+    margin: 0 0 10px 1% !important;
+    box-sizing: border-box !important;
+  }
+  .box-paginacao .box-vitrines {
+      height: 651px !important;
+  }
+  .box-paginacao .vitrine1, 
+  .box-paginacao .vitrine2, 
+  .box-paginacao .vitrine3, 
+  .box-paginacao .vitrine4 {
+    height: auto !important;
+  }
+  #paginacao1:checked ~ .box-vitrines > ul{  
+    transition: transform .7s ease-in-out;
+    transform: translateY(0px);
+  }
+  #paginacao2:checked ~ .box-vitrines > ul{  
+    transition: transform .7s ease-in-out;
+    transform: translateY(-624px);
+  }
+  #paginacao3:checked ~ .box-vitrines > ul{  
+    transition: transform .7s ease-in-out;
+    transform: translateY(-1251px);
+  }
+  #paginacao4:checked ~ .box-vitrines > ul{  
+    transition: transform .7s ease-in-out;
+    transform: translateY(-1882px);
+  }
+  .btn-paginacao ul li {
+    width: 30px !important;
+    margin: 0 5px 0 0 !important;
   }
 }
 @media (min-width: 770px) and (max-width: 1024px){
