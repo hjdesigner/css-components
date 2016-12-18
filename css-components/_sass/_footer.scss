@@ -33,6 +33,10 @@ footer{
                 margin-left: 20px;
                 &:hover{
                     -webkit-animation: social 1s linear;
+                    -moz-animation: social 1s linear;
+                    -ms-animation: social 1s linear;
+                    -o-animation: social 1s linear;
+                    animation: social 1s linear;
                 }
                 @media screen and (max-width: $media-tablet) {
                     margin-left: 9px;

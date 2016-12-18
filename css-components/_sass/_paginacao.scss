@@ -1,0 +1,132 @@
+input{
+  display: none;
+}
+.box-paginacao{
+  width: 100%;
+  height: auto;
+  float: left;
+    h2{
+      width: 100%;
+      height: auto;
+      float: left;
+      margin: 0 0 50px;
+      text-align: center;
+      font-family: $font-padrao;
+      font-weight: 400;
+      font-size: 1.3em;
+      color: $azul;
+    }
+    .box-vitrines{
+      width: 100%;
+      height: 371px;
+      float: left;
+      overflow: hidden;
+      position: relative;
+    }
+    ul{
+      width: 100%;
+      height: auto;
+      float: left;
+        li{
+          width: 250px;
+          height: 250px;
+          float: left;
+          margin: 0 0 10px 60px;
+          border: 1px solid $cinza;
+          border-radius: 10px;
+          line-height: 250px;
+          text-align: center;
+          font-family: $font-padrao;
+          font-weight: 400;
+          font-size: 1.3em;
+          color: $preto;
+        }        
+    }
+    .vitrine1,
+    .vitrine2,
+    .vitrine3,
+    .vitrine4{
+      width: 100%;
+      height: 336px;
+      float: left;
+      margin-bottom: 33px;
+    }
+}
+.btn-paginacao{
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  bottom: 0;
+  background-color: $branco;
+    ul{
+      width: auto;
+      height: auto;
+        li{
+          width: 30px;
+          height: 30px;
+          float: left;
+          margin: 0 5px 0 0;
+          border: 0;
+          &:last-child{
+            margin: 0;
+          }
+            label{
+              width: 100%;
+              height: 30px;
+              float: left;
+              text-align: center;
+              line-height: 30px;
+              font-family: $font-padrao;
+              font-weight: 400;
+              font-size: 1em;
+              color: $preto;
+              cursor: pointer;
+              border-radius: 3px;
+              transition: background-color .25s ease-in-out;
+              &:hover{
+                background-color: $rosa;
+                color: $branco;
+              }
+            }
+        }
+    }
+}
+#paginacao1:checked ~ .box-vitrines > ul{  
+  transition: transform .7s ease-in-out;
+  transform: translateY(0px);
+}
+#paginacao1:checked ~ .box-vitrines label[for="paginacao1"]{
+  background-color: $rosa;
+  color: $branco;
+}  
+#paginacao2:checked ~ .box-vitrines > ul{
+  transition: transform .7s ease-in-out;
+  transform: translateY(-369px);
+}
+#paginacao2:checked ~ .box-vitrines label[for="paginacao2"]{
+  background-color: $rosa;
+  color: $branco;
+}
+#paginacao3:checked ~ .box-vitrines > ul{
+  transition: transform .7s ease-in-out;
+  transform: translateY(-738px);
+}
+#paginacao3:checked ~ .box-vitrines label[for="paginacao3"]{
+  background-color: $rosa;
+  color: $branco;
+}
+#paginacao4:checked ~ .box-vitrines > ul{
+  transition: transform .7s ease-in-out;
+  transform: translateY(-1107px);
+}
+#paginacao4:checked ~ .box-vitrines label[for="paginacao4"]{
+  background-color: $rosa;
+  color: $branco;
+}
