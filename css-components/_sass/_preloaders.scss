@@ -132,4 +132,22 @@
 			border-radius: 50%;
 		}
 	}
+	.preloaders-5{
+		width: 200px;
+		height: 20px;
+		float: left;
+		position: relative;
+		margin: 100px 0 0 150px;
+		background-color: $preto;
+		&:after{
+			content: "";
+			width: 50px;
+			height: 20px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: $rosa;
+			animation: preloaders-5 1s linear infinite;
+		}
+	}
 }

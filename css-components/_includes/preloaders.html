@@ -16,6 +16,7 @@
       </div>
       <div class="line">
         <div class="preloaders-4"></div>
+        <div class="preloaders-5"></div>
       </div>
 
     </div>
@@ -39,6 +40,7 @@
         </div>
         <div class="line">
           <div class="preloaders-4"></div>
+          <div class="preloaders-5"></div>
         </div>
 
       </div>
@@ -111,7 +113,18 @@
               transform: rotate(360deg);
           }
       }
-    /* PRELOADER 1 */
+      @-webkit-keyframes preloaders-5{
+        0%{
+          left: 0;
+        }
+        50%{
+          left: 150px;
+        }
+        100%{
+          left: 0;
+        }
+      }
+      /* PRELOADER 1 */
       .box-preloaders{
           width: 100%;
           height: auto;
@@ -138,7 +151,7 @@
           border-radius: 50%;
           -webkit-animation: preloader1 1s linear infinite;
       }
-    /* PRELOADER 2 */
+      /* PRELOADER 2 */
       .box-preloaders .preloaders-2{
           width: 200px;
           height: 200px;
@@ -172,7 +185,7 @@
           border-radius: 50%;
           -webkit-animation: preloader2before 1s cubic-bezier(0.49, 0, 0.46, 1) infinite;
       }
-    /* PRELOADER 3 */
+      /* PRELOADER 3 */
       .box-preloaders .preloaders-3{
           width: 230px;
           height: 50px;
@@ -199,7 +212,7 @@
       .box-preloaders .preloaders-3 span:nth-child(3){
           -webkit-animation: preloader3 1s cubic-bezier(0.49, 0, 0.46, 1) infinite;
       }
-    /* PRELOADER 4 */
+      /* PRELOADER 4 */
       .box-preloaders .preloaders-4{
           width: 200px;
           height: 200px;
@@ -222,11 +235,100 @@
           background-color: #2E2929;
           border-radius: 50%;
       }
-
+      /* PRELOADER 5*/
+      .preloaders-5 {
+          width: 200px;
+          height: 20px;
+          float: left;
+          position: relative;
+          margin: 100px 0 0 150px;
+          background-color: #2E2929;
+      }
+      .preloaders-5:after {
+          content: "";
+          width: 50px;
+          height: 20px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: #FF1493;
+          animation: preloaders-5 1s linear infinite;
+      }
 
     {% endhighlight %}
 
     {% highlight sass linenos%}
+      @-webkit-keyframes preloader1 {
+          0%{
+              transform: rotate(0deg);
+          }
+          100%{
+              transform: rotate(360deg);
+          }
+      }
+      @-webkit-keyframes preloader2after {
+          0%{
+              transform: rotate(0deg);
+          }
+          50%{
+              transform: rotate(190deg);
+          }
+          100%{
+              transform: rotate(0deg);
+          }
+      }
+      @-webkit-keyframes preloader2before {
+          0%{
+              transform: rotate(0deg);
+          }
+          50%{
+              transform: rotate(190deg);
+          }
+          100%{
+              transform: rotate(0deg);
+          }
+      }
+      @-webkit-keyframes preloader3 {
+          0%{
+              transform: scale(.2);
+          }
+          50%{
+              transform: scale(1);
+          }
+          100%{
+              transform: scale(.2);
+          }
+      }
+      @-webkit-keyframes preloader3b {
+          0%{
+              transform: scale(1);
+          }
+          50%{
+              transform: scale(.2);
+          }
+          100%{
+              transform: scale(1);
+          }
+      }
+      @-webkit-keyframes preloader4 {
+          0%{
+              transform: rotate(0deg);
+          }
+          100%{
+              transform: rotate(360deg);
+          }
+      }
+      @-webkit-keyframes preloaders-5{
+        0%{
+          left: 0;
+        }
+        50%{
+          left: 150px;
+        }
+        100%{
+          left: 0;
+        }
+      }
       //SASS
       .box-preloaders{
       	width: 100%;
@@ -332,6 +434,24 @@
       			top: 50px;
       			background-color: $preto;
       			border-radius: 50%;
+      		}
+      	}
+        .preloaders-5{
+      		width: 200px;
+      		height: 20px;
+      		float: left;
+      		position: relative;
+      		margin: 100px 0 0 150px;
+      		background-color: $preto;
+      		&:after{
+      			content: "";
+      			width: 50px;
+      			height: 20px;
+      			position: absolute;
+      			top: 0;
+      			left: 0;
+      			background-color: $rosa;
+      			animation: preloaders-5 1s linear infinite;
       		}
       	}
       }
