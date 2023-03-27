@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    background-color: teal;
+    overflow: hidden;
+}
+.cabecalho{
+    height: 70px;
+    padding: 10px;
+    background-color: #000;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho_logo{
+    color: white;
+}
+.cabecalho_botao{
+    width: 30px;
+    cursor: pointer;
+}
+.botao_barra{
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+
+.cabecalho_menu{
+    background-color: white;
+    height: calc(100vh - 70px);
+    width: 50%;
+    padding: 0;
+    position: absolute;
+    top: 70px;
+    right: -100vw;
+    transition: all 0.5s;
+}
+.cabecalho_menu ul{
+    list-style-type: none;
+    font-size: 1.3em;
+    height: calc(50vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.cabecalho_menu ul li{
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.cabecalho_menu ul li:hover{
+    background-color: #000;
+    color: white;
+    transition: all 0.5s;
+}
+
+
+/* classe vai ser adicionada com js à div cabeçalho menu para fazer surgi-lo */
+.show{
+    right: 0;
+    transition: all 0.5s;
+}
+
+
+@media (min-width:1000px){
+    .cabecalho_botao{
+        display: none;
+    }
+    .cabecalho{
+        position: inherit;
+        background-color: #000;
+    }
+    .cabecalho_menu{
+        background-color: #000;
+        color: white;
+        position: inherit;
+        height: auto;
+    }
+    .cabecalho_menu ul{
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        font-size: 1.1em;
+    }
+    .cabecalho_menu ul li{
+        padding: 5px;
+    }
+    .cabecalho_menu ul li:hover{
+        background-color: white;
+        color: #000;
+    }
+}
